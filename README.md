@@ -2,6 +2,8 @@
 
 - ### [Getting into Competitive Programming](https://github.com/the-hyp0cr1t3/CC)
 
+- ### [Warm-Up: Solve At Least 200 Problems](https://codeforces.com/problemset?order=BY_SOLVED_DESC)
+
 - ### [FAQ](https://codeforces.com/blog/entry/47516)
 
 - ### How Should I Practice?
