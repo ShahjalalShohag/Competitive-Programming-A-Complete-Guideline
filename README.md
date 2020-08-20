@@ -18,6 +18,6 @@
 
   - [A Very Useful Guide For Beginners](https://github.com/the-hyp0cr1t3/CC)
   - [[Tutorial] A way to Practice Competitive Programming : From Rating 1000 to 2400+](https://drive.google.com/file/d/1J2x8pIYQ3MXANgvzOgBciWd3d79j_Exa/view)
-  - [How Much Time Should I Spend for A Single Problem?](http://mdotsabouri.blogspot.com/2014/10/my-recipe-to-improve-your-programming.html)
+  - [How Much Time Should I Spend for A Single Problem?](https://www.google.com/search?q=random+number+from+15+to+30&oq=random+number+from+15+to+30&aqs=chrome..69i57j0l2.8559j0j7&sourceid=chrome&ie=UTF-8)
   - [Useful Advice](https://docs.google.com/document/d/1cHJ3S3s5dZJjMQjvL_R24ZIwzZjeYMzAuVm3MkHDxzU/edit)
   - [FAQ](https://codeforces.com/blog/entry/47516)
