@@ -20,7 +20,7 @@
     - [Programming Camp Syllabus](https://docs.google.com/document/d/1_dc3Ifg7Gg1LxhiqMMmE9UbTsXpdRiYh4pKILYG2eA4/edit)
     - [CP Algo](https://cp-algorithms.com/)
     - [Geometry](https://vlecomte.github.io/cp-geo.pdf)
-    - [GeeksForGeeks](https://www.geeksforgeeks.org/fundamentals-of-algorithms/(
+    - [GeeksForGeeks](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
     - [PEG Wiki](http://wcipeg.com/wiki/Special:AllPages)
     - [Topcoder](https://www.topcoder.com/community/competitive-programming/tutorials/)
     - [The Hitchhiker’s Guide to the Programming Contests](http://comscigate.com/Books/contests/icpc.pdf)
