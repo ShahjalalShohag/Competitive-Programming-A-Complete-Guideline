@@ -13,6 +13,20 @@
   That was my strategy. You can make your own that suits you well.
 
   Best Wishes!
+  
+ - ### Topic List
+  - [A2 OJ](https://a2oj.com/categories) 
+  - [Algorithms](https://www.quora.com/What-are-the-algorithms-required-to-solve-all-problems-using-C++-in-any-competitive-coding-contest)
+  - [Programming Camp Syllabus](https://docs.google.com/document/d/1_dc3Ifg7Gg1LxhiqMMmE9UbTsXpdRiYh4pKILYG2eA4/edit)
+  - [CP Algo](https://cp-algorithms.com/)
+  - [Geometry](https://vlecomte.github.io/cp-geo.pdf)
+  - [GeeksForGeeks](https://www.geeksforgeeks.org/fundamentals-of-algorithms/(
+  - [PEG Wiki](http://wcipeg.com/wiki/Special:AllPages)
+  - [Topcoder](https://www.topcoder.com/community/competitive-programming/tutorials/)
+  - [The Hitchhiker’s Guide to the Programming Contests](http://comscigate.com/Books/contests/icpc.pdf)
+  - [Competitive Programming Resources](https://halexv.blogspot.com/2015/10/competitive-programming-resources.html)
+  - [All the good tutorials found for Competitive Programming](https://codeforces.com/blog/entry/57282)
+  - [Good Blog Post Resources about Algorithm and Data Structures](https://codeforces.com/blog/entry/13529)
 
 - ### Useful Links
 
