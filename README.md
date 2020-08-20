@@ -14,4 +14,4 @@ Best Wishes!
 
 #Useful Links
 
- - (A Very Useful Guide for beginners)[https://github.com/the-hyp0cr1t3/CC]
+ - [A Very Useful Guide for beginners](https://github.com/the-hyp0cr1t3/CC)
