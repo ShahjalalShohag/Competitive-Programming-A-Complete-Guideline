@@ -1,4 +1,4 @@
-The steps are sorted in a cronological order!
+The steps are sorted in a chronological order!
 
 - ### [The Ultimate Question: Why Should I Start Competitive Programming?](https://codeforces.com/blog/entry/79449#comment-651688)
 
