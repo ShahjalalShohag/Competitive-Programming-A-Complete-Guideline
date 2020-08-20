@@ -35,7 +35,7 @@
 
   And of course, participate in every possible contests in every online judge.
   
- - ### Topic List(As you are feeling lazy to collect them by yourself!)
+ - ### Topic List (As you are feeling lazy to collect them by yourself!)
     - [Chronological](https://docs.google.com/spreadsheets/d/1XSP_OsjzhdJfcvuOluUnwkoWKi9XCayEtWMsbh5yoeo/edit?fbclid=IwAR2JDGnBakUhRs-niPR2RdwCp010r18fB0bNhVcAdE32T29ewTK9bi5HaV0#gid=0)
     - [A2 OJ](https://a2oj.com/categories) 
     - [Quora](https://www.quora.com/What-are-the-algorithms-required-to-solve-all-problems-using-C++-in-any-competitive-coding-contest)
