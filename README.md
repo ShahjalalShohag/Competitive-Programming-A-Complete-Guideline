@@ -1,4 +1,4 @@
-- ### [Why Should I Start Competitive Programming?](https://codeforces.com/blog/entry/79449#comment-651688)
+- ### [The Ultimate Question: Why Should I Start Competitive Programming?](https://codeforces.com/blog/entry/79449#comment-651688)
 
 - ### How Should I Practice?
 
