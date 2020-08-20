@@ -4,6 +4,8 @@
 
 - ### [Warm-Up: Solve At Least 200 Problems](https://codeforces.com/problemset?order=BY_SOLVED_DESC)
 
+- ### [How Much Time Should I Spend for A Single Problem?](https://www.google.com/search?q=random+number+from+15+to+30&oq=random+number+from+15+to+30&aqs=chrome..69i57j0l2.8559j0j7&sourceid=chrome&ie=UTF-8)
+
 - ### [FAQ](https://codeforces.com/blog/entry/47516)
 
 - ### How Should I Practice?
@@ -39,7 +41,5 @@
 - ### [Library Checker](https://judge.yosupo.jp/)
 
 - ### [[Tutorial] A way to Practice Competitive Programming : From Rating 1000 to 2400+](https://drive.google.com/file/d/1J2x8pIYQ3MXANgvzOgBciWd3d79j_Exa/view)
-
-- ### [How Much Time Should I Spend for A Single Problem?](https://www.google.com/search?q=random+number+from+15+to+30&oq=random+number+from+15+to+30&aqs=chrome..69i57j0l2.8559j0j7&sourceid=chrome&ie=UTF-8)
 
 - ### [I Know Every Topic That You Have Thrown At Me. Am I A Good Programmer Now?](https://codeforces.com/blog/entry/53341?#comment-373965)
