@@ -56,4 +56,4 @@ The steps are sorted chronologically!
 
 - ### [Library Checker](https://judge.yosupo.jp/)
 
-- ### [I know every topic that you have thrown at me. am I a Good Programmer now?](https://codeforces.com/blog/entry/53341?#comment-373965)
+- ### [I know every topic that you have thrown at me. Am I a Good Programmer now?](https://codeforces.com/blog/entry/53341?#comment-373965)
