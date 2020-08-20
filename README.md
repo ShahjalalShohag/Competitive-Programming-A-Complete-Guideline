@@ -27,6 +27,8 @@
     - [Competitive Programming Resources](https://halexv.blogspot.com/2015/10/competitive-programming-resources.html)
     - [All the good tutorials found for Competitive Programming](https://codeforces.com/blog/entry/57282)
     - [Good Blog Post Resources about Algorithm and Data Structures](https://codeforces.com/blog/entry/13529)
+    
+- ### [Code Library](https://github.com/kth-competitive-programming/kactl/tree/master/content)
 
 - ### [How Much Time Should I Spend for A Single Problem?](https://www.google.com/search?q=random+number+from+15+to+30&oq=random+number+from+15+to+30&aqs=chrome..69i57j0l2.8559j0j7&sourceid=chrome&ie=UTF-8)
 
