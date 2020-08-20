@@ -11,3 +11,7 @@ And of course, participate in every possible contests in every online judge.
 That was my strategy. You can make your own that suits you well.
 
 Best Wishes!
+
+#Useful Links
+
+ - (A Very Useful Guide for beginners)[https://github.com/the-hyp0cr1t3/CC]
