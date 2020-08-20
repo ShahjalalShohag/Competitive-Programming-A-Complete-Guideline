@@ -16,7 +16,7 @@
   
  - ### Topic List
     - [A2 OJ](https://a2oj.com/categories) 
-    - [Algorithms](https://www.quora.com/What-are-the-algorithms-required-to-solve-all-problems-using-C++-in-any-competitive-coding-contest)
+    - [Quora](https://www.quora.com/What-are-the-algorithms-required-to-solve-all-problems-using-C++-in-any-competitive-coding-contest)
     - [Programming Camp Syllabus](https://docs.google.com/document/d/1_dc3Ifg7Gg1LxhiqMMmE9UbTsXpdRiYh4pKILYG2eA4/edit)
     - [CP Algo](https://cp-algorithms.com/)
     - [Geometry](https://vlecomte.github.io/cp-geo.pdf)
