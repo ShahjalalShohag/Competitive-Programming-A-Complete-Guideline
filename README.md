@@ -4,7 +4,7 @@
 
 - ### [Warm-Up: Solve At Least 200 Problems](https://codeforces.com/problemset?order=BY_SOLVED_DESC)
 
-- ### [How Much Time Should I Spend for A Single Problem?](https://www.google.com/search?q=random+number+from+15+to+30&oq=random+number+from+15+to+30&aqs=chrome..69i57j0l2.8559j0j7&sourceid=chrome&ie=UTF-8)
+- ### [How Much Time Should I Spend for A Single Problem Before Looking At The Editorials?](https://www.google.com/search?q=random+number+from+15+to+30&oq=random+number+from+15+to+30&aqs=chrome..69i57j0l2.8559j0j7&sourceid=chrome&ie=UTF-8)
 
 - ### [FAQ](https://codeforces.com/blog/entry/47516)
 
