@@ -10,6 +10,8 @@ The steps are sorted chronologically!
 
 - ### [FAQ](https://codeforces.com/blog/entry/47516)
 
+- ### [[Tutorial] A way to Practice Competitive Programming : From Rating 1000 to 2400+](https://drive.google.com/file/d/1J2x8pIYQ3MXANgvzOgBciWd3d79j_Exa/view)
+
 - ### How Should I Practice?
 
   1. Create a topic list(every possible category, from easy to advanced).
@@ -42,7 +44,5 @@ The steps are sorted chronologically!
 - ### [Code Library](https://github.com/kth-competitive-programming/kactl/tree/master/content)
 
 - ### [Library Checker](https://judge.yosupo.jp/)
-
-- ### [[Tutorial] A way to Practice Competitive Programming : From Rating 1000 to 2400+](https://drive.google.com/file/d/1J2x8pIYQ3MXANgvzOgBciWd3d79j_Exa/view)
 
 - ### [I Know Every Topic That You Have Thrown At Me. Am I A Good Programmer Now?](https://codeforces.com/blog/entry/53341?#comment-373965)
