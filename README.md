@@ -1,5 +1,3 @@
-The steps are sorted chronologically!
-
 - ### [The Ultimate Question: Why should I start Competitive Programming?](https://codeforces.com/blog/entry/79449#comment-651688)
   Well, I believe that the ultimate goal of my existence is to be happy. And I have learned from many well-established people that getting a great job or being famous or other   common stereotypical goals won't make you happy as when you get used to those they become meaningless.
 
