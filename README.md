@@ -8,11 +8,11 @@
   4. Solve lots of problems about that topic.
   5. Go to 2.
 
-And of course, participate in every possible contests in every online judge.
+  And of course, participate in every possible contests in every online judge.
 
-That was my strategy. You can make your own that suits you well.
+  That was my strategy. You can make your own that suits you well.
 
-Best Wishes!
+  Best Wishes!
 
 - ### Useful Links
 
