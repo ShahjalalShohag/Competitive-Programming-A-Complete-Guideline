@@ -36,7 +36,7 @@
   And of course, participate in every possible contests in every online judge.
   
  - ### Topic List
-    - [Chronoligcal](https://docs.google.com/spreadsheets/d/1XSP_OsjzhdJfcvuOluUnwkoWKi9XCayEtWMsbh5yoeo/edit?fbclid=IwAR2JDGnBakUhRs-niPR2RdwCp010r18fB0bNhVcAdE32T29ewTK9bi5HaV0#gid=0)
+    - [Chronological](https://docs.google.com/spreadsheets/d/1XSP_OsjzhdJfcvuOluUnwkoWKi9XCayEtWMsbh5yoeo/edit?fbclid=IwAR2JDGnBakUhRs-niPR2RdwCp010r18fB0bNhVcAdE32T29ewTK9bi5HaV0#gid=0)
     - [A2 OJ](https://a2oj.com/categories) 
     - [Quora](https://www.quora.com/What-are-the-algorithms-required-to-solve-all-problems-using-C++-in-any-competitive-coding-contest)
     - [Programming Camp Syllabus](https://docs.google.com/document/d/1_dc3Ifg7Gg1LxhiqMMmE9UbTsXpdRiYh4pKILYG2eA4/edit)
