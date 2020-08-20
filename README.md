@@ -21,10 +21,6 @@ The steps are sorted chronologically!
   5. Go to ii.
 
   And of course, participate in every possible contests in every online judge.
-
-  That was my strategy. You can make your own that suits you well.
-
-  Best Wishes!
   
  - ### Topic List
     - [Categorized](https://docs.google.com/spreadsheets/d/1XSP_OsjzhdJfcvuOluUnwkoWKi9XCayEtWMsbh5yoeo/edit?fbclid=IwAR2JDGnBakUhRs-niPR2RdwCp010r18fB0bNhVcAdE32T29ewTK9bi5HaV0#gid=0)
