@@ -6,7 +6,7 @@
   2. Select a topic.
   3. Learn the topic.
   4. Solve lots of problems about that topic.
-  5. Go to 2.
+  5. Go to ii.
 
   And of course, participate in every possible contests in every online judge.
 
