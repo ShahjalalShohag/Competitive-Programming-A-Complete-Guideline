@@ -11,7 +11,7 @@
 
   Let's discuss something if you think CP is the thing that you wanna do.
 
-  Many of us set this goal like I wanna be red and continuously looking at the goal and not enjoying our current hard works. I am not red but I can guarantee myself that when I will be red I will be happy for a day or two and will get used to it. So what was my 3-4 years of hard work all about? Just a day of excitement? I don't believe in so. Wouldn't it be great if I could live those 3-4 years of my life with excitement? Well yes. This is what I am currently doing. I am living in the present, working hard and whether I become successful or not I will still be happy as I was alive throughout the whole process and lived my life to the fullest.
+  Many of us set this goal like I wanna be red and continuously **looking at the goal** and not enjoying our **current** hard works. I am not red but I can guarantee myself that when I will be red I will be happy for a day or two and will get used to it. So what was my 3-4 years of hard work all about? Just a day of excitement? I don't believe in so. Wouldn't it be great if I could live those 3-4 years of my life with excitement? Well yes. This is what I am currently doing. I am living in the present, working hard and whether I become successful or not I will still be happy as I was **alive** throughout the whole process and lived my life to the fullest.
 
   May you find that something that you have been looking for throughout your life!
 
@@ -37,8 +37,12 @@
   
  - ### How to Practice a Problem?
     - First of all, you should try to solve it  by yourself.
-    - If you can not solve it within 15 - 30 minutes — do it with the help of the editorial.
-    - After that read implementations of some skilled users (searching for some useful tricks or realy nice implementation). This part is really important which will significantly improve your skill.
+    - At the first glance, it may look like you have no idea what that random alien-made problem is asking you to do. But take your time. Always try to solve the problem using brute force. After that try to make your solution more efficient. 
+    - Ok, so still you have no idea on how to solve the problem? Try to look at it from a whole new angle.
+    - If you still can not solve it more likely within 15 - 30 minutes, now is the time to look at the editorial. Well, some people won't agree with me on this part. Here's what I have to say: If you think you are getting into the solution, then take more time and try to solve it. But if you have no fucking idea on how to solve the problem, then what is the point of wasting your valuable time? It will only slow down your improvement process.
+    - Time to implement the problem. Try not to use any unnecessary macros. Try to make it more readable. It will help you debugging the solution.
+    - After that read implementations of some skilled users (searching for some useful tricks or really nice implementations). This part is really important which will significantly improve your skill.
+    - If the problem uses a new idea/trick/algorithm which is a classic one i.e. it might be helpful in future then try to write that down so that in future you can easily access it.
   
  - ### Topic List (As you are feeling lazy to collect them by yourself!)
     - [Chronological](https://docs.google.com/spreadsheets/d/1XSP_OsjzhdJfcvuOluUnwkoWKi9XCayEtWMsbh5yoeo/edit?fbclid=IwAR2JDGnBakUhRs-niPR2RdwCp010r18fB0bNhVcAdE32T29ewTK9bi5HaV0#gid=0)
