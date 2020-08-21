@@ -90,7 +90,7 @@
     - Instead of printing NO printed N0. (with a zero).
     - Are you erasing values from a set or an stl while parallelly traversing
     the elements of the stl? Please don’t. This is not nice!
-    - Don't use scanf or printf while useing ios_base.
+    - Don't use scanf or printf while using ios_base.
                                                                  
   
  - ### Topic List (As you are feeling lazy to collect them by yourself!)
