@@ -65,7 +65,7 @@
     (small one) while I was thinking it was 'X' (capital), I lost a bronze
     medal because of it :(" - kingofnumbers
     - Set or multiset?
-    - Different Variables with same name?
+    - Different Variables with the same name?
     - Inside 2d loop are you using i++ instead of j++?
     - Are you using ceil function? Then remove it!
     - Is inf large enough?
