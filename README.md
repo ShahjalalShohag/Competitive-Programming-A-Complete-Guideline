@@ -35,6 +35,11 @@
 
   And of course, participate in every possible contests in every online judge.
   
+ - ### How to Practice a Problem?
+    - First of all, you should try to solve it  by yourself.
+    - If you can not solve it within 15 - 30 minutes — do it with the help of the editorial.
+    - After that read implementations of some skilled users (searching for some useful tricks or realy nice implementation). This part is really important which will significantly improve your skill.
+  
  - ### Topic List (As you are feeling lazy to collect them by yourself!)
     - [Chronological](https://docs.google.com/spreadsheets/d/1XSP_OsjzhdJfcvuOluUnwkoWKi9XCayEtWMsbh5yoeo/edit?fbclid=IwAR2JDGnBakUhRs-niPR2RdwCp010r18fB0bNhVcAdE32T29ewTK9bi5HaV0#gid=0)
     - [A2 OJ](https://a2oj.com/categories) 
