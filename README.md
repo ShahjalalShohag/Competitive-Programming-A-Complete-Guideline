@@ -82,7 +82,6 @@
     instead of:
     for (int i = n - 1; i >= 0; i--)
     It passed pretests and failed systests" - A random CF user
-    - In 2d grid for valid(x,y) check if x>=0&&x<n or x>=1&&x<=n.
     - Are you using memset correctly?
     - Use bool operators using brackets. Beware!!! E.g. ans = ans + k == 0 vs ans = ans + (k == 0).
     - Have you deleted debug(x) lines? It might get you TLE!
