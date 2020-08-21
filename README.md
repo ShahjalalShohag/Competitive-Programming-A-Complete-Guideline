@@ -39,10 +39,59 @@
     - First of all, you should try to solve it  by yourself.
     - At the first glance, it may look like you have no idea what that random alien-made problem is asking you to do. But take your time. Always try to solve the problem using brute force. After that try to make your solution more efficient. 
     - Ok, so still you have no idea on how to solve the problem? Try to look at it from a whole new angle.
-    - If you still can not solve it more likely within 15 - 30 minutes, now is the time to look at the editorial. Well, some people won't agree with me on this part. Here's what I have to say: If you think you are getting into the solution, then take more time and try to solve it. But if you have no fucking idea on how to solve the problem, then what is the point of wasting your valuable time? It will only slow down your improvement process.
+    - If you still can not solve it more likely within 15 - 30 minutes, now is the time to look at the editorial. Well, some people won't agree with me on this part. Here's what I have to say: If you think you are getting into the solution, then take more time and try to solve it. But if you have no fucking clue on how to solve the problem, then what is the point of wasting your valuable time? It will only slow down your improvement process.
     - Time to implement the problem. Try not to use any unnecessary macros. Try to make it more readable. It will help you debugging the solution.
     - After that read implementations of some skilled users (searching for some useful tricks or really nice implementations). This part is really important which will significantly improve your skill.
     - If the problem uses a new idea/trick/algorithm which is a classic one i.e. it might be helpful in future then try to write that down so that in future you can easily access it.
+ 
+ - ### The Art of Debugging
+    - Run with n=1.
+    - Check overflow(long long vs int).
+    - Check all array bounds.
+    - Check if m, n aren’t misused.
+    - Printed enough new lines or extra new lines?
+    - Make sure output format is right(including YES/NO vs Yes/No or
+    newline vs spaces).
+    - Have you cleared the vectors ?
+    - Make sure two ints aren’t multiplied to get a long long.
+    - Output enough digits after decimal point.
+    - Check the constraints again.
+    - When using multiple dfs recursions check if inside one dfs another dfs
+    is called or not.
+    - Shouldn't you print the case number?
+    - Are you using the correct mod value?
+    - "I spent a lot of my time debugging my solution without any success,
+    after the contest I discovered that the obstacles in the input is 'x'
+    (small one) while I was thinking it was 'X' (capital), I lost a bronze
+    medal because of it :(" - kingofnumbers
+    - Set or multiset?
+    - Different Variables with same name?
+    - Inside 2d loop are you using i++ instead of j++?
+    - Are you using ceil function? Then remove it!
+    - Is inf large enough?
+    - For multiple queries are you returning 0 inside the queries?
+    - For max and min have you initialized the values by a good enough
+    value?
+    - Are you using the local variable of the same name when global variable was
+    required to be used?
+    - "Declared a counter of type char instead of int , resulted in passing of
+    pretests and failing of system test. :)" - A random CF user
+    - "I subtracted 1 in a for loop from v.size(). Guess what happened when
+    the input vector is empty?" - A random CF user
+    - "for (int i = n - 1; i--; i >= 0)
+    instead of:
+    for (int i = n - 1; i >= 0; i--)
+    It passed pretests and failed systests" - A random CF user
+    - In 2d grid for valid(x,y) check if x>=0&&x<n or x>=1&&x<=n.
+    - Are you using memset correctly?
+    - Use bool operators using brackets. Beware!!! E.g. ans = ans + k == 0 vs ans = ans + (k == 0).
+    - Have you deleted debug(x) lines? It might get you TLE!
+    - It may be scanf("%d" , x). where &x is missing.
+    - Instead of printing NO printed N0. (with a zero).
+    - Are you erasing values from a set or an stl while parallelly traversing
+    the elements of the stl? Please don’t. This is not nice!
+    - Don't use scanf or printf while useing ios_base.
+                                                                 
   
  - ### Topic List (As you are feeling lazy to collect them by yourself!)
     - [Chronological](https://docs.google.com/spreadsheets/d/1XSP_OsjzhdJfcvuOluUnwkoWKi9XCayEtWMsbh5yoeo/edit?fbclid=IwAR2JDGnBakUhRs-niPR2RdwCp010r18fB0bNhVcAdE32T29ewTK9bi5HaV0#gid=0)
