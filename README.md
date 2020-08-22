@@ -90,6 +90,7 @@
     - Are you erasing values from a set or an stl while parallelly traversing
     the elements of the stl? Please don’t. This is not nice!
     - Don't use scanf or printf while using ios_base.
+    - Still have no idea? Try to recode from scratch or see others solutions.
                                                                  
   
  - ### Topic List (As you are feeling lazy to collect them by yourself!)
