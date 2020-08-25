@@ -40,7 +40,7 @@
     - "Keep trying while you have new ideas, then look up the editorial after **15+ minutes of being completely stuck**." - [Errichto](https://codeforces.com/profile/Errichto)
     - To be more precise, if you think you are getting into the solution, then take more time and try to solve it. But if you have no clue on how to solve it, then what is the point of wasting your valuable time? It will only slow down your improvement process.
     - Time to implement the problem. Try not to use any unnecessary macros. Try to make it more readable. It will help you debugging the solution.
-    - After that read implementations of some skilled users (searching for some useful tricks or really nice implementations). This part is really important which will significantly improve your skill.
+    - After that read implementations of some skilled users (searching for some useful tricks or really nice implementations). **This part is really important which will significantly improve your skill.**
     - If the problem uses a new idea/trick/algorithm which is a classic one i.e. it might be helpful in future then try to write that down so that in future you can easily access it.
  
  - ### The Art of Debugging
