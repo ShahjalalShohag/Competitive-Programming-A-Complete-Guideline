@@ -19,17 +19,7 @@
 
 - ### [[Tutorial] A way to Practice Competitive Programming : From Rating 1000 to 2400+](https://drive.google.com/file/d/1J2x8pIYQ3MXANgvzOgBciWd3d79j_Exa/view)
 
-**If your Codeforces rating is at least 1600 then follow the topicwise practice, otherwise follow the tutorial linked above.**
-
-- ### How to do Topicwise Practice?
-
-  1. Create a topic list(every possible category, from easy to advanced).
-  2. Select a topic.
-  3. Learn the topic.
-  4. Solve lots of problems about that topic.
-  5. Go to ii.
-
-  And of course, participate in every possible contests in every online judge.
+  **If your Codeforces rating is at least 1600 then follow the topicwise practice, otherwise follow the tutorial linked above.**
   
  - ### How to Practice a Problem?
     - First of all, you should try to solve it  by yourself.
@@ -40,8 +30,44 @@
     - Time to implement the problem. Try not to use any unnecessary macros. Try to make it more readable. It will help you debugging the solution.
     - After that read implementations of some skilled users (searching for some useful tricks or really nice implementations). **This part is really important which will significantly improve your skill.**
     - If the problem uses a new idea/trick/algorithm which is a classic one i.e. it might be helpful in future then try to write that down so that in future you can easily access it.
- 
- - ### The Art of Debugging
+
+ - ### How to do Topicwise Practice?
+
+    1. Create a topic list(every possible category, from easy to advanced).
+    2. Select a topic.
+    3. Learn the topic.
+    4. Solve lots of problems about that topic.
+    5. Go to ii.
+  
+    And of course, participate in every possible contests in every online judge.                                                            
+  
+ - ### Topic List (As you are feeling lazy to collect them by yourself!)
+    - [Chronological](https://docs.google.com/spreadsheets/d/1XSP_OsjzhdJfcvuOluUnwkoWKi9XCayEtWMsbh5yoeo/edit?fbclid=IwAR2JDGnBakUhRs-niPR2RdwCp010r18fB0bNhVcAdE32T29ewTK9bi5HaV0#gid=0)
+    - [Competitive Programmer’s Handbook](https://cses.fi/book/book.pdf)
+    - [A2 OJ](https://a2oj.com/categories) 
+    - [Quora](https://www.quora.com/What-are-the-algorithms-required-to-solve-all-problems-using-C++-in-any-competitive-coding-contest)
+    - [Programming Camp Syllabus](https://docs.google.com/document/d/1_dc3Ifg7Gg1LxhiqMMmE9UbTsXpdRiYh4pKILYG2eA4/edit)
+    - [E-Maxx](https://cp-algorithms.com/)
+    - [Geometry](https://vlecomte.github.io/cp-geo.pdf)
+    - [GeeksForGeeks](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
+    - [PEG Wiki](http://wcipeg.com/wiki/Special:AllPages)
+    - [Topcoder](https://www.topcoder.com/community/competitive-programming/tutorials/)
+    - [The Hitchhiker’s Guide to the Programming Contests](http://comscigate.com/Books/contests/icpc.pdf)
+    - [Competitive Programming Resources](https://halexv.blogspot.com/2015/10/competitive-programming-resources.html)
+    - [All the good tutorials found for Competitive Programming](https://codeforces.com/blog/entry/57282)
+    - [Good Blog Post Resources about Algorithm and Data Structures](https://codeforces.com/blog/entry/13529)
+    - [Topic Specific Problems by Morass](https://codeforces.com/blog/entry/55274)
+    - [LightOJ](http://www.lightoj.com/volume_problemcategory.php)
+    
+- ### [Code Library](https://github.com/kth-competitive-programming/kactl/tree/master/content)
+
+- ### [Library Checker](https://judge.yosupo.jp/)
+
+- ### [I know every topic that you have thrown at me. Am I a Good Programmer now?](https://codeforces.com/blog/entry/53341?#comment-373965)
+
+- ### [FAQ](https://codeforces.com/blog/entry/47516)
+
+- ### (Bonus) The Art of Debugging
     - Run with n=1.
     - Check overflow(long long vs int).
     - Check all array bounds.
@@ -88,30 +114,3 @@
     the elements of the stl? Please don’t. This is not nice!
     - Don't use scanf or printf while using ios_base.
     - Still have no idea? Try to recode from scratch or see others solutions.
-                                                                 
-  
- - ### Topic List (As you are feeling lazy to collect them by yourself!)
-    - [Chronological](https://docs.google.com/spreadsheets/d/1XSP_OsjzhdJfcvuOluUnwkoWKi9XCayEtWMsbh5yoeo/edit?fbclid=IwAR2JDGnBakUhRs-niPR2RdwCp010r18fB0bNhVcAdE32T29ewTK9bi5HaV0#gid=0)
-    - [Competitive Programmer’s Handbook](https://cses.fi/book/book.pdf)
-    - [A2 OJ](https://a2oj.com/categories) 
-    - [Quora](https://www.quora.com/What-are-the-algorithms-required-to-solve-all-problems-using-C++-in-any-competitive-coding-contest)
-    - [Programming Camp Syllabus](https://docs.google.com/document/d/1_dc3Ifg7Gg1LxhiqMMmE9UbTsXpdRiYh4pKILYG2eA4/edit)
-    - [E-Maxx](https://cp-algorithms.com/)
-    - [Geometry](https://vlecomte.github.io/cp-geo.pdf)
-    - [GeeksForGeeks](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
-    - [PEG Wiki](http://wcipeg.com/wiki/Special:AllPages)
-    - [Topcoder](https://www.topcoder.com/community/competitive-programming/tutorials/)
-    - [The Hitchhiker’s Guide to the Programming Contests](http://comscigate.com/Books/contests/icpc.pdf)
-    - [Competitive Programming Resources](https://halexv.blogspot.com/2015/10/competitive-programming-resources.html)
-    - [All the good tutorials found for Competitive Programming](https://codeforces.com/blog/entry/57282)
-    - [Good Blog Post Resources about Algorithm and Data Structures](https://codeforces.com/blog/entry/13529)
-    - [Topic Specific Problems by Morass](https://codeforces.com/blog/entry/55274)
-    - [LightOJ](http://www.lightoj.com/volume_problemcategory.php)
-    
-- ### [Code Library](https://github.com/kth-competitive-programming/kactl/tree/master/content)
-
-- ### [Library Checker](https://judge.yosupo.jp/)
-
-- ### [I know every topic that you have thrown at me. Am I a Good Programmer now?](https://codeforces.com/blog/entry/53341?#comment-373965)
-
-- ### [FAQ](https://codeforces.com/blog/entry/47516)
