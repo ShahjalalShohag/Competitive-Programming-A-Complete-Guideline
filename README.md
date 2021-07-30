@@ -21,7 +21,7 @@
 
 **If your Codeforces rating is at least 1600 then follow the topicwise practice, otherwise follow the tutorial linked above.**
 
-- ### How should I Practice?
+- ### How to do Topicwise Practice?
 
   1. Create a topic list(every possible category, from easy to advanced).
   2. Select a topic.
