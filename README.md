@@ -17,11 +17,9 @@
 
 - ### [Getting into Competitive Programming](https://github.com/the-hyp0cr1t3/CC)
 
-- ### [Warm-Up: Solve at least 200 Problems](https://codeforces.com/problemset?order=BY_SOLVED_DESC)
-
-- ### [FAQ](https://codeforces.com/blog/entry/47516)
-
 - ### [[Tutorial] A way to Practice Competitive Programming : From Rating 1000 to 2400+](https://drive.google.com/file/d/1J2x8pIYQ3MXANgvzOgBciWd3d79j_Exa/view)
+
+**If your Codeforces rating is at least 1600 then follow the topicwise practice, otherwise follow the tutorial linked above.**
 
 - ### How should I Practice?
 
@@ -115,3 +113,5 @@
 - ### [Library Checker](https://judge.yosupo.jp/)
 
 - ### [I know every topic that you have thrown at me. Am I a Good Programmer now?](https://codeforces.com/blog/entry/53341?#comment-373965)
+
+- ### [FAQ](https://codeforces.com/blog/entry/47516)
