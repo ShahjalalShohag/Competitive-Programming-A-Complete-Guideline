@@ -17,7 +17,7 @@
 You can compare learning any natural language with this. Lets say you want to learn german/english. You need to learn grammer first then you can write a paragraph. In coding, you can think CP programming as grammer learning and frameworks as paragraph writing! When you know grammer you can write paragraph on any topic.
 Even after a good or average (not the best) career in CP, you will find database, distributed system, machine learning topics very much understandable to you."- Raihat Zaman Neloy
   - Career Opportunities.
-  - [and many more](https://www.quora.com/What-have-you-gained-from-competitive-programming-Did-you-go-into-research-Did-it-help-you-in-any-aspect-as-a-software-engineer-Did-it-help-you-get-an-in-depth-knowledge-of-a-programming-language-Did-it-affect-your-problem-solving-skills)
+  - [and many more...](https://www.quora.com/What-have-you-gained-from-competitive-programming-Did-you-go-into-research-Did-it-help-you-in-any-aspect-as-a-software-engineer-Did-it-help-you-get-an-in-depth-knowledge-of-a-programming-language-Did-it-affect-your-problem-solving-skills)
 
   Let's discuss something if you think CP is the thing that you wanna do.
 
