@@ -10,7 +10,7 @@
   Because I wanna spend my precious time on something so that in the end I can say with Heisenberg, "I did it for me. I liked it, I was good at it, and I was really... I was alive".
   
   **So what kinda benefits you will get by doing CP?**
-  - Fun and excitements(tons of it).
+  - Fun and excitement(tons of it).
   - "Competitive programming builds the basics in you. You became so expert in coding anything that learning framework then becomes very very easy task. Because when you learn to read the codes of hard or advance algorithms, what can be more complex than those?
 
     CP programming makes you versatile, so you can move from any stack to other. But when you only learn specific framework or stack, your knowledge gets bounded.
