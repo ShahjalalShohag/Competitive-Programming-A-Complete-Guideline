@@ -59,7 +59,7 @@
     - [Topic Specific Problems by Morass](https://codeforces.com/blog/entry/55274)
     - [LightOJ](http://www.lightoj.com/volume_problemcategory.php)
     
-- ### [Code Library](https://github.com/kth-competitive-programming/kactl/tree/master/content)
+- ### [Code Library](https://github.com/ShahjalalShohag/code-library)
 
 - ### [Library Checker](https://judge.yosupo.jp/)
 
