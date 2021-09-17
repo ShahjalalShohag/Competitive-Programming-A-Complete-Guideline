@@ -1,4 +1,4 @@
-- ### [The Ultimate Question: Why should I start Competitive Programming?](https://codeforces.com/blog/entry/79449#comment-651688)
+- ### The Ultimate Question: Why should I start Competitive Programming?
   Well, I believe that the ultimate goal of my existence is to be happy. And I have learned from many well-established people that getting a great job or being famous or other   common stereotypical goals won't make you happy as when you get used to those they become meaningless.
 
   I think happiness is living your present with excitement.
@@ -8,6 +8,15 @@
   Man, I am not saying that you have to choose CP too. Find anything that suits you well, delve into that and maybe you will find peace.
 
   Because I wanna spend my precious time on something so that in the end I can say with Heisenberg, "I did it for me. I liked it, I was good at it, and I was really... I was alive".
+  
+  **So what kinda benefits you will get by doing CP?**
+  - Fun and excitements(tons of it).
+  - "Competitive programming builds the basics in you. You became so expert in coding anything that learning framework then becomes very very easy task. Because when you learn to read the codes of hard or advance algorithms, what can be more complex than those?
+CP programming makes you versatile, so you can move from any stack to other. But when you only learn specific framework or stack, your knowledge gets bounded.
+You can compare learning any natural language with this. Lets say you want to learn german/english. You need to learn grammer first then you can write a paragraph. In coding, you can think CP programming as grammer learning and frameworks as paragraph writing! When you know grammer you can write paragraph on any topic.
+Even after a good or average (not the best) career in CP, you will find database, distributed system, machine learning topics very much understandable to you."- Raihat Zaman Neloy
+  - Career Opportunities.
+  - [and many more](https://www.quora.com/What-have-you-gained-from-competitive-programming-Did-you-go-into-research-Did-it-help-you-in-any-aspect-as-a-software-engineer-Did-it-help-you-get-an-in-depth-knowledge-of-a-programming-language-Did-it-affect-your-problem-solving-skills)
 
   Let's discuss something if you think CP is the thing that you wanna do.
 
@@ -15,18 +24,23 @@
 
   May you find that something that you have been looking for throughout your life!
 
-- ### [Getting into Competitive Programming](https://github.com/the-hyp0cr1t3/CC)
+- ### Getting into Competitive Programming
+  - [Getting into CP](https://github.com/the-hyp0cr1t3/CC)
+  - [Basic Blocks](https://www.hackerearth.com/practice/notes/getting-started-with-the-sport-of-programming/ )
+  - [Basics](https://www.codechef.com/ioi/basics)
 
-- ### [[Tutorial] A way to Practice Competitive Programming : From Rating 1000 to 2400+](https://drive.google.com/file/d/1J2x8pIYQ3MXANgvzOgBciWd3d79j_Exa/view)
+- ### Tutorial
+  - [A way to Practice Competitive Programming : From Rating 1000 to 2400+](https://drive.google.com/file/d/1J2x8pIYQ3MXANgvzOgBciWd3d79j_Exa/view)
 
-  ### Note: **If your Codeforces rating is not at least 1600 then the aftermentioned topicwise practice is not needed, just learn basic stuffs and follow the tutorial linked above.**
-  
+ **Note: If your Codeforces rating is not at least 1600 then the aftermentioned topicwise practice is not needed, just learn basic stuffs and follow the tutorial linked above.**
+ 
+ ---
   
  - ### How to Practice a Problem?
     - First of all, you should try to solve it  by yourself.
     - At the first glance, it may look like you have no idea what that random alien-made problem is asking you to do. But take your time. Always try to solve the problem using brute force. After that try to make your solution more efficient. 
     - Ok, so still you have no idea on how to solve the problem? Try to look at it from a whole new angle.
-    - "Keep trying while you have new ideas, then look up the editorial after **15+ minutes of being completely stuck**." - [Errichto](https://codeforces.com/profile/Errichto)
+    - "Keep trying while you have new ideas, then look up the editorial after **15+ minutes of being completely stuck**." - Kamil Debowski
     - To be more precise, if you think you are getting into the solution, then take more time and try to solve it. But if you have no clue on how to solve it, then what is the point of wasting your valuable time? It will only slow down your improvement process.
     - Time to implement the problem. Try not to use any unnecessary macros. Try to make it more readable. It will help you debugging the solution.
     - After that read implementations of some skilled users (searching for some useful tricks or really nice implementations). **This part is really important which will significantly improve your skill.**
@@ -60,13 +74,14 @@
     - [Topic Specific Problems by Morass](https://codeforces.com/blog/entry/55274)
     - [LightOJ](http://www.lightoj.com/volume_problemcategory.php)
     
-- ### [Code Library](https://github.com/ShahjalalShohag/code-library)
+- ### Code Library
+  - [Almost all the important templates that you will need in CP](https://github.com/ShahjalalShohag/code-library)
 
-- ### [Library Checker](https://judge.yosupo.jp/)
+- ### Are you a good programmer?
+  - [I know every topic that you have thrown at me. Am I a Good Programmer now?](https://codeforces.com/blog/entry/53341?#comment-373965)
 
-- ### [I know every topic that you have thrown at me. Am I a Good Programmer now?](https://codeforces.com/blog/entry/53341?#comment-373965)
-
-- ### [FAQ](https://codeforces.com/blog/entry/47516)
+- ### FAQ
+  - [Solve Problems!](https://codeforces.com/blog/entry/47516)
 
 - ### (Bonus) The Art of Debugging
     - Run with n=1.
