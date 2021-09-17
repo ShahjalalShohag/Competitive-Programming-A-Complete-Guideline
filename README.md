@@ -74,7 +74,7 @@ Even after a good or average (not the best) career in CP, you will find database
     - [Good Blog Post Resources about Algorithm and Data Structures](https://codeforces.com/blog/entry/13529)
     - [Topic Specific Problems by Morass](https://codeforces.com/blog/entry/55274)
     - [LightOJ](http://www.lightoj.com/volume_problemcategory.php)
-    
+
 - ### Code Library
   - [Almost all the important templates that you will need in CP](https://github.com/ShahjalalShohag/code-library)
 
