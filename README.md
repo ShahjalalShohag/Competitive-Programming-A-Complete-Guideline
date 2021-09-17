@@ -82,7 +82,7 @@ Even after a good or average (not the best) career in CP, you will find database
   - [Solve Problems!](https://codeforces.com/blog/entry/47516)
   - [Regarding Interviews and Jobs](https://redgreencode.com/cpwiki/Category:FAQs_about_interviews_and_jobs)
   - [I need Advice](https://redgreencode.com/cpwiki/What_advice_does_(person)_have_for_competitive_programming_success%3F)
-
+  - [When will I be a good CPer?](https://codeforces.com/blog/entry/53341?#comment-373965)
 - ### The Art of Debugging
     - Run with n=1.
     - Check overflow(long long vs int).
@@ -132,5 +132,3 @@ Even after a good or average (not the best) career in CP, you will find database
     - Still have no idea? Try to recode from scratch or see others solutions.
 - ### Stress Testing
   - [Find a counter-test](https://ali-ibrahim137.github.io/competitive/programming/2020/08/23/Stress-Testing.html)
-- ### How to check if you are a good programmer?
-  - [I know every topic that you have thrown at me. Am I a Good Programmer now?](https://codeforces.com/blog/entry/53341?#comment-373965)
