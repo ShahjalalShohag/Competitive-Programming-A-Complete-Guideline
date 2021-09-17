@@ -81,6 +81,7 @@ Even after a good or average (not the best) career in CP, you will find database
 - ### FAQ
   - [Solve Problems!](https://codeforces.com/blog/entry/47516)
   - [Regarding Interviews and Jobs](https://redgreencode.com/cpwiki/Category:FAQs_about_interviews_and_jobs)
+  - [CP or Development?](https://redgreencode.com/cpwiki/Should_I_spend_my_time_on_competitive_programming_or_real-world_software_development%3F)
   - [I need Advice](https://redgreencode.com/cpwiki/What_advice_does_(person)_have_for_competitive_programming_success%3F)
   - [When will I be a good CPer?](https://codeforces.com/blog/entry/53341?#comment-373965)
 - ### The Art of Debugging
