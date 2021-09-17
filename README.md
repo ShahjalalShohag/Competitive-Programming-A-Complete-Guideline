@@ -80,6 +80,8 @@ Even after a good or average (not the best) career in CP, you will find database
 
 - ### FAQ
   - [Solve Problems!](https://codeforces.com/blog/entry/47516)
+  - [Regarding Interviews and Jobs](https://redgreencode.com/cpwiki/Category:FAQs_about_interviews_and_jobs)
+  - [I need Advice](https://redgreencode.com/cpwiki/What_advice_does_(person)_have_for_competitive_programming_success%3F)
 
 - ### The Art of Debugging
     - Run with n=1.
