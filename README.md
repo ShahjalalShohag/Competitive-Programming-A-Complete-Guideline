@@ -81,7 +81,7 @@ Even after a good or average (not the best) career in CP, you will find database
 - ### FAQ
   - [Solve Problems!](https://codeforces.com/blog/entry/47516)
 
-- ### (Bonus) The Art of Debugging
+- ### The Art of Debugging
     - Run with n=1.
     - Check overflow(long long vs int).
     - Check all array bounds.
