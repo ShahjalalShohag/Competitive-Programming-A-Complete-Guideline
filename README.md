@@ -133,3 +133,7 @@ Even after a good or average (not the best) career in CP, you will find database
     - Still have no idea? Try to recode from scratch or see others solutions.
 - ### Stress Testing
   - [Find a counter-test](https://ali-ibrahim137.github.io/competitive/programming/2020/08/23/Stress-Testing.html)
+
+Also, remember to exercise and drink more water. It helps a lot. 
+
+Good luck <a href="https://emoji.gg/emoji/8771_blobheart"><img src="https://emoji.gg/assets/emoji/8771_blobheart.png" width="16px" height="16px" alt="blobheart"></a>.
