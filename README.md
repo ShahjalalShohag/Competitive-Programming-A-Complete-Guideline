@@ -19,7 +19,7 @@
 
 - ### [[Tutorial] A way to Practice Competitive Programming : From Rating 1000 to 2400+](https://drive.google.com/file/d/1J2x8pIYQ3MXANgvzOgBciWd3d79j_Exa/view)
 
-  **If your Codeforces rating is not at least 1600 then the aftermentioned topicwise practice is not needed, just follow the tutorial linked above.**
+  **If your Codeforces rating is not at least 1600 then the aftermentioned topicwise practice is not needed, just learn basic stuffs and follow the tutorial linked above.**
   
   
  - ### How to Practice a Problem?
