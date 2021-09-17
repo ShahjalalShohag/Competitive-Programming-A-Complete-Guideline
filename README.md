@@ -129,6 +129,6 @@ Even after a good or average (not the best) career in CP, you will find database
     - Don't use scanf or printf while using ios_base.
     - Still have no idea? Try to recode from scratch or see others solutions.
 - ### Stress Testing
-  - [Find a counter-test]
+  - [Find a counter-test](https://ali-ibrahim137.github.io/competitive/programming/2020/08/23/Stress-Testing.html)
 - ### How to check if you are a good programmer?
   - [I know every topic that you have thrown at me. Am I a Good Programmer now?](https://codeforces.com/blog/entry/53341?#comment-373965)
