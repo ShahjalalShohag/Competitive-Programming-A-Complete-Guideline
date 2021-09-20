@@ -58,22 +58,7 @@ Even after a good or average (not the best) career in CP, you will find database
     And of course, participate in every possible contests in every online judge.                                                            
   
  - ### Topic List (As you are feeling lazy to collect them by yourself!)
-    - [Chronological](https://docs.google.com/spreadsheets/d/1XSP_OsjzhdJfcvuOluUnwkoWKi9XCayEtWMsbh5yoeo/edit?fbclid=IwAR2JDGnBakUhRs-niPR2RdwCp010r18fB0bNhVcAdE32T29ewTK9bi5HaV0#gid=0)
-    - [Competitive Programmer’s Handbook](https://cses.fi/book/book.pdf)
-    - [A2 OJ](https://a2oj.com/categories) 
-    - [Quora](https://www.quora.com/What-are-the-algorithms-required-to-solve-all-problems-using-C++-in-any-competitive-coding-contest)
-    - [Programming Camp Syllabus](https://docs.google.com/document/d/1_dc3Ifg7Gg1LxhiqMMmE9UbTsXpdRiYh4pKILYG2eA4/edit)
-    - [E-Maxx](https://cp-algorithms.com/)
-    - [Geometry](https://vlecomte.github.io/cp-geo.pdf)
-    - [GeeksForGeeks](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
-    - [PEG Wiki](http://wcipeg.com/wiki/Special:AllPages)
-    - [Topcoder](https://www.topcoder.com/community/competitive-programming/tutorials/)
-    - [The Hitchhiker’s Guide to the Programming Contests](http://comscigate.com/Books/contests/icpc.pdf)
-    - [Competitive Programming Resources](https://halexv.blogspot.com/2015/10/competitive-programming-resources.html)
-    - [All the good tutorials found for Competitive Programming](https://codeforces.com/blog/entry/57282)
-    - [Good Blog Post Resources about Algorithm and Data Structures](https://codeforces.com/blog/entry/13529)
-    - [Topic Specific Problems by Morass](https://codeforces.com/blog/entry/55274)
-    - [LightOJ](http://www.lightoj.com/volume_problemcategory.php)
+    - [The Ultimate Topic List (with Resources, Problems and Templates)](https://codeforces.com/blog/entry/95106)
 
 - ### Code Library
   - [Almost all the important templates that you will need in CP](https://github.com/ShahjalalShohag/code-library)
