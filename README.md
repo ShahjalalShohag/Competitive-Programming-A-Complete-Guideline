@@ -29,6 +29,7 @@ Even after a good or average (not the best) career in CP, you will find database
   - [Getting into CP](https://github.com/the-hyp0cr1t3/CC)
   - [Basic Blocks](https://www.hackerearth.com/practice/notes/getting-started-with-the-sport-of-programming/ )
   - [Basics](https://www.codechef.com/ioi/basics)
+  - [Book](https://cses.fi/book/book.pdf)
 
 - ### Tutorial
   - [A way to Practice Competitive Programming : From Rating 1000 to 2400+](https://drive.google.com/file/d/1J2x8pIYQ3MXANgvzOgBciWd3d79j_Exa/view)
