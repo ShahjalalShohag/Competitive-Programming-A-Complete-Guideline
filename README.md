@@ -1,5 +1,5 @@
 - ### The Ultimate Question: Why should I start Competitive Programming?
-  Well, I believe that the ultimate goal of my existence is to be happy. And I have learned from many well-established people that getting a great job or being famous or other   common stereotypical goals won't make you happy as when you get used to those they become meaningless.
+   Well, I believe that the ultimate goal of my existence is to be happy. And I have learned from many well-established people that getting a great job or being famous or other   common stereotypical goals won't make you happy as when you get used to those they become meaningless.
 
   I think happiness is living your present with excitement.
 
@@ -14,9 +14,10 @@
   - "Competitive programming builds the basics in you. You became so expert in coding anything that learning framework then becomes very very easy task. Because when you learn to read the codes of hard or advance algorithms, what can be more complex than those?
 
     CP programming makes you versatile, so you can move from any stack to other. But when you only learn specific framework or stack, your knowledge gets bounded.
-You can compare learning any natural language with this. Lets say you want to learn german/english. You need to learn grammer first then you can write a paragraph. In coding, you can think CP programming as grammer learning and frameworks as paragraph writing! When you know grammer you can write paragraph on any topic.
+You can compare learning any natural language with this. Lets say you want to learn german/english. You need to learn grammar first then you can write a paragraph. In coding, you can think CP programming as grammar learning and frameworks as paragraph writing! When you know grammar you can write paragraph on any topic.
 Even after a good or average (not the best) career in CP, you will find database, distributed system, machine learning topics very much understandable to you."- Raihat Zaman Neloy
-  - Career Opportunities.
+  - You will find Interview problems much much easier if you do CP. Problem solving skill is required in interviews and CP is the best and most exciting way to learn problem solving.
+  - "Competitive programming is recognized and supported by several multinational software and Internet companies, such as Google and Meta (Facebook). There are several organizations who host programming competitions on a regular basis." - Wikipedia
   - [and many more...](https://www.quora.com/What-have-you-gained-from-competitive-programming-Did-you-go-into-research-Did-it-help-you-in-any-aspect-as-a-software-engineer-Did-it-help-you-get-an-in-depth-knowledge-of-a-programming-language-Did-it-affect-your-problem-solving-skills)
 
   Let's discuss something if you think CP is the thing that you wanna do.
