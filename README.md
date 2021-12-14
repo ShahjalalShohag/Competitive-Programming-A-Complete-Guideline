@@ -573,7 +573,9 @@
  
 ---
 - ### Life Hack(if you are from Bangladesh)
-    If you want a complete guideline like this for EVERYTHING about CP and you are from Bangladesh, then you can check out my academy and enroll in some courses that fits you well. Link: [YouKn0wWho Academy](https://academy.shahjalalshohag.com/). 
+    If you want a complete guideline like this for EVERYTHING about CP and you are from Bangladesh, then you can check out my academy and enroll in some courses that fits you well. 
+     
+     Link: [YouKn0wWho Academy](https://academy.shahjalalshohag.com/). 
     
      Actually the whole part of this repo till now is taken from a **single class** from one of my academy courses!
 --- 
