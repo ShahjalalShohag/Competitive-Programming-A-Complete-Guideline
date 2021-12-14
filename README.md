@@ -98,7 +98,7 @@
 
 - ### [Editorials and Codes] Check how to solve the problems of Contest 3
    Credit: @MehediMubin, @tahmidarefin and @Tofayel and me
-
+   <details> <summary> Smash me </summary>
    <b>1. Problem A</b>
 
    Editorial: [link](https://img.atcoder.jp/abc169/editorial.pdf)
@@ -540,6 +540,7 @@
 
    ```
    </details>
+     </details>
    <br>
 
    REMEMBER THAT SOLVING MORE PROBLEMS IS THE KEY
