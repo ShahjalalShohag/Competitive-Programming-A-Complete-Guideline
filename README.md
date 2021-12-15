@@ -25,7 +25,11 @@
   Many of us set this goal like I wanna be red and continuously **looking at the goal** and not enjoying our **current** hard works. I am not red but I can guarantee myself that when I will be red I will be happy for a day or two and will get used to it. So what was my 3-4 years of hard work all about? Just a day of excitement? I don't believe in so. Wouldn't it be great if I could live those 3-4 years of my life with excitement? Well yes. This is what I am currently doing. I am living in the present, working hard and whether I become successful or not I will still be happy as I was **alive** throughout the whole process and lived my life to the fullest.
 
   May you find that something that you have been looking for throughout your life!
+- ### The Secret
+  Not everyone has the privilege to do the things that they enjoy to do. If you have that privilege, then its really cool. But most of the people don't have that privilege. So "Instead of doing things you enjoy, learn to enjoy the things you do". And CP is one of the things that you can easily fall in love with.
 
+- ### Seriously vs Sincerely
+  If you find yourself approaching thing too seriously, like its no fun playing a game if you take it "too seriously". So if you want to have fun, you should switch to approching things sincerely, like you are still gonna give it all, but you are gonna recognize that this is a game and you are gonna try and enjoy yourself while doing it. This philosophy also applies in CP. Watch [this](https://www.youtube.com/watch?v=FbSNfj2S6Pw) for more.
 - ### Which language should I use for CP?
 
    Most Competitive Programmers (more than 95%) use C++ mostly because its quite faster than other languages and it has some great built-in libraries(Standard Template Library (STL)) to ease your life. There are also many [other reasons](https://www.quora.com/Why-do-competitive-programmers-prefer-to-use-C++-instead-of-Java-in-the-programming-contests) for using C++.
