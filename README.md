@@ -1,3 +1,25 @@
+- ### What is Competitive Programming(CP)?
+  Writing code to solve problems or tasks is the essence of programming. Competitive programming turns this into a sport, with competitors competing (typically online) to solve a bunch of such problems in a restricted period of time.
+
+  "A programming competition generally involves the host presenting a set of logical or mathematical problems, also known as puzzles, to the contestants (who can vary in number from tens to several thousands), and contestants are required to write computer programs capable of solving each problem. Judging is based mostly upon number of problems solved and time spent for writing successful solutions." - Wikipedia
+
+- ### What is a Problem? 
+  A problem is often based on arithmetic, logic, and/or algorithms and looks somewhat like [this](https://codeforces.com/problemset/problem/630/A). Such challenges often include a statement (detailing the task), the input and output format, and input, time and memory constraints.
+
+  Try to understand [this](https://codeforces.com/problemset/problem/630/A) problem, read the statement carefully, check the input output constraints and solve this. When you get the idea of how to solve it, then code it and submit to get your first AC (Accepted solution).
+
+  Here is the code for the problem in C++.
+
+  ``` c++
+  #include<bits/stdc++.h>
+  using namespace std;
+
+  int main() {
+    long long n; cin >> n;
+    cout << 25 << '\n';
+    return 0;
+  }
+  ```
 - ### The Ultimate Question: Why should I start Competitive Programming?
   Well, I believe that the ultimate goal of my existence is to be happy. And I have learned from many well-established people that getting a great job or being famous or other   common stereotypical goals won't make you happy as when you get used to those they become meaningless.
 
