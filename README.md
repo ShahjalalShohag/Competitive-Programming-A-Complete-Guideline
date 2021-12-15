@@ -574,8 +574,7 @@ Even after a good or average (not the best) career in CP, you will find the data
   ```
   </details>
     </details>
-  <br>
-
+    
   REMEMBER THAT SOLVING MORE PROBLEMS IS THE KEY
 
 - ### FAQ
