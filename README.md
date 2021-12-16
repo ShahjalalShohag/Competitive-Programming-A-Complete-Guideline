@@ -55,6 +55,30 @@ Even after a good or average (not the best) career in CP, you will find the data
 - ### Seriously vs Sincerely
   If you find yourself approaching things too seriously like it's no fun playing a game if you take it "too seriously". So if you want to have fun, you should switch to approaching things sincerely, like you are still gonna give it all, but you are gonna recognize that this is a game and you are gonna try and enjoy yourself while doing it. This philosophy also applies in CP. Watch [this](https://www.youtube.com/watch?v=FbSNfj2S6Pw) for more.
 
+- ### What Progress is Really Like
+  Imagine that you have an ice cube sitting on the table in front of you.
+
+  The room is cold and you can see your breath. It is currently twentyfive degrees. Ever so slowly, the room begins to heat up.
+
+  Twenty-six degrees. <br>
+  Twenty-seven. <br>
+  Twenty-eight.
+
+  The ice cube is still sitting on the table in front of you.
+
+  Twenty-nine degrees. <br>
+  Thirty. <br>
+  Thirty-one.
+
+  Still, nothing has happened.
+
+  Then, thirty-two degrees. The ice begins to melt. A one-degree shift, seemingly no different from the temperature increases before it, has unlocked a huge change. 
+
+  Breakthrough moments are often the result of many previous actions, which build up the potential required to unleash a major change. This pattern shows up everywhere. Cancer spends 80 percent of its life undetectable, then takes over the body in months. Bamboo can barely be seen for the first five years as it builds extensive root systems underground before exploding ninety feet into the air within six weeks.
+
+  Credit: The book Atomic Habit by  James Clear
+
+  So don't get depressed after starting CP. It takes time to get your work reflected on your progress.
 - ### Which language should I use for CP?
   Most Competitive Programmers (more than 95%) use C++ mostly because it's quite faster than other languages and it has some great built-in libraries(Standard Template Library (STL)) to ease your life. There are also many [other reasons](https://www.quora.com/Why-do-competitive-programmers-prefer-to-use-C++-instead-of-Java-in-the-programming-contests) for using C++.
 
