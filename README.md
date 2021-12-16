@@ -36,9 +36,9 @@
     - Fun and excitement(tons of it).
     - "Competitive programming builds the basics in you. You became so expert in coding anything that learning framework then becomes a very very easy task. Because when you learn to read the codes of hard or advanced algorithms, what can be more complex than those?  
 
-    CP programming makes you versatile, so you can move from any stack to other. But when you only learn a specific framework or stack, your knowledge gets bounded.
-You can compare learning any natural language with this. Let's say you want to learn German/English. You need to learn grammar first then you can write a paragraph. In coding, you can think of CP programming as grammar learning and frameworks as paragraph writing! When you know grammar you can write a paragraph on any topic.
-Even after a good or average (not the best) career in CP, you will find the database, distributed system, machine learning topics very much understandable to you."- Raihat Zaman Neloy
+      CP programming makes you versatile, so you can move from any stack to other. But when you only learn a specific framework or stack, your knowledge gets bounded.
+  You can compare learning any natural language with this. Let's say you want to learn German/English. You need to learn grammar first then you can write a paragraph. In coding, you can think of CP programming as grammar learning and frameworks as paragraph writing! When you know grammar you can write a paragraph on any topic.
+  Even after a good or average (not the best) career in CP, you will find the database, distributed system, machine learning topics very much understandable to you."- Raihat Zaman Neloy
   - You will find Interview problems much much easier if you do CP. Problem-solving skill is required in interviews and CP is the best and most exciting way to learn problem-solving.
   - "Competitive programming is recognized and supported by several multinational software and Internet companies, such as Google and Meta (Facebook). Several organizations host programming competitions on a regular basis." - Wikipedia
   - [and many more...](https://www.quora.com/What-have-you-gained-from-competitive-programming-Did-you-go-into-research-Did-it-help-you-in-any-aspect-as-a-software-engineer-Did-it-help-you-get-an-in-depth-knowledge-of-a-programming-language-Did-it-affect-your-problem-solving-skills)
