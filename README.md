@@ -1,9 +1,37 @@
-- ### What is Competitive Programming(CP)?
+### Table of Contents
+- [What is Competitive Programming(CP)?](#what-is-competitive-programmingcp)
+- [What is a Problem?](#what-is-a-problem)
+- [The Ultimate Question: Why should I start Competitive Programming?](#the-ultimate-question-why-should-i-start-competitive-programming)
+- [The Secret](#the-secret)
+- [Seriously vs Sincerely](#seriously-vs-sincerely)
+- [What Progress is Really Like](#what-progress-is-really-like)
+- [Which language should I use for CP?](#which-language-should-i-use-for-cp)
+- [Where to write codes? What are the best IDEs?](#where-to-write-codes-what-are-the-best-ides)
+- [Competitive Programming Platforms](#competitive-programming-platforms)
+- [Details about problem statements, how contests work and the rating system on Codeforces (and a few other platforms) <a name = "ratingsys"></a>](#details-about-problem-statements-how-contests-work-and-the-rating-system-on-codeforces-and-a-few-other-platforms-)
+- [What to do if I don't know how to solve a problem?](#what-to-do-if-i-dont-know-how-to-solve-a-problem)
+- [How to check others solutions?](#how-to-check-others-solutions)
+- [How to practice a problem efficiently?](#how-to-practice-a-problem-efficiently)
+- [Kidlin's Law](#kidlins-law)
+- [[Contest]Solve some very basic problems.](#contestsolve-some-very-basic-problems)
+- [[Editorials and Codes] Check how to solve the problems of Contest 3](#editorials-and-codes-check-how-to-solve-the-problems-of-contest-3)
+- [FAQ](#faq)
+- [Important Notes](#important-notes)
+- [Getting into Competitive Programming](#getting-into-competitive-programming)
+- [Tutorial](#tutorial)
+- [Life Hack(if you are from Bangladesh)](#life-hackif-you-are-from-bangladesh)
+- [How to do Topicwise Practice?](#how-to-do-topicwise-practice)
+- [Topic List (As you are feeling lazy to collect them by yourself!)](#topic-list-as-you-are-feeling-lazy-to-collect-them-by-yourself)
+- [Code Library](#code-library)
+- [The Art of Debugging](#the-art-of-debugging)
+- [Stress Testing](#stress-testing)
+
+### What is Competitive Programming(CP)?
   Writing code to solve problems or tasks is the essence of programming. Competitive programming turns this into a sport, with competitors competing (typically online) to solve a bunch of such problems in a restricted period of time.
 
   "A programming competition generally involves the host presenting a set of logical or mathematical problems, also known as puzzles, to the contestants (who can vary in number from tens to several thousand), and contestants are required to write computer programs capable of solving each problem. Judging is based mostly upon several problems solved and time spent for writing successful solutions." - Wikipedia
 
-- ### What is a Problem? 
+### What is a Problem? 
   A problem is often based on arithmetic, logic, and/or algorithms and looks somewhat like [this](https://codeforces.com/problemset/problem/630/A). Such challenges often include a statement (detailing the task), the input and output format, and input, time and memory constraints.
 
   Try to understand [this](https://codeforces.com/problemset/problem/630/A) problem, read the statement carefully, check the input-output constraints and solve this. When you get the idea of how to solve it, then code it and submit it to get your first AC (Accepted solution).
@@ -21,7 +49,7 @@
   }
   ```
 
-- ### The Ultimate Question: Why should I start Competitive Programming?
+### The Ultimate Question: Why should I start Competitive Programming?
   Well, I believe that the ultimate goal of my existence is to be happy. And I have learned from many well-established people that getting a great job or being famous or other common stereotypical goals won't make you happy as when you get used to those they become meaningless.
 
   I think happiness is living your present with excitement.
@@ -36,7 +64,7 @@
     - Fun and excitement(tons of it).
     - "Competitive programming builds the basics in you. You became so expert in coding anything that learning framework then becomes a very very easy task. Because when you learn to read the codes of hard or advanced algorithms, what can be more complex than those?  
 
-      CP programming makes you versatile, so you can move from any stack to other. But when you only learn a specific framework or stack, your knowledge gets bounded.
+"CP programming makes you versatile, so you can move from any stack to other. But when you only learn a specific framework or stack, your knowledge gets bounded.
   You can compare learning any natural language with this. Let's say you want to learn German/English. You need to learn grammar first then you can write a paragraph. In coding, you can think of CP programming as grammar learning and frameworks as paragraph writing! When you know grammar you can write a paragraph on any topic.
   Even after a good or average (not the best) career in CP, you will find the database, distributed system, machine learning topics very much understandable to you."- Raihat Zaman Neloy
   - You will find Interview problems much much easier if you do CP. Problem-solving skill is required in interviews and CP is the best and most exciting way to learn problem-solving.
@@ -49,13 +77,13 @@
 
   May you find that something that you have been looking for throughout your life!  
 
-- ### The Secret
+### The Secret
   Not everyone has the privilege to do the things that they enjoy doing. If you have that privilege, then it's really cool. But most people don't have that privilege. So "Instead of doing things you enjoy, learn to enjoy the things you do". And CP is one of the things that you can easily fall in love with.
 
-- ### Seriously vs Sincerely
+### Seriously vs Sincerely
   If you find yourself approaching things too seriously like it's no fun playing a game if you take it "too seriously". So if you want to have fun, you should switch to approaching things sincerely, like you are still gonna give it all, but you are gonna recognize that this is a game and you are gonna try and enjoy yourself while doing it. This philosophy also applies in CP. Watch [this](https://www.youtube.com/watch?v=FbSNfj2S6Pw) for more.
 
-- ### What Progress is Really Like
+### What Progress is Really Like
   Imagine that you have an ice cube sitting on the table in front of you.
 
   The room is cold and you can see your breath. It is currently twentyfive degrees. Ever so slowly, the room begins to heat up.
@@ -79,14 +107,14 @@
   Credit: The book Atomic Habit by  James Clear
 
   So don't get depressed after starting CP. It takes time to get your work reflected on your progress.
-- ### Which language should I use for CP?
+### Which language should I use for CP?
   Most Competitive Programmers (more than 95%) use C++ mostly because it's quite faster than other languages and it has some great built-in libraries(Standard Template Library (STL)) to ease your life. There are also many [other reasons](https://www.quora.com/Why-do-competitive-programmers-prefer-to-use-C++-instead-of-Java-in-the-programming-contests) for using C++.
 
   You can also use other languages too but for CP C++ is better. Languages are just tools and it doesn't take more than a few days to understand the basics of a language.
 
   Note that you don't have to be a master in C++ to start your CP journey. If you know the basics i.e. variables, data types, operators, conditions, functions and loops, then you are ready to start CP. You can learn them from [here](https://www.javatpoint.com/cpp-tutorial) or any of your favourite youtube channels.
 
-- ### Where to write codes? What are the best IDEs?
+### Where to write codes? What are the best IDEs?
 
   IDEs are where you will write your codes. You can use Sublime Text, Codeblocks, VS Code or any other IDE that you like. 
 
@@ -99,15 +127,15 @@
   Check [this](https://medium.com/@chinmaykulkarni8/how-to-setup-visual-studio-code-for-c-c-java-python-competitive-programming-angular-22fdc9b1f4c6) to setup C, C++, Java, Python in Visual Studio Code for Competitive Programming.
 
 
-- ### Competitive Programming Platforms
+### Competitive Programming Platforms
 
   The most famous CP platform is [Codeforces](https://codeforces.com/). Check [this](https://blog.codingblocks.com/2019/sites-and-tools-for-competitive-programming/) to know about more platforms.
 
-- ### Details about problem statements, how contests work and the rating system on Codeforces (and a few other platforms) <a name = "ratingsys"></a>
+### Details about problem statements, how contests work and the rating system on Codeforces (and a few other platforms) <a name = "ratingsys"></a>
 
   Check [this](https://github.com/the-hyp0cr1t3/CC/blob/master/Competitve%20Programming%20Platforms.md) to get a detailed understanding of whats in a problem, what is meant by different verdicts (AC, WA, TLE, MLE, CE etc) and how contests work.
 
-- ### What to do if I don't know how to solve a problem?
+### What to do if I don't know how to solve a problem?
   Most of the problems have editorials/tutorials. The tutorial link is normally attached to the problem statement. In particular, on Codeforces, you can find the link to the tutorial at the lower right side of the problem statement. 
   <details> <summary> Example </summary>
   <a href="https://ibb.co/MRxm4XK"><img src="https://i.ibb.co/cNSjHmR/tutorial.jpg" alt="tutorial" border="0"></a>
@@ -115,7 +143,7 @@
 
   Also, **join this discord server(if you are from Bangladesh) to get help**. Link: [Bangladesh CP Server](https://discord.gg/hDSMZATsrM)
 
-- ### How to check others solutions?
+### How to check others solutions?
   Check [this](https://codeforces.com/blog/entry/17012) to check solutions for a specific problem on Codeforces.
 
   For other platforms the way is similar. Just go to the submissions page for that problem and click on the ID of the submission.
@@ -130,7 +158,7 @@
   - [Bruteforceman](https://codeforces.com/profile/Bruteforceman)
   - [Others](https://codeforces.com/blog/entry/77865)
 
-- ### How to practice a problem efficiently?
+### How to practice a problem efficiently?
   - First of all, you should try to solve it by yourself.
   - At the first glance, it may look like you have no idea what that random alien-made problem is asking you to do. But take your time. Always try to solve the problem using brute force. After that try to make your solution more efficient. 
   - Ok, so still you have no idea how to solve the problem? Try to look at it from a whole new angle.
@@ -140,12 +168,12 @@
   - After that read implementations of some skilled users (searching for some useful tricks or really nice implementations). **This part is really important which will significantly improve your skill.**
   - If the problem uses a new idea/trick/algorithm which is a classic one i.e. it might be helpful in future then try to write that down so that in future you can easily access it.
 
-- ### Kidlin's Law
+### Kidlin's Law
   Kidlin's law: If you can write the problem down clearly then the matter is already half solved.
 
   This is also the same here in CP. First, understand what the problem asks you to do. Then proceed to solve it. If you understand it correctly, then you are half done. So don't start solving without understanding what the problem demands.
 
-- ### [Contest]Solve some very basic problems.
+### [Contest]Solve some very basic problems.
   Get familiar with problem-solving by solving these problems. You won't need to know anything other than the basics of a language to solve them. <br>
   Goal: Solve at least 30 problems in total from the following contests. 
 
@@ -153,7 +181,7 @@
   - Contest 2: [link](https://codeforces.com/group/MWSDmqGsZm/contest/219432)
   - Contest 3: [link](https://vjudge.net/contest/468964)
 
-- ### [Editorials and Codes] Check how to solve the problems of Contest 3
+### [Editorials and Codes] Check how to solve the problems of Contest 3
   Credit: @MehediMubin, @tahmidarefin and @Tofayel and me
   <details> <summary> smash me </summary>
   <b>1. Problem A</b>
@@ -601,101 +629,101 @@
     
   REMEMBER THAT SOLVING MORE PROBLEMS IS THE KEY
 
-- ### FAQ
+### FAQ
   - [What is the key to CP?](https://codeforces.com/blog/entry/47516)
   - [Regarding Interviews and Jobs](https://redgreencode.com/cpwiki/Category:FAQs_about_interviews_and_jobs)
   - [CP or Development?](https://redgreencode.com/cpwiki/Should_I_spend_my_time_on_competitive_programming_or_real-world_software_development%3F)
   - [I need Advice](https://redgreencode.com/cpwiki/What_advice_does_(person)_have_for_competitive_programming_success%3F)
   - [When will I be a good CPer?](https://codeforces.com/blog/entry/53341?#comment-373965)
 
-- ### Important Notes
+### Important Notes
   - **Exercise** (at least running) and drink more water. It will surprisingly boost up your learning capability.
   - **Getting AC is not the final goal, learning something new is the final goal**. Exactly, for this reason, people solve thousands of problems but can't get better. You need to solve harder problems than your current level so that you can learn something new by solving that problem. Also, after you solve a problem, try to do it more efficiently if possible, look at others solutions. This way you will learn better and become better faster in the long run.
   - After solving a problem, **think about why your way of thinking was not optimal**. This is important too.
   - **SOLVE MORE PROBLEMS**.
 
-- ### Getting into Competitive Programming
+### Getting into Competitive Programming
   - [Getting into CP](https://github.com/the-hyp0cr1t3/CC)
   - [Basic Blocks](https://www.hackerearth.com/practice/notes/getting-started-with-the-sport-of-programming/ )
   - [Book](https://cses.fi/book/book.pdf)
 
-- ### Tutorial
+### Tutorial
   - [A way to Practice Competitive Programming : From Rating 1000 to 2400+](https://drive.google.com/file/d/1J2x8pIYQ3MXANgvzOgBciWd3d79j_Exa/view)
 
- **Note: If your Codeforces rating is not at least 1600 then the aftermentioned topicwise practice is not needed, just learn basic stuffs and follow the tutorial linked above.**
+**Note: If your Codeforces rating is not at least 1600 then the aftermentioned topicwise practice is not needed, just learn basic stuffs and follow the tutorial linked above.**
  
 ---
-- ### Life Hack(if you are from Bangladesh)
-    If you want a complete guideline like this for EVERYTHING about CP and you are from Bangladesh, then you can check out my academy and enroll in some courses that fits you well. 
-     
-     Link: [YouKn0wWho Academy](https://academy.shahjalalshohag.com/). 
-    
-     Actually the whole part of this repo till now is taken from a **single class** from one of my academy courses!
+### Life Hack(if you are from Bangladesh)
+If you want a complete guideline like this for EVERYTHING about CP and you are from Bangladesh, then you can check out my academy and enroll in some courses that fits you well. 
+
+Link: [YouKn0wWho Academy](https://academy.shahjalalshohag.com/). 
+
+Actually the whole part of this repo till now is taken from a **single class** from one of my academy courses!
+
 --- 
- - ### How to do Topicwise Practice?
+### How to do Topicwise Practice?
+  1. Create a topic list(every possible category, from easy to advanced).
+  2. Select a topic.
+  3. Learn the topic.
+  4. Solve lots of problems about that topic.
+  5. Go to ii.
 
-    1. Create a topic list(every possible category, from easy to advanced).
-    2. Select a topic.
-    3. Learn the topic.
-    4. Solve lots of problems about that topic.
-    5. Go to ii.
+  And of course, participate in every possible contests in every online judge.                                                            
   
-    And of course, participate in every possible contests in every online judge.                                                            
-  
- - ### Topic List (As you are feeling lazy to collect them by yourself!)
-    - [The Ultimate Topic List (with Resources, Problems and Templates)](https://codeforces.com/blog/entry/95106)
+### Topic List (As you are feeling lazy to collect them by yourself!)
+- [The Ultimate Topic List (with Resources, Problems and Templates)](https://codeforces.com/blog/entry/95106)
 
-- ### Code Library
-  - [Almost all the important templates that you will need in CP](https://github.com/ShahjalalShohag/code-library)
+### Code Library
+- [Almost all the important templates that you will need in CP](https://github.com/ShahjalalShohag/code-library)
 
-- ### The Art of Debugging
-    - Run with n=1.
-    - Check overflow(long long vs int).
-    - Check all array bounds.
-    - Check if m, n aren’t misused.
-    - Printed enough new lines or extra new lines?
-    - Make sure output format is right(including YES/NO vs Yes/No or
-    newline vs spaces).
-    - Have you cleared the vectors ?
-    - Make sure two ints aren’t multiplied to get a long long.
-    - Output enough digits after decimal point.
-    - Check the constraints again.
-    - When using multiple dfs recursions check if inside one dfs another dfs
-    is called or not.
-    - Shouldn't you print the case number?
-    - Are you using the correct mod value?
-    - "I spent a lot of my time debugging my solution without any success,
-    after the contest I discovered that the obstacles in the input is 'x'
-    (small one) while I was thinking it was 'X' (capital), I lost a bronze
-    medal because of it :(" - kingofnumbers
-    - Set or multiset?
-    - Different Variables with the same name?
-    - Inside 2d loop are you using i++ instead of j++?
-    - Are you using ceil function? Then remove it!
-    - Is inf large enough?
-    - For multiple queries are you returning 0 inside the queries?
-    - For max and min have you initialized the values by a good enough
-    value?
-    - Are you using the local variable of the same name when global variable was
-    required to be used?
-    - "Declared a counter of type char instead of int , resulted in passing of
-    pretests and failing of system test. :)" - A random CF user
-    - "I subtracted 1 in a for loop from v.size(). Guess what happened when
-    the input vector is empty?" - A random CF user
-    - "for (int i = n - 1; i--; i >= 0)
-    instead of:
-    for (int i = n - 1; i >= 0; i--)
-    It passed pretests and failed systests" - A random CF user
-    - Are you using memset correctly?
-    - Use bool operators using brackets. Beware!!! E.g. ans = ans + k == 0 vs ans = ans + (k == 0).
-    - Have you deleted debug(x) lines? It might get you TLE!
-    - It may be scanf("%d" , x). where &x is missing.
-    - Instead of printing NO printed N0. (with a zero).
-    - Are you erasing values from a set or an stl while parallelly traversing
-    the elements of the stl? Please don’t. This is not nice!
-    - Don't use scanf or printf while using ios_base.
-    - Still have no idea? Try to recode from scratch or see others solutions.
-- ### Stress Testing
+### The Art of Debugging
+  - Run with n=1.
+  - Check overflow(long long vs int).
+  - Check all array bounds.
+  - Check if m, n aren’t misused.
+  - Printed enough new lines or extra new lines?
+  - Make sure output format is right(including YES/NO vs Yes/No or
+  newline vs spaces).
+  - Have you cleared the vectors ?
+  - Make sure two ints aren’t multiplied to get a long long.
+  - Output enough digits after decimal point.
+  - Check the constraints again.
+  - When using multiple dfs recursions check if inside one dfs another dfs
+  is called or not.
+  - Shouldn't you print the case number?
+  - Are you using the correct mod value?
+  - "I spent a lot of my time debugging my solution without any success,
+  after the contest I discovered that the obstacles in the input is 'x'
+  (small one) while I was thinking it was 'X' (capital), I lost a bronze
+  medal because of it :(" - kingofnumbers
+  - Set or multiset?
+  - Different Variables with the same name?
+  - Inside 2d loop are you using i++ instead of j++?
+  - Are you using ceil function? Then remove it!
+  - Is inf large enough?
+  - For multiple queries are you returning 0 inside the queries?
+  - For max and min have you initialized the values by a good enough
+  value?
+  - Are you using the local variable of the same name when global variable was
+  required to be used?
+  - "Declared a counter of type char instead of int , resulted in passing of
+  pretests and failing of system test. :)" - A random CF user
+  - "I subtracted 1 in a for loop from v.size(). Guess what happened when
+  the input vector is empty?" - A random CF user
+  - "for (int i = n - 1; i--; i >= 0)
+  instead of:
+  for (int i = n - 1; i >= 0; i--)
+  It passed pretests and failed systests" - A random CF user
+  - Are you using memset correctly?
+  - Use bool operators using brackets. Beware!!! E.g. ans = ans + k == 0 vs ans = ans + (k == 0).
+  - Have you deleted debug(x) lines? It might get you TLE!
+  - It may be scanf("%d" , x). where &x is missing.
+  - Instead of printing NO printed N0. (with a zero).
+  - Are you erasing values from a set or an stl while parallelly traversing
+  the elements of the stl? Please don’t. This is not nice!
+  - Don't use scanf or printf while using ios_base.
+  - Still have no idea? Try to recode from scratch or see others solutions.
+### Stress Testing
   - [Find a counter-test](https://ali-ibrahim137.github.io/competitive/programming/2020/08/23/Stress-Testing.html)
 
 Also, remember to exercise and drink more water. It helps a lot. 
