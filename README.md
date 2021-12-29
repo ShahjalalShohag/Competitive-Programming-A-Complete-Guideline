@@ -1,4 +1,5 @@
 ### Table of Contents
+- [Table of Contents](#table-of-contents)
 - [What is Competitive Programming(CP)?](#what-is-competitive-programmingcp)
 - [What is a Problem?](#what-is-a-problem)
 - [The Ultimate Question: Why should I start Competitive Programming?](#the-ultimate-question-why-should-i-start-competitive-programming)
@@ -12,6 +13,7 @@
 - [What to do if I don't know how to solve a problem?](#what-to-do-if-i-dont-know-how-to-solve-a-problem)
 - [How to check others solutions?](#how-to-check-others-solutions)
 - [How to practice a problem efficiently?](#how-to-practice-a-problem-efficiently)
+- [Virtual Contests](#virtual-contests)
 - [Kidlin's Law](#kidlins-law)
 - [[Contest]Solve some very basic problems.](#contestsolve-some-very-basic-problems)
 - [[Editorials and Codes] Check how to solve the problems of Contest 3](#editorials-and-codes-check-how-to-solve-the-problems-of-contest-3)
@@ -164,9 +166,17 @@
   - Ok, so still you have no idea how to solve the problem? Try to look at it from a whole new angle.
   - "Keep trying while you have new ideas, then look up the editorial/tutorial after **15+ minutes of being completely stuck**." - Kamil Debowski
   - To be more precise, if you think you are getting into the solution, then take more time and try to solve it. But if you have no clue on how to solve it, then what is the point of wasting your valuable time? It will only slow down your improvement process.
+  - After solving a problem by looking at the editorial/others codes, **think about why your way of thinking was not correct, what did you miss**. This is reallyyyy important.
   - Time to implement the problem. Try not to use any unnecessary macros. Try to make it more readable. It will help you debug the solution.
   - After that read implementations of some skilled users (searching for some useful tricks or really nice implementations). **This part is really important which will significantly improve your skill.**
   - If the problem uses a new idea/trick/algorithm which is a classic one i.e. it might be helpful in future then try to write that down so that in future you can easily access it.
+
+### Virtual Contests
+Virtual contests will give you a real-time experience. It enables the users to run the past contests in a special mode that would imitate a real competition. It feels just like a real contest with real contestants competing alongside the participant who writes a virtual contest. It won't affect your rating.
+
+Do at least 3 virtual contests per week. Just pick any time and start a virtual contest from here: [link](https://codeforces.com/contests).
+
+Do upsolve. Problems you can't solve during a contest but was in your range should be solved after the contest. What is the meaning of a contest if you don't learn something that wasn't already known to you?
 
 ### Kidlin's Law
   Kidlin's law: If you can write the problem down clearly then the matter is already half solved.
