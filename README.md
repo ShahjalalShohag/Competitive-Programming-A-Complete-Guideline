@@ -170,6 +170,7 @@
   - Time to implement the problem. Try not to use any unnecessary macros. Try to make it more readable. It will help you debug the solution.
   - After that read implementations of some skilled users (searching for some useful tricks or really nice implementations). **This part is really important which will significantly improve your skill.**
   - If the problem uses a new idea/trick/algorithm which is a classic one i.e. it might be helpful in future then try to write that down so that in future you can easily access it.
+  - Now, let me ask you a question, what did you learn from this problem?
 
 ### Virtual Contests
 Virtual contests will give you a real-time experience. It enables the users to run the past contests in a special mode that would imitate a real competition. It feels just like a real contest with real contestants competing alongside the participant who writes a virtual contest. It won't affect your rating.
