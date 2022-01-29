@@ -16,6 +16,8 @@
 - [Virtual Contests](#virtual-contests)
 - [Kidlin's Law](#kidlins-law)
 - [[Contest]Solve some very basic problems.](#contestsolve-some-very-basic-problems)
+- [[Codes] Check how to solve the problems of Contest 1](#codes-check-how-to-solve-the-problems-of-contest-1)
+- [[Codes] Check how to solve the problems of Contest 2](#codes-check-how-to-solve-the-problems-of-contest-2)
 - [[Editorials and Codes] Check how to solve the problems of Contest 3](#editorials-and-codes-check-how-to-solve-the-problems-of-contest-3)
 - [FAQ](#faq)
 - [Important Notes](#important-notes)
@@ -192,9 +194,1511 @@ Do upsolve. Problems you can't solve during a contest but was in your range shou
   - Contest 2: [link](https://codeforces.com/group/MWSDmqGsZm/contest/219432)
   - Contest 3: [link](https://vjudge.net/contest/468964)
 
-### [Editorials and Codes] Check how to solve the problems of Contest 3
-  Credit: @MehediMubin, @tahmidarefin and @Tofayel and me
+### [Codes] Check how to solve the problems of Contest 1
+<details> <summary> smash me </summary>
+Credit: Dhiman Sarker Bappi
+
+<b>1. Problem A</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+using namespace std;         
+int main()
+{
+	string a; cin >> a ; 
+	cout << "Hello, "<<a<< endl; 
+	return 0;
+}
+
+
+
+```
+</details>
+<br>
+
+<b>2. Problem B</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int a ; long long b ; char c; float d ; double e ; 
+	cin >>a>>b>>c>>d>>e ; 
+	cout <<a<< endl; 
+	cout <<b<< endl; 
+	cout <<c<< endl; 
+	cout <<d<< endl; 
+	cout <<e<< endl; 
+	return 0;
+}
+
+
+
+```
+</details>
+<br>
+
+<b>3. Problem C</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	long long int a,b ;
+	cin >> a >> b ; 
+	printf("%lld + %lld = %lld\n",a,b,a+b );
+	printf("%lld * %lld = %lld\n",a,b,a*b );
+	printf("%lld - %lld = %lld\n",a,b,a-b );
+	return 0;
+}
+
+
+
+```
+</details>
+<br>
+
+<b>4. Problem D</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	long long int a,b, c,d ;
+	cin >> a >> b >> c >> d ;
+	cout << "Difference = "<< (a*b)-(c*d) << endl ;  
+	return 0;
+}
+
+
+
+```
+</details>
+<br>
+
+<b>5. Problem E</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+double r ; cin >> r ; 
+     	cout << fixed << setprecision(9);
+     	cout << r * r * 3.141592653 << endl; 
+	return 0;
+}
+
+
+```
+</details>
+<br>
+
+<b>6. Problem F</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	unsigned long long a,b;
+	cin >> a >> b ; 
+	cout << a%10 + b%10 << endl ; 
+     	return 0;
+}
+
+
+```
+</details>
+<br>
+
+<b>7. Problem G</b>
+
+<details> <summary> Code(C++) </summary>
+G - Summation from 1 to N
+
+```c++
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	unsigned long long a,b;
+	cin >> a ;
+	cout << (a*(a+1))/2 << endl ; 
+     	return 0;
+}
+
+
+```
+</details>
+<br>
+
+<b>8. Problem H</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	double a,b;
+	cin >> a >>b;
+	cout << "floor "<<a<<" / "<<b<<" = "<<floor(a/b)<<endl; 
+	cout << "ceil "<<a<<" / "<<b<<" = "<<ceil(a/b)<<endl; 
+	cout << "round "<<a<<" / "<<b<<" = "<<round(a/b)<<endl; 
+	return 0 ; 
+
+}
+
+
+```
+</details>
+<br>
+
+<b>9. Problem I</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	int a,b ; cin >> a >> b ; 
+	(a >= b ) ? cout << "Yes\n" : cout << "No\n" ;
+	return 0 ; 
+
+}
+
+
+```
+</details>
+<br>
+
+<b>10. Problem J</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	int a,b ; cin >> a >> b ; 
+	(a % b == 0 or b%a==0 ) ? cout << "Multiples\n" : cout << "No Multiples\n" ;
+	return 0 ; 
+
+}
+
+
+```
+</details>
+<br>
+
+<b>11. Problem K</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	int a,b,c ; cin >> a >> b >> c; 
+	cout << min(a,min(b,c)) << " " << max(a,max(b,c)) << endl; 
+	return 0 ; 
+}
+
+
+```
+</details>
+<br>
+
+<b>12. Problem L</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	string a,b,c,d ; 
+	cin >> a >> b >> c >> d ;  
+	(b==d) ? cout << "ARE Brothers\n" : cout << "NOT\n" ; 
+	return 0 ; 
+
+}
+
+
+```
+</details>
+<br>
+
+<b>13. Problem M</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	char c;cin >> c ; 
+	if(c >= 'A' and c <= 'Z') printf("ALPHA\nIS CAPITAL\n");
+	else if(c >= 'a' and c <= 'z') printf("ALPHA\nIS SMALL\n");
+	else printf("IS DIGIT\n");
+	return 0 ; 
+
+}
+
+
+```
+</details>
+<br>
+
+<b>14. Problem N</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	char c;cin >> c ; 
+	if(c >= 'A' and c <= 'Z') printf("%c", c+32);
+	if(c >= 'a' and c <= 'z') printf("%c", c-32);
+
+	return 0 ; 
+
+}
+
+
+```
+</details>
+<br>
+
+<b>15. Problem O</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	int a,b ; char c ; 
+	scanf("%d%c%d",&a,&c,&b) ; 
+	if(c=='+') cout << a+b << endl;  
+	if(c=='-') cout << a-b << endl;  
+	if(c=='*') cout << a*b << endl;  
+	if(c=='/') cout << a/b << endl;  
+
+	return 0 ; 
+
+}
+
+
+```
+</details>
+<br>
+
+<b>16. Problem P</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	string a ; cin >> a ;
+	if(a[0]%2==0) printf("EVEN\n"); 
+	else printf("ODD\n");
+
+	return 0 ; 
+
+}
+
+
+```
+</details>
+<br>
+
+<b>17. Problem Q</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	double x,y ; 
+	cin >> x >> y ; 
+	if(x==0.0 and y==0.0) printf("Origem\n");
+	else if(x==0.0) printf("Eixo Y\n");
+	else if(y==0.0) printf("Eixo X\n");
+	else if(x >0.0 and y >0.0) printf("Q1\n");
+	else if(x <0.0 and y >0.0) printf("Q2\n");
+	else if(x <0.0 and y <0.0) printf("Q3\n");
+	else if(x >0.0 and y <0.0) printf("Q4\n");
+
+	return 0 ; 
+
+}
+
+
+```
+</details>
+<br>
+
+<b>18. Problem R</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	int a ; cin >> a; 
+	int y = a/365 ; a %= 365 ; 
+	int m = a/30 ; a %= 30 ; 
+	printf("%d years\n", y);
+	printf("%d months\n", m);
+	printf("%d days\n", a);
+	return 0 ; 
+
+}
+
+
+```
+</details>
+<br>
+
+<b>19. Problem S</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	double a ; cin >> a ;
+	if(a < 0.0 or a > 100.0) printf("Out of Intervals\n"); 
+	else if(a <= 25.0) printf("Interval [0,25]\n");
+	else if(a <= 50.0) printf("Interval (25,50]\n");
+	else if(a <= 75.0) printf("Interval (50,75]\n");
+	else if(a <= 100.0) printf("Interval (75,100]\n");
+	return 0 ; 
+
+}
+
+
+```
+</details>
+<br>
+
+<b>20. Problem T</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	int a[3],b[3] ; 
+	for(int i=0 ; i < 3 ; i++) cin >> a[i] , b[i] = a[i] ; 
+	sort(a,a+3) ;
+	for(int i=0 ; i < 3 ; i++) cout << a[i] << endl ; cout << endl ;   
+	for(int i=0 ; i < 3 ; i++) cout << b[i] << endl ;  
+
+	return 0 ; 
+
+}
+
+
+```
+</details>
+<br>
+
+<b>21. Problem U</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	double a ; cin >> a ;
+	if(ceil(a)==floor(a)) cout <<"int " << int(a) << endl  ;
+	else cout << "float "<< int(a) << " " << a - int(a) << endl ;  
+
+	return 0 ; 
+
+}
+
+
+```
+</details>
+<br>
+
+<b>22. Problem V</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+#include<iomanip>
+#define    r         printf("Right\n")
+#define    w          printf("Wrong\n")
+using namespace std;
+int main()
+{
+	int a,b ; char c ;  
+	scanf("%d %c %d" , &a , &c , &b) ; 
+	if(c=='<') (a<b) ? r : w ; 
+	if(c=='>') (a>b) ? r : w ; 
+	if(c=='=') (a==b) ? r : w ; 
+	return 0 ; 
+
+}
+
+
+```
+</details>
+<br>
+
+<b>23. Problem W</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+#include<iomanip>
+#define    yes         printf("Yes\n")
+#define    w          printf("Wrong\n")
+using namespace std;
+int main()
+{
+	int a,b,ans ; char c ,d ;  
+	scanf("%d %c %d %c %d" , &a , &c , &b , &d , &ans) ; 
+	if(c=='+') (ans==a+b) ? yes : printf("%d\n", a+b);
+	if(c=='-') (ans==a-b) ? yes : printf("%d\n", a-b);
+	if(c=='*') (ans==a*b) ? yes : printf("%d\n", a*b);
+	
+	return 0 ; 
+
+}
+
+
+```
+</details>
+<br>
+
+<b>24. Problem X</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	long long l1,r1,l2,r2;
+	cin >> l1 >> r1 >> l2 >> r2;
+	if ((r1 < l2) ||  (r2 < l1)) printf("-1\n");
+ 	else cout << max(l1, l2) << " " << min(r1, r2) << endl; 
+	return 0 ;
+}
+
+
+
+```
+</details>
+<br>
+
+<b>25. Problem Y</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	long long a,b,c,d, sum;
+	cin >> a >> b >> c >> d ; 
+	a %= 100 ; 
+	b %= 100 ; 
+	c %= 100 ; 
+	d %= 100 ; 
+	sum = a * b * c * d ; 
+	sum %= 100;
+	if(sum<10) cout << 0 << sum << endl ; 
+	else 
+	cout << sum << endl ; 
+	return 0;
+}
+
+
+
+```
+</details>
+<br>
+
+<b>26. Problem Z</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define pb push_back
+int main()
+{
+	ll a,b,c,d ; 
+	cin >> a >> b >> c >> d ; 
+	if(b*log(a) > d * log(c)) printf("YES\n");
+	else printf("NO\n");
+	return 0 ; 
+}
+
+
+
+```
+</details>
+  </details>
+
+### [Codes] Check how to solve the problems of Contest 2
   <details> <summary> smash me </summary>
+  Credit: Diman Sarker Bappi
+
+<b>1. Problem A</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Author: YouKn0wWho
+#include<bits/stdc++.h>
+using namespace std;
+
+int32_t main() {
+  int n; cin >> n;
+  for (int i = 1; i <= n; i++) {
+    cout << i << '\n';
+  }
+  return 0;
+}
+```
+</details>
+<br>
+
+<b>2. Problem B</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+
+	int n ; cin >> n ; 
+	if(n < 2) puts("-1") ;  
+	for(int i=2 ; i <= n ; i+=2) {
+		cout << i << endl ;
+	}
+	return 0;
+}
+
+
+```
+</details>
+<br>
+
+<b>3. Problem C</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+int main(int argc, char const *argv[])
+{
+	int n; 
+	cin >> n ;
+	int odd = 0 , even = 0 , pos = 0 , neg = 0 ; 
+	while(n--){
+		int x;
+		cin >> x ; 
+		(x%2) ? odd++ : even++ ; 
+		if(x!=0)
+			(x>0) ? pos++ : neg++ ; 
+	}
+	printf("Even: %d\nOdd: %d\nPositive: %d\nNegative: %d", even , odd , pos, neg);
+
+	return 0;
+}
+```
+</details>
+<br>
+
+<b>4. Problem D</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n;
+	int flag = 0; ; ;;;;
+	int wrong = 0 ;
+	while(cin>>n){
+		if(n==1999) flag = 1;
+		if(flag==0) wrong++; 
+	}
+	while(wrong--) printf("Wrong\n");
+	if(flag)printf("Correct\n");
+	return 0;
+}
+```
+</details>
+<br>
+
+<b>5. Problem E</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Problem: E. Max
+// Contest: Codeforces - Sheet #2 (Loops)
+// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/E
+// Memory Limit: 256 MB
+// Time Limit: 1000 ms
+// 
+// // Coded by : Dhiman Sarker Bappi (Dhimanda)
+// 
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n;
+	cin>>n; 
+	long long mx = -INT_MAX;
+	for(int i=0 ; i < n ; i++){
+		long long x ; 
+		cin >> x ; 
+		if(x > mx){
+			mx = x ; 
+		}
+	}	
+	cout << mx << endl; 
+	return 0;
+}
+
+```
+</details>
+<br>
+
+<b>6. Problem F</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+
+```
+</details>
+<br>
+
+<b>7. Problem G</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Problem: G. Factorial
+// Contest: Codeforces - Sheet #2 (Loops)
+// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/G
+// 
+//  Coded by : Dhiman Sarker Bappi (Dhimanda)
+// 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int t ;
+	cin >> t ;
+	while (t--){
+		long long x,ans = 1 ; 
+		cin >> x;
+		while(x){
+			ans *= x ; 
+			x--;
+		}
+		cout << ans << endl; 
+	}
+		
+	return 0;
+}
+
+```
+</details>
+<br>
+
+<b>8. Problem H</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Problem: H. One Prime
+// Contest: Codeforces - Sheet #2 (Loops)
+// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/H
+// 
+//  Coded by : Dhiman Sarker Bappi (Dhimanda)
+// 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n;
+	cin >> n ; 
+	if(n<2){
+		cout <<"NO"<<endl;
+		return 0; 
+	}
+	for(int i=2 ; i < n ; i++) {
+		if(n%i==0) {
+			cout << "NO" << endl ; 
+			return 0 ; 
+		}
+	}
+	cout << "YES" << endl; 
+	return 0;
+}
+
+
+```
+</details>
+<br>
+
+<b>9. Problem I</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Problem: I. Palindrome
+// Contest: Codeforces - Sheet #2 (Loops)
+// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/I
+// 
+//  Coded by : Dhiman Sarker Bappi (Dhimanda)
+// 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	string a;
+	cin >> a ; 
+	string b="";
+	bool ok = true; 
+	
+	int sz = a.size() - 1; 
+	for(int i=0 ; i < sz/2  ; i++){
+		if(a[i]!=a[sz-i]){
+			ok = false; 
+			break;
+		}
+	}
+	bool zero = false; 
+	for(int i=sz ; i >= 0 ; i--){
+		if(a[i]!='0'){
+			cout << a[i] ;
+			zero = true; 
+		}
+		if(zero and a[i]=='0') cout<<"0";  
+	}
+	
+	cout << (ok ? "\nYES" : "\nNO") << endl;
+	return 0;
+}
+
+```
+</details>
+<br>
+
+<b>10. Problem J</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Problem: J. Primes from 1 to n
+// Contest: Codeforces - Sheet #2 (Loops)
+// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/J
+// 
+//  Coded by : Dhiman Sarker Bappi (Dhimanda)
+// 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n;
+	cin>>n; 
+	int ans=0;
+	for(int i=2 ; i <= n ; i++){
+		int prime=1;
+		for(int j=2 ; j<i ; j++){
+			if(i%j==0){
+				prime = 0;
+				break;
+			}
+		}
+		if(prime==1) cout <<i<<" "; 
+	}
+	return 0;
+}
+
+```
+</details>
+<br>
+
+<b>11. Problem K</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Problem: K. Divisors
+// Contest: Codeforces - Sheet #2 (Loops)
+// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/K
+// 
+//  Coded by : Dhiman Sarker Bappi (Dhimanda)
+// 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n;
+	cin>>n; 
+	for(int i=1 ; i <= n ; i++){
+		if(n%i==0){
+			cout << i << endl;
+		}
+	}
+	return 0;
+}
+
+```
+</details>
+<br>
+
+<b>12. Problem L</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Problem: L. GCD
+// Contest: Codeforces - Sheet #2 (Loops)
+// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/L
+// 
+//  Coded by : Dhiman Sarker Bappi (Dhimanda)
+// 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int p,q ; 
+	cin >> p >> q ; 
+    while (p != q) {
+        if (p > q) {
+            p -= q;
+        } else {
+            q -= p;
+        }
+    }
+	cout << p << endl ; 
+	
+	//cout << __gcd(p,q) << endl;
+	return 0;
+}
+
+```
+</details>
+<br>
+
+<b>13. Problem M</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Problem: M. Lucky Numbers
+// Contest: Codeforces - Sheet #2 (Loops)
+// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/M
+// 
+//  Coded by : Dhiman Sarker Bappi (Dhimanda)
+// 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+bool lucky(int x){
+	while(x){
+		int rem= x%10 ; 
+		if(!(rem==4 or rem==7)) return false ;  
+		x/=10 ; 
+	}
+	return true;
+}
+
+int main()
+{
+	int a,b;
+	cin >> a >> b ; 
+	if(a>b) swap(a,b);
+
+	bool flag=true;  
+	for(int i=a ; i<= b ; i++){
+		if(lucky(i)==true){
+			cout << i << " " ; 
+			flag = false; 
+		}
+	}
+	if(flag) cout << -1 << endl; 
+	
+	return 0;
+}
+```
+</details>
+<br>
+
+<b>14. Problem N</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Problem: N. Numbers Histogram
+// Contest: Codeforces - Sheet #2 (Loops)
+// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/n
+// 
+//  Coded by : Dhiman Sarker Bappi (Dhimanda)
+// 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	char ch ; 
+	cin >> ch ; 
+	int n ; 
+	cin >> n ; 
+	while(n--){
+		int x ;
+		cin >> x ; 
+		while(x--){
+			printf("%c",ch) ; 
+		}
+		printf("\n");
+	}
+	return 0;
+}
+
+```
+</details>
+<br>
+
+<b>15. Problem O</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Problem: O. Pyramid
+// Contest: Codeforces - Sheet #2 (Loops)
+// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/O
+// 
+//  Coded by : Dhiman Sarker Bappi (Dhimanda)
+// 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n ; 
+	cin>>n;
+	for(int j=1 ; j <= n ; j++){
+		for(int i=1 ; i <= j ; i++ ){
+			printf("*");
+		}
+		printf("\n");
+	}	
+	return 0;
+}
+
+```
+</details>
+<br>
+
+<b>16. Problem P</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Problem: P. Shape1
+// Contest: Codeforces - Sheet #2 (Loops)
+// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/P
+// 
+//  Coded by : Dhiman Sarker Bappi (Dhimanda)
+// 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n ; 
+	cin>>n;
+	while(n--){
+		for(int i=0 ; i <= n ; i++ ){
+			printf("*");
+		}
+		printf("\n");
+	}	
+	return 0;
+}
+
+```
+</details>
+<br>
+
+<b>17. Problem Q</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Problem: Q. Digits
+// Contest: Codeforces - Sheet #2 (Loops)
+// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/Q
+// Memory Limit: 256 MB
+// Time Limit: 1000 ms
+// 
+// // Coded by : Dhiman Sarker Bappi (Dhimanda)
+// 
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int t;
+	cin >> t ; 
+	while(t--){
+		string a ; 
+		cin >> a ; 
+		for(int i=a.size()-1 ; i >= 0 ; i--) {
+			cout << a[i] << " " ;
+		}
+		printf("\n");
+	}	
+	return 0;
+}
+
+
+
+```
+</details>
+<br>
+
+<b>18. Problem R</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Problem: R. Sequence of Numbers and Sum
+// Contest: Codeforces - Sheet #2 (Loops)
+// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/R
+// Memory Limit: 256 MB
+// Time Limit: 1000 ms
+// 
+// // Coded by : Dhiman Sarker Bappi (Dhimanda)
+// 
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	while(true){
+		int n,m;
+		cin >> n >> m ; 
+		if(n<=0 or m<=0){
+			return 0 ; 
+		}
+		if(n>m) swap(n,m);
+		int sum = 0 ; 
+		for(int i=n; i <= m ; i++){
+			cout << i << " " ; 
+			sum +=i ; 
+		}
+		cout << "sum ="<<sum<<endl; 
+	}
+	return 0;
+}
+
+```
+</details>
+<br>
+
+<b>19. Problem S</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Problem: S. Sum of Consecutive Odd Numbers
+// Contest: Codeforces - Sheet #2 (Loops)
+// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/S
+// 
+//  Coded by : Dhiman Sarker Bappi (Dhimanda)
+// 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int t;
+	cin >> t ; 
+	while(t--){
+		int a,b;
+		cin>>a>>b;
+		if(b<a) swap(a,b);
+		int sum = 0;
+		for(int i=a+1 ; i < b ; i++){
+			if(i%2) sum+=i;
+		}
+		cout << sum << endl ; 
+	}
+	return 0;
+}
+
+```
+</details>
+<br>
+
+<b>20. Problem T</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Problem: T. Shape2
+// Contest: Codeforces - Sheet #2 (Loops)
+// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/T
+// 
+//  Coded by : Dhiman Sarker Bappi (Dhimanda)
+// 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n;
+	cin >> n ; 	
+	for(int i=1 ; i <= n ; i++){
+		for(int j=i ; j < n; j++){
+			printf(" ");
+		}
+		for(int j=1 ; j <= i*2-1 ; j++){
+			printf("*");
+		}
+		printf("\n");
+		
+	}
+	return 0;
+}
+
+```
+</details>
+<br>
+
+<b>21. Problem U</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Problem: U. Some Sums
+// Contest: Codeforces - Sheet #2 (Loops)
+// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/U
+// 
+//  Coded by : Dhiman Sarker Bappi (Dhimanda)
+// 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int digitSum(int x){
+	int sum = 0 ; 
+	while(x){
+		sum += x%10 ; 
+		x/=10 ; 
+	}
+	return sum; 
+}
+
+int main()
+{
+	int n,a,b;
+	cin >> n >> a >> b ; 
+	if(a>b) swap(a,b);
+	int ans = 0 ; 
+	for(int i=1 ; i<= n ; i++){
+		int dSum = digitSum(i); 
+		if(dSum >= a and dSum <= b){
+			ans += i ; 
+		}
+	}
+	cout << ans << endl;
+	return 0;
+}
+
+```
+</details>
+<br>
+
+<b>22. Problem V</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Problem: V. PUM
+// Contest: Codeforces - Sheet #2 (Loops)
+// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/v
+// 
+//  Coded by : Dhiman Sarker Bappi (Dhimanda)
+// 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n ;
+	cin >> n ; 
+	for(int i=1 ; i <= n*4 ; i++){
+		if(i%4==0) printf("PUM\n");
+		else printf("%d ", i); 
+	}	
+	return 0;
+}
+
+```
+</details>
+<br>
+
+<b>23. Problem W</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Problem: W. Shape3
+// Contest: Codeforces - Sheet #2 (Loops)
+// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/W
+// 
+//  Coded by : Dhiman Sarker Bappi (Dhimanda)
+// 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n;
+	cin >> n ; 	
+	for(int i=1 ; i <= n ; i++){
+		for(int j=i ; j < n; j++){
+			printf(" ");
+		}
+		for(int j=1 ; j <= i*2-1 ; j++){
+			printf("*");
+		}
+		printf("\n");
+		
+	}
+	for(int i=n ; i >= 1 ; i--){
+		for(int j=i ; j < n; j++){
+			printf(" ");
+		}
+		for(int j=1 ; j <= i*2-1 ; j++){
+			printf("*");
+		}
+		printf("\n");
+		
+	}
+	return 0;
+}
+```
+</details>
+<br>
+
+<b>24. Problem X</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Problem: X. Convert To Decimal 2
+// Contest: Codeforces - Sheet #2 (Loops)
+// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/X
+// 
+//  Coded by : Dhiman Sarker Bappi (Dhimanda)
+// 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int t;
+	cin >> t ;
+	while(t--){
+		long long x ; 
+		cin >> x ; 
+		int ones = 0 ; 
+		while(x){
+			ones += (x%2);
+			x /= 2;
+		}
+		long long ans = 1 ; 
+		for(int i=1 ; i <= ones ; i++){
+			ans *= 2; 
+		}
+		cout << ans - 1<< endl;
+		//cout << pow(2,ones)-1 << endl;
+	}	
+	return 0;
+}
+
+```
+</details>
+<br>
+
+<b>25. Problem Y</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Problem: Y. Easy Fibonacci
+// Contest: Codeforces - Sheet #2 (Loops)
+// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/Y
+// 
+//  Coded by : Dhiman Sarker Bappi (Dhimanda)
+// 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	long long n,a=0,b=1;
+	cin >> n ; 
+	if(n==1) printf("0");
+	else{
+		printf("0 1") ; 
+		for(int i=3 ; i <= n ; i++ ){
+			long long now = a + b ; 
+			cout <<" "<<now; 
+			a = b , b = now; 
+		}
+	}
+	return 0;
+}
+
+```
+</details>
+<br>
+
+<b>26. Problem Z</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// Problem: Z. Three Numbers
+// Contest: Codeforces - Sheet #2 (Loops)
+// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/Z
+// 
+//  Coded by : Dhiman Sarker Bappi (Dhimanda)
+// 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int k,s;
+	cin>>k >>s ;
+	int way=0; 
+	for(int i=0 ; i <= k ; i++){
+		for(int j=0 ; j <= k ; j++){
+			if(i+j <= s and (s-(i+j))<=k) way++;
+		}
+	}
+	cout <<way<<endl;
+	return 0;
+}
+
+```
+</details>
+<br>
+  </details>
+
+### [Editorials and Codes] Check how to solve the problems of Contest 3
+  <details> <summary> smash me </summary>
+  Credit: @MehediMubin, @tahmidarefin and @Tofayel and me
   <b>1. Problem A</b>
 
   Editorial: [link](https://img.atcoder.jp/abc169/editorial.pdf)
