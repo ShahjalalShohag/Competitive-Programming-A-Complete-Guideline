@@ -187,12 +187,16 @@ Do upsolve. Problems you can't solve during a contest but was in your range shou
   This is also the same here in CP. First, understand what the problem asks you to do. Then proceed to solve it. If you understand it correctly, then you are half done. So don't start solving without understanding what the problem demands.
 
 ### [Contest]Solve some very basic problems.
-  Get familiar with problem-solving by solving these problems. You won't need to know anything other than the basics of a language to solve them. <br>
-  Goal: Solve at least 30 problems in total from the following contests. 
+Get familiar with problem-solving by solving these problems. You won't need to know anything other than the basics of a language to solve them. 
 
-  - Contest 1: [link](https://codeforces.com/group/MWSDmqGsZm/contest/219158)
-  - Contest 2: [link](https://codeforces.com/group/MWSDmqGsZm/contest/219432)
-  - Contest 3: [link](https://vjudge.net/contest/468964)
+**Hint:** [How to Practice?](https://github.com/ShahjalalShohag/Competitive-Programming-A-Complete-Guideline#how-to-practice-a-problem-efficiently) <br>
+
+**Goal:** Solve at least $25$ problems in total from Contest 1 and Contest 2 and at least $15$ problems from Contest 3.
+- Contest 1: [link](https://codeforces.com/group/MWSDmqGsZm/contest/219158)
+- Contest 2: [link](https://codeforces.com/group/MWSDmqGsZm/contest/219432)
+- Contest 3: [link](https://vjudge.net/contest/468964)
+
+**Pro Tip:** To check your ranking on the standings page on Vjudge, click on [settings](https://i.ibb.co/x7b1LQ6/image.png) on the contest page and then click on [Show Practice Submissions](https://i.ibb.co/R2CZ1Wg/image.png).
 
 ### [Codes] Check how to solve the problems of Contest 1
 <details> <summary> smash me </summary>
