@@ -1699,6 +1699,7 @@ int main()
 ### [Editorials and Codes] Check how to solve the problems of Contest 3
   <details> <summary> smash me </summary>
   Credit: @MehediMubin, @tahmidarefin and @Tofayel and me
+
   <b>1. Problem A</b>
 
   Editorial: [link](https://img.atcoder.jp/abc169/editorial.pdf)
