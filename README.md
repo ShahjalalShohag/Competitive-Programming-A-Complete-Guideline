@@ -163,7 +163,8 @@
   - [Others](https://codeforces.com/blog/entry/77865)
 
 ### How to practice a problem efficiently?
-  - First of all, you should try to solve it by yourself.
+  - First of all, **deeply** understand what the problem asks you to do.
+  - Then you should try to solve it by yourself.
   - At the first glance, it may look like you have no idea what that random alien-made problem is asking you to do. But take your time. Always try to solve the problem using brute force. After that try to make your solution more efficient. 
   - Ok, so still you have no idea how to solve the problem? Try to look at it from a whole new angle.
   - "Keep trying while you have new ideas, then look up the editorial/tutorial after **15+ minutes of being completely stuck**." - Kamil Debowski
