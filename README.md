@@ -9,6 +9,7 @@
 - [Which language should I use for CP?](#which-language-should-i-use-for-cp)
 - [Where to write codes? What are the best IDEs?](#where-to-write-codes-what-are-the-best-ides)
 - [Competitive Programming Platforms](#competitive-programming-platforms)
+- [How to Use Codeforces](#how-to-use-codeforces)
 - [Details about problem statements, how contests work and the rating system on Codeforces (and a few other platforms) <a name = "ratingsys"></a>](#details-about-problem-statements-how-contests-work-and-the-rating-system-on-codeforces-and-a-few-other-platforms-)
 - [What to do if I don't know how to solve a problem?](#what-to-do-if-i-dont-know-how-to-solve-a-problem)
 - [How to check others solutions?](#how-to-check-others-solutions)
@@ -134,6 +135,9 @@
 ### Competitive Programming Platforms
 
   The most famous CP platform is [Codeforces](https://codeforces.com/). Check [this](https://blog.codingblocks.com/2019/sites-and-tools-for-competitive-programming/) to know about more platforms.
+
+### How to Use Codeforces
+  Check this [guide](https://codeforces.com/blog/entry/99660).
 
 ### Details about problem statements, how contests work and the rating system on Codeforces (and a few other platforms) <a name = "ratingsys"></a>
 
