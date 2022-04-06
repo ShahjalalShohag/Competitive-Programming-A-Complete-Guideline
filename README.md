@@ -2175,9 +2175,8 @@ int main()
 ### Tutorial
   - [A way to Practice Competitive Programming : From Rating 1000 to 2400+](https://drive.google.com/file/d/1J2x8pIYQ3MXANgvzOgBciWd3d79j_Exa/view)
 
-**Note: If your Codeforces rating is not at least 1600 then the aftermentioned topicwise practice is not needed, just learn basic stuffs and follow the tutorial linked above.**
+**Note: If your Codeforces rating is not at least 1900 then the aftermentioned topicwise practice is not needed, just learn basic stuffs and follow the tutorial linked above.**
  
----
 ### Life Hack(if you are from Bangladesh)
 If you want a complete guideline like this for EVERYTHING about CP and you are from Bangladesh, then you can check out my academy and enroll in some courses that fits you well. 
 
@@ -2185,7 +2184,6 @@ Link: [YouKn0wWho Academy](https://academy.shahjalalshohag.com/).
 
 Actually the whole part of this repo till now is taken from a **single class** from one of my academy courses!
 
---- 
 ### How to do Topicwise Practice?
   1. Create a topic list(every possible category, from easy to advanced).
   2. Select a topic.
