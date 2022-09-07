@@ -2173,8 +2173,9 @@ int main()
   - [Book](https://cses.fi/book/book.pdf)
 
 ### Tutorial
-  - [A way to Practice Competitive Programming : From Rating 1000 to 2400+](https://drive.google.com/file/d/1J2x8pIYQ3MXANgvzOgBciWd3d79j_Exa/view)
-
+  - [A way to Practice Competitive Programming : From Rating 1000 to 2400+ by Masataka Yoneda](https://drive.google.com/file/d/1J2x8pIYQ3MXANgvzOgBciWd3d79j_Exa/view)
+  - [From Beginner to Grandmaster - Complete Roadmap for Competitive Programming by Galen Colin](https://www.youtube.com/watch?v=bSdp2WeyuJY)
+  
 **Note: If your Codeforces rating is not at least 1900 then the aftermentioned topicwise practice is not needed, just learn basic stuffs and follow the tutorial linked above.**
  
 ### Life Hack(if you are from Bangladesh)
