@@ -1,3 +1,14 @@
+[![Stargazers][stars-shield]][stars-url]
+[![Forks][forks-shield]][forks-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+[forks-shield]: https://img.shields.io/github/forks/ShahjalalShohag/Competitive-Programming-A-Complete-Guideline.svg?style=for-the-badge
+[forks-url]: https://github.com/ShahjalalShohag/Competitive-Programming-A-Complete-Guideline/network/members
+[stars-shield]: https://img.shields.io/github/stars/ShahjalalShohag/Competitive-Programming-A-Complete-Guideline.svg?style=for-the-badge
+[stars-url]: https://github.com/ShahjalalShohag/Competitive-Programming-A-Complete-Guideline/stargazers
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/ShahjalalShohag
+
 ### Table of Contents
 - [Table of Contents](#table-of-contents)
 - [What is Competitive Programming(CP)?](#what-is-competitive-programmingcp)
