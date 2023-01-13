@@ -2211,6 +2211,9 @@ Actually the whole part of this repo till now is taken from a **single class** f
 ### Code Library
 - [Almost all the important templates that you will need in CP](https://github.com/ShahjalalShohag/code-library)
 
+### Common Mistakes
+Check out [[Tutorial] Common Mistakes in Competitive Programming and How to Avoid Them](https://codeforces.com/blog/entry/111217)
+
 ### The Art of Debugging
   - Run with n=1.
   - Check overflow(long long vs int).
