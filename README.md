@@ -39,6 +39,7 @@
 - [How to do Topicwise Practice?](#how-to-do-topicwise-practice)
 - [Topic List (As you are feeling lazy to collect them by yourself!)](#topic-list-as-you-are-feeling-lazy-to-collect-them-by-yourself)
 - [Code Library](#code-library)
+- [Common Mistakes](#common-mistakes)
 - [The Art of Debugging](#the-art-of-debugging)
 - [Stress Testing](#stress-testing)
 
