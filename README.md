@@ -11,6 +11,7 @@
 
 ### Table of Contents
 - [Table of Contents](#table-of-contents)
+- [Discord Server](#discord-server)
 - [What is Competitive Programming(CP)?](#what-is-competitive-programmingcp)
 - [What is a Problem?](#what-is-a-problem)
 - [The Ultimate Question: Why should I start Competitive Programming?](#the-ultimate-question-why-should-i-start-competitive-programming)
@@ -42,6 +43,9 @@
 - [Common Mistakes](#common-mistakes)
 - [The Art of Debugging](#the-art-of-debugging)
 - [Stress Testing](#stress-testing)
+
+### Discord Server
+Join the best Competitive Programming Discord Server to get any kinda help instantly for free: [BCS - Bangladesh CP Server](https://discord.gg/hDSMZATsrM)
 
 ### What is Competitive Programming(CP)?
   Writing code to solve problems or tasks is the essence of programming. Competitive programming turns this into a sport, with competitors competing (typically online) to solve a bunch of such problems in a restricted period of time.
