@@ -212,34 +212,35 @@ Get familiar with problem-solving by solving these problems. You won't need to k
 
 **Hint:** [How to Practice?](https://github.com/ShahjalalShohag/Competitive-Programming-A-Complete-Guideline#how-to-practice-a-problem-efficiently) <br>
 
-**Goal:** Solve at least $25$ problems in total from Contest 1 and Contest 2 and at least $15$ problems from Contest 3.
+**Goal:** Solve ALL problems.
 - Contest 1: [link](https://codeforces.com/group/MWSDmqGsZm/contest/219158)
 - Contest 2: [link](https://codeforces.com/group/MWSDmqGsZm/contest/219432)
 - Contest 3: [link](https://vjudge.net/contest/468964)
 
 **Pro Tip:** To check your ranking on the standings page on Vjudge, click on [settings](https://i.ibb.co/x7b1LQ6/image.png) on the contest page and then click on [Show Practice Submissions](https://i.ibb.co/R2CZ1Wg/image.png).
 
+IT IS HIGHLY RECOMMENDED TO READ AND UNDERSTAND THE FOLLOWING CODES EVEN IF YOU SOLVE A PROBLEM ON YOUR OWN.
+You will find very detailed commented out solutions here. Try to follow the same coding style (better spacing, better variable naming, modularized and readable codes etc). You may learn lots of new stuff by reading other's solutions.
+
 ### [Codes] Check how to solve the problems of Contest 1
 <details> <summary> smash me </summary>
-Credit: Dhiman Sarker Bappi
 
 <b>1. Problem A</b>
 
 <details> <summary> Code(C++) </summary>
 
 ```c++
-#include <bits/stdc++.h>
-using namespace std;         
-int main()
-{
-	string a; cin >> a ; 
-	cout << "Hello, "<<a<< endl; 
-	return 0;
+#include<iostream>
+using namespace std;
+
+int main() {
+  char name[100]; // considering the name has at most 100 characters
+  cin >> name; // take the name as input
+  cout << "Hello, " << name << '\n'; // output in the correct format
+  return 0;
 }
-
-
-
 ```
+
 </details>
 <br>
 
@@ -248,23 +249,30 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-int main()
-{
-	int a ; long long b ; char c; float d ; double e ; 
-	cin >>a>>b>>c>>d>>e ; 
-	cout <<a<< endl; 
-	cout <<b<< endl; 
-	cout <<c<< endl; 
-	cout <<d<< endl; 
-	cout <<e<< endl; 
-	return 0;
+
+int main() {
+  // make sure to declare the correct data types for each variable
+  // use meaningful and readable variable names
+  // use proper spacing to make your code look cooler (spaces before and after all operators)
+  int int_variable;
+  long long int long_long_variable;
+  char char_variable;
+  float float_variable;
+  double double_variable;
+
+  cin >> int_variable >> long_long_variable >> char_variable >> float_variable >> double_variable;
+  cout << int_variable << '\n';
+  cout << long_long_variable << '\n';
+  cout << char_variable << '\n';
+  cout << float_variable << '\n';
+  cout << double_variable << '\n';
+  // don't forget to output newlines after each variable
+  return 0;
 }
-
-
-
 ```
+
 </details>
 <br>
 
@@ -273,21 +281,37 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-int main()
-{
-	long long int a,b ;
-	cin >> a >> b ; 
-	printf("%lld + %lld = %lld\n",a,b,a+b );
-	printf("%lld * %lld = %lld\n",a,b,a*b );
-	printf("%lld - %lld = %lld\n",a,b,a-b );
-	return 0;
+
+int main() {
+  // int data type is enough for this problem as values are <= 10^5
+  // always check the constraints in the problem statement
+  // you can also use long long here but thats unnecessary and 2 times slower
+  // because long long is 64 bit but int is 32 bit
+  // Also use long long only when its necessary, do not overuse it, not a good practice
+  int x, y; cin >> x >> y;
+
+  // output in the EXACT SAME format as the problem suggests
+  // 5 + 10 = 15 and 5+10=15 are different from each other! Spaces do matter when you output them
+  cout << x << " + " << y << " = " << x + y << '\n';
+  // cout << x << "+" << y << "=" << x + y << '\n'; // wrong! because we are not printing enough spaces
+  // cout<<x<<" + "<<y<<" = "<<x+y<<'\n'; // correct but looks ugly. we are printing enough spaces IN THE OUTPUT but not using spaces IN THE CODE
+
+  // typecast to long long as 1 <= x, y <= 10^5, so in the worst case (the case when the product will be the highest)
+  // x = y = 10^5, so x * y = 10^5 * 10^5 = 10^10 and 10^10 is big enough
+  // that we can't store it using 32 bits (int). So we should use 64 bit data types
+  // As a rule of thumb, you can store upto 2*10^9 in int data type
+  // and upto 9*10^18 in long long data type
+  // but the exact value is of course 2^31 - 1 for int and 2^63-1 for long long
+  cout << x << " * " << y << " = " << (long long)x * y << '\n';
+  // cout << x << " * " << y << " = " << x * y << '\n'; // wrong, overflow!
+
+  cout << x << " - " << y << " = " << x - y << '\n';
+  return 0;
 }
-
-
-
 ```
+
 </details>
 <br>
 
@@ -296,19 +320,35 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-int main()
-{
-	long long int a,b, c,d ;
-	cin >> a >> b >> c >> d ;
-	cout << "Difference = "<< (a*b)-(c*d) << endl ;  
-	return 0;
+
+int main() {
+  // note that the variable names do not have to be the exactly same as the problem statement
+  // but it is intuitive to use the same variable names
+  int A, B, C, D; cin >> A >> B >> C >> D; // int is enough as max value is <= 10^5
+
+  // in the worst case A = B = 10^5, so A * B = 10^10
+  // and 10^10 can't be stored in int,
+  // - so we typecast it when multiplying A and B
+  // - we also store it in a variable (AB) that has long long data type
+  long long AB = (long long)A * B;
+  // int AB = (long long) A * B; // wrong! as AB is in int, so overflow
+  // long long AB = A * B; // wrong! as in the right hand side, A and B both are in int
+                        // so A * B will also be in int, and so it will overflow
+                        // even before storing the result in the AB variable
+
+  long long CD = (long long) C * D;
+
+  long long answer = AB - CD;
+
+  cout << "Difference = " << answer << '\n';
+  // cout << "Difference=" << answer << '\n'; // wrong! as not enough space before and after =
+  // cout << answer << '\n'; // wrong! as not in the same output format as the problem tells us to do
+  return 0;
 }
-
-
-
 ```
+
 </details>
 <br>
 
@@ -318,18 +358,29 @@ int main()
 
 ```c++
 #include<iostream>
-#include<iomanip>
+#include<iomanip> // for using setprecision
 using namespace std;
-int main()
-{
-double r ; cin >> r ; 
-     	cout << fixed << setprecision(9);
-     	cout << r * r * 3.141592653 << endl; 
-	return 0;
+
+// its better to use const for variables that do not change
+// you can't modify const variables and thats what we want for PI!
+const double PI = 3.141592653;
+
+int main() {
+  // always use double instead of float as double has more bits
+  // -> means more precisions -> more accurate results
+  double R; cin >> R;
+  double area = PI * R * R;
+
+  // use setprecision to print UPTO 9 digits after the decimal point
+  // use fixed to print EXACLTLY 9 digits after the decimal point
+  // so if the result is 1.4569 then using setprecision(9) will output 1.4569
+  // and using fixed << setprecision(9) will output 1.456900000
+  // it is always better to use fixed when you use setprecision
+  cout << fixed << setprecision(9) << area << '\n';
+  return 0;
 }
-
-
 ```
+
 </details>
 <br>
 
@@ -339,40 +390,62 @@ double r ; cin >> r ;
 
 ```c++
 #include<iostream>
-#include<iomanip>
 using namespace std;
-int main()
-{
-	unsigned long long a,b;
-	cin >> a >> b ; 
-	cout << a%10 + b%10 << endl ; 
-     	return 0;
+
+int main() {
+  // use long long as values are upto 10^18
+  long long n, m; cin >> n >> m;
+
+  int last_digit_of_n = n % 10; // if you divide a number by 10 then the remainder will always be the last digit
+  int last_digit_of_m = m % 10;
+  int answer = last_digit_of_n + last_digit_of_m;
+  cout << answer << '\n';
+  return 0;
 }
-
-
 ```
+
 </details>
 <br>
 
 <b>7. Problem G</b>
 
 <details> <summary> Code(C++) </summary>
-G - Summation from 1 to N
 
 ```c++
 #include<iostream>
-#include<iomanip>
 using namespace std;
-int main()
-{
-	unsigned long long a,b;
-	cin >> a ;
-	cout << (a*(a+1))/2 << endl ; 
-     	return 0;
+
+int main() {
+  int n; cin >> n;
+  // the formula for the summation of numbers from 1 to n is = n * (n + 1) / 2
+  // in the worst case, n = 10^9
+  // so sum = 10^9 * (10^9 + 1) / 2 = around 10^18 / 2
+  // and we can't store it in int, so we need long long here
+  long long sum = 0;
+
+  // we need to typecast in the right hand side as otherwise the right hand side will overflow
+  sum = (long long) n * (n + 1) / 2;
+  cout << sum << '\n'; // always output a newline at the end of the output file
+
+
+  // sum = 0;
+  // for (int i = 1; i <= n; i++) {
+  //   sum += i;
+  // }
+  // cout << sum << '\n';
+  //
+  // this is also correct
+  // but it will give you time limit exceeded verdict
+  // as in the worst case, n = 10^9 and then the loop will run 10^9 times
+  // in general it takes around 1s to run 10^8 operations (loops/additions/etc)
+  // so it will take around 10s to run 10^9 operations
+  // but the time limit in the problem is 0.25s
+  // thats why it will give you TLE
+  // note that you should ALWAYS understand why your code gives TLE
+  return 0;
 }
-
-
 ```
+
 </details>
 <br>
 
@@ -381,22 +454,31 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-#include <bits/stdc++.h>
-#include<iomanip>
+#include<iostream>
+#include <cmath> // for using floor, ceil and round functions
 using namespace std;
-int main()
-{
-	double a,b;
-	cin >> a >>b;
-	cout << "floor "<<a<<" / "<<b<<" = "<<floor(a/b)<<endl; 
-	cout << "ceil "<<a<<" / "<<b<<" = "<<ceil(a/b)<<endl; 
-	cout << "round "<<a<<" / "<<b<<" = "<<round(a/b)<<endl; 
-	return 0 ; 
 
+int main() {
+  int a, b; cin >> a >> b;
+
+  int floor_value = a / b; // c/c++ division operator does floor division by default IF a and b are integers
+  // int floor_value = floor((double)a / b); // also corrects
+
+  // ceil of a / b = floor of (a + b - 1) / b when a, b >= 1
+  // for example, ceil of 9 / 5 = floor of (9 + 5 - 1) / 5 = 2
+  // why is it true? think for yourself
+  int ceil_value = (a + b - 1) / b; // great approach as we are not using any double here
+  // int ceil_value = ceil((double)a / b); // also corrects, but it uses doubles which we normally should avoid because of precision issues
+
+  int round_value = round((double) a / b);
+
+  cout << "floor " << a << " / " << b << " = " << floor_value << '\n';
+  cout << "ceil " << a << " / " << b << " = " << ceil_value << '\n';
+  cout << "round " << a << " / " << b << " = " << round_value << '\n';
+  return 0;
 }
-
-
 ```
+
 </details>
 <br>
 
@@ -405,695 +487,22 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-#include <bits/stdc++.h>
-#include<iomanip>
-using namespace std;
-int main()
-{
-	int a,b ; cin >> a >> b ; 
-	(a >= b ) ? cout << "Yes\n" : cout << "No\n" ;
-	return 0 ; 
-
-}
-
-
-```
-</details>
-<br>
-
-<b>10. Problem J</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-#include <bits/stdc++.h>
-#include<iomanip>
-using namespace std;
-int main()
-{
-	int a,b ; cin >> a >> b ; 
-	(a % b == 0 or b%a==0 ) ? cout << "Multiples\n" : cout << "No Multiples\n" ;
-	return 0 ; 
-
-}
-
-
-```
-</details>
-<br>
-
-<b>11. Problem K</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-#include <bits/stdc++.h>
-#include<iomanip>
-using namespace std;
-int main()
-{
-	int a,b,c ; cin >> a >> b >> c; 
-	cout << min(a,min(b,c)) << " " << max(a,max(b,c)) << endl; 
-	return 0 ; 
-}
-
-
-```
-</details>
-<br>
-
-<b>12. Problem L</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-#include <bits/stdc++.h>
-#include<iomanip>
-using namespace std;
-int main()
-{
-	string a,b,c,d ; 
-	cin >> a >> b >> c >> d ;  
-	(b==d) ? cout << "ARE Brothers\n" : cout << "NOT\n" ; 
-	return 0 ; 
-
-}
-
-
-```
-</details>
-<br>
-
-<b>13. Problem M</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-#include <bits/stdc++.h>
-#include<iomanip>
-using namespace std;
-int main()
-{
-	char c;cin >> c ; 
-	if(c >= 'A' and c <= 'Z') printf("ALPHA\nIS CAPITAL\n");
-	else if(c >= 'a' and c <= 'z') printf("ALPHA\nIS SMALL\n");
-	else printf("IS DIGIT\n");
-	return 0 ; 
-
-}
-
-
-```
-</details>
-<br>
-
-<b>14. Problem N</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-#include <bits/stdc++.h>
-#include<iomanip>
-using namespace std;
-int main()
-{
-	char c;cin >> c ; 
-	if(c >= 'A' and c <= 'Z') printf("%c", c+32);
-	if(c >= 'a' and c <= 'z') printf("%c", c-32);
-
-	return 0 ; 
-
-}
-
-
-```
-</details>
-<br>
-
-<b>15. Problem O</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-#include <bits/stdc++.h>
-#include<iomanip>
-using namespace std;
-int main()
-{
-	int a,b ; char c ; 
-	scanf("%d%c%d",&a,&c,&b) ; 
-	if(c=='+') cout << a+b << endl;  
-	if(c=='-') cout << a-b << endl;  
-	if(c=='*') cout << a*b << endl;  
-	if(c=='/') cout << a/b << endl;  
-
-	return 0 ; 
-
-}
-
-
-```
-</details>
-<br>
-
-<b>16. Problem P</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-#include <bits/stdc++.h>
-#include<iomanip>
-using namespace std;
-int main()
-{
-	string a ; cin >> a ;
-	if(a[0]%2==0) printf("EVEN\n"); 
-	else printf("ODD\n");
-
-	return 0 ; 
-
-}
-
-
-```
-</details>
-<br>
-
-<b>17. Problem Q</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-#include <bits/stdc++.h>
-#include<iomanip>
-using namespace std;
-int main()
-{
-	double x,y ; 
-	cin >> x >> y ; 
-	if(x==0.0 and y==0.0) printf("Origem\n");
-	else if(x==0.0) printf("Eixo Y\n");
-	else if(y==0.0) printf("Eixo X\n");
-	else if(x >0.0 and y >0.0) printf("Q1\n");
-	else if(x <0.0 and y >0.0) printf("Q2\n");
-	else if(x <0.0 and y <0.0) printf("Q3\n");
-	else if(x >0.0 and y <0.0) printf("Q4\n");
-
-	return 0 ; 
-
-}
-
-
-```
-</details>
-<br>
-
-<b>18. Problem R</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-#include <bits/stdc++.h>
-#include<iomanip>
-using namespace std;
-int main()
-{
-	int a ; cin >> a; 
-	int y = a/365 ; a %= 365 ; 
-	int m = a/30 ; a %= 30 ; 
-	printf("%d years\n", y);
-	printf("%d months\n", m);
-	printf("%d days\n", a);
-	return 0 ; 
-
-}
-
-
-```
-</details>
-<br>
-
-<b>19. Problem S</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-#include <bits/stdc++.h>
-#include<iomanip>
-using namespace std;
-int main()
-{
-	double a ; cin >> a ;
-	if(a < 0.0 or a > 100.0) printf("Out of Intervals\n"); 
-	else if(a <= 25.0) printf("Interval [0,25]\n");
-	else if(a <= 50.0) printf("Interval (25,50]\n");
-	else if(a <= 75.0) printf("Interval (50,75]\n");
-	else if(a <= 100.0) printf("Interval (75,100]\n");
-	return 0 ; 
-
-}
-
-
-```
-</details>
-<br>
-
-<b>20. Problem T</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-#include <bits/stdc++.h>
-#include<iomanip>
-using namespace std;
-int main()
-{
-	int a[3],b[3] ; 
-	for(int i=0 ; i < 3 ; i++) cin >> a[i] , b[i] = a[i] ; 
-	sort(a,a+3) ;
-	for(int i=0 ; i < 3 ; i++) cout << a[i] << endl ; cout << endl ;   
-	for(int i=0 ; i < 3 ; i++) cout << b[i] << endl ;  
-
-	return 0 ; 
-
-}
-
-
-```
-</details>
-<br>
-
-<b>21. Problem U</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-#include <bits/stdc++.h>
-#include<iomanip>
-using namespace std;
-int main()
-{
-	double a ; cin >> a ;
-	if(ceil(a)==floor(a)) cout <<"int " << int(a) << endl  ;
-	else cout << "float "<< int(a) << " " << a - int(a) << endl ;  
-
-	return 0 ; 
-
-}
-
-
-```
-</details>
-<br>
-
-<b>22. Problem V</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-#include <bits/stdc++.h>
-#include<iomanip>
-#define    r         printf("Right\n")
-#define    w          printf("Wrong\n")
-using namespace std;
-int main()
-{
-	int a,b ; char c ;  
-	scanf("%d %c %d" , &a , &c , &b) ; 
-	if(c=='<') (a<b) ? r : w ; 
-	if(c=='>') (a>b) ? r : w ; 
-	if(c=='=') (a==b) ? r : w ; 
-	return 0 ; 
-
-}
-
-
-```
-</details>
-<br>
-
-<b>23. Problem W</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-#include <bits/stdc++.h>
-#include<iomanip>
-#define    yes         printf("Yes\n")
-#define    w          printf("Wrong\n")
-using namespace std;
-int main()
-{
-	int a,b,ans ; char c ,d ;  
-	scanf("%d %c %d %c %d" , &a , &c , &b , &d , &ans) ; 
-	if(c=='+') (ans==a+b) ? yes : printf("%d\n", a+b);
-	if(c=='-') (ans==a-b) ? yes : printf("%d\n", a-b);
-	if(c=='*') (ans==a*b) ? yes : printf("%d\n", a*b);
-	
-	return 0 ; 
-
-}
-
-
-```
-</details>
-<br>
-
-<b>24. Problem X</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-#include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-	long long l1,r1,l2,r2;
-	cin >> l1 >> r1 >> l2 >> r2;
-	if ((r1 < l2) ||  (r2 < l1)) printf("-1\n");
- 	else cout << max(l1, l2) << " " << min(r1, r2) << endl; 
-	return 0 ;
-}
-
-
-
-```
-</details>
-<br>
-
-<b>25. Problem Y</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-#include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-	long long a,b,c,d, sum;
-	cin >> a >> b >> c >> d ; 
-	a %= 100 ; 
-	b %= 100 ; 
-	c %= 100 ; 
-	d %= 100 ; 
-	sum = a * b * c * d ; 
-	sum %= 100;
-	if(sum<10) cout << 0 << sum << endl ; 
-	else 
-	cout << sum << endl ; 
-	return 0;
-}
-
-
-
-```
-</details>
-<br>
-
-<b>26. Problem Z</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-#include <bits/stdc++.h>
-using namespace std;
-#define ll long long
-#define pb push_back
-int main()
-{
-	ll a,b,c,d ; 
-	cin >> a >> b >> c >> d ; 
-	if(b*log(a) > d * log(c)) printf("YES\n");
-	else printf("NO\n");
-	return 0 ; 
-}
-
-
-
-```
-</details>
-  </details>
-
-### [Codes] Check how to solve the problems of Contest 2
-  <details> <summary> smash me </summary>
-  Credit: Diman Sarker Bappi
-
-<b>1. Problem A</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-// Author: YouKn0wWho
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
-int32_t main() {
-  int n; cin >> n;
-  for (int i = 1; i <= n; i++) {
-    cout << i << '\n';
+int main() {
+  int a, b; cin >> a >> b;
+  if (a >= b) { // notice where I am using spaces to make the code look better!
+    cout << "Yes\n";
+    // cout << "YES\n"; // wrong! as everything is case sensitive in general
+  }
+  else {
+    cout << "No\n";
   }
   return 0;
 }
 ```
-</details>
-<br>
 
-<b>2. Problem B</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-#include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-
-	int n ; cin >> n ; 
-	if(n < 2) puts("-1") ;  
-	for(int i=2 ; i <= n ; i+=2) {
-		cout << i << endl ;
-	}
-	return 0;
-}
-
-
-```
-</details>
-<br>
-
-<b>3. Problem C</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-#include <bits/stdc++.h>
-using namespace std;
-int main(int argc, char const *argv[])
-{
-	int n; 
-	cin >> n ;
-	int odd = 0 , even = 0 , pos = 0 , neg = 0 ; 
-	while(n--){
-		int x;
-		cin >> x ; 
-		(x%2) ? odd++ : even++ ; 
-		if(x!=0)
-			(x>0) ? pos++ : neg++ ; 
-	}
-	printf("Even: %d\nOdd: %d\nPositive: %d\nNegative: %d", even , odd , pos, neg);
-
-	return 0;
-}
-```
-</details>
-<br>
-
-<b>4. Problem D</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-#include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-	int n;
-	int flag = 0; ; ;;;;
-	int wrong = 0 ;
-	while(cin>>n){
-		if(n==1999) flag = 1;
-		if(flag==0) wrong++; 
-	}
-	while(wrong--) printf("Wrong\n");
-	if(flag)printf("Correct\n");
-	return 0;
-}
-```
-</details>
-<br>
-
-<b>5. Problem E</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-// Problem: E. Max
-// Contest: Codeforces - Sheet #2 (Loops)
-// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/E
-// Memory Limit: 256 MB
-// Time Limit: 1000 ms
-// 
-// // Coded by : Dhiman Sarker Bappi (Dhimanda)
-// 
-#include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-	int n;
-	cin>>n; 
-	long long mx = -INT_MAX;
-	for(int i=0 ; i < n ; i++){
-		long long x ; 
-		cin >> x ; 
-		if(x > mx){
-			mx = x ; 
-		}
-	}	
-	cout << mx << endl; 
-	return 0;
-}
-
-```
-</details>
-<br>
-
-<b>6. Problem F</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-
-```
-</details>
-<br>
-
-<b>7. Problem G</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-// Problem: G. Factorial
-// Contest: Codeforces - Sheet #2 (Loops)
-// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/G
-// 
-//  Coded by : Dhiman Sarker Bappi (Dhimanda)
-// 
-
-
-#include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-	int t ;
-	cin >> t ;
-	while (t--){
-		long long x,ans = 1 ; 
-		cin >> x;
-		while(x){
-			ans *= x ; 
-			x--;
-		}
-		cout << ans << endl; 
-	}
-		
-	return 0;
-}
-
-```
-</details>
-<br>
-
-<b>8. Problem H</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-// Problem: H. One Prime
-// Contest: Codeforces - Sheet #2 (Loops)
-// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/H
-// 
-//  Coded by : Dhiman Sarker Bappi (Dhimanda)
-// 
-
-
-#include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-	int n;
-	cin >> n ; 
-	if(n<2){
-		cout <<"NO"<<endl;
-		return 0; 
-	}
-	for(int i=2 ; i < n ; i++) {
-		if(n%i==0) {
-			cout << "NO" << endl ; 
-			return 0 ; 
-		}
-	}
-	cout << "YES" << endl; 
-	return 0;
-}
-
-
-```
-</details>
-<br>
-
-<b>9. Problem I</b>
-
-<details> <summary> Code(C++) </summary>
-
-```c++
-// Problem: I. Palindrome
-// Contest: Codeforces - Sheet #2 (Loops)
-// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/I
-// 
-//  Coded by : Dhiman Sarker Bappi (Dhimanda)
-// 
-
-
-#include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-	string a;
-	cin >> a ; 
-	string b="";
-	bool ok = true; 
-	
-	int sz = a.size() - 1; 
-	for(int i=0 ; i < sz/2  ; i++){
-		if(a[i]!=a[sz-i]){
-			ok = false; 
-			break;
-		}
-	}
-	bool zero = false; 
-	for(int i=sz ; i >= 0 ; i--){
-		if(a[i]!='0'){
-			cout << a[i] ;
-			zero = true; 
-		}
-		if(zero and a[i]=='0') cout<<"0";  
-	}
-	
-	cout << (ok ? "\nYES" : "\nNO") << endl;
-	return 0;
-}
-
-```
 </details>
 <br>
 
@@ -1102,35 +511,24 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-// Problem: J. Primes from 1 to n
-// Contest: Codeforces - Sheet #2 (Loops)
-// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/J
-// 
-//  Coded by : Dhiman Sarker Bappi (Dhimanda)
-// 
-
-
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-int main()
-{
-	int n;
-	cin>>n; 
-	int ans=0;
-	for(int i=2 ; i <= n ; i++){
-		int prime=1;
-		for(int j=2 ; j<i ; j++){
-			if(i%j==0){
-				prime = 0;
-				break;
-			}
-		}
-		if(prime==1) cout <<i<<" "; 
-	}
-	return 0;
-}
 
+int main() {
+  int a, b; cin >> a >> b;
+  // a is divisible by b means the remainder after dividing a by b is 0
+  if (a % b == 0 or b % a == 0) { // you can use "or", "||" for the OR operator
+    // we aren't using the AND operator here as we want the whole condition to be true
+    // if any of the condition is true
+    cout << "Multiples\n";
+  }
+  else {
+    cout << "No Multiples\n";
+  }
+  return 0;
+}
 ```
+
 </details>
 <br>
 
@@ -1139,29 +537,21 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-// Problem: K. Divisors
-// Contest: Codeforces - Sheet #2 (Loops)
-// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/K
-// 
-//  Coded by : Dhiman Sarker Bappi (Dhimanda)
-// 
-
-
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-int main()
-{
-	int n;
-	cin>>n; 
-	for(int i=1 ; i <= n ; i++){
-		if(n%i==0){
-			cout << i << endl;
-		}
-	}
-	return 0;
-}
 
+int main() {
+  int a, b, c; cin >> a >> b >> c;
+  int minimum = min(a, min(b, c)); // take the min of b and c first and then minimize it with a
+  // int minimum = min(min(a, b), c); // also correct
+  int maximum = max(a, max(b, c));
+
+  // print the minimum first as suggested by the problem
+  cout << minimum << ' ' << maximum << '\n';
+  return 0;
+}
 ```
+
 </details>
 <br>
 
@@ -1170,34 +560,45 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-// Problem: L. GCD
-// Contest: Codeforces - Sheet #2 (Loops)
-// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/L
-// 
-//  Coded by : Dhiman Sarker Bappi (Dhimanda)
-// 
-
-
-#include <bits/stdc++.h>
+#include<iostream>
+#include <cstring> // for strings
 using namespace std;
-int main()
-{
-	int p,q ; 
-	cin >> p >> q ; 
-    while (p != q) {
-        if (p > q) {
-            p -= q;
-        } else {
-            q -= p;
-        }
-    }
-	cout << p << endl ; 
-	
-	//cout << __gcd(p,q) << endl;
-	return 0;
-}
 
+int main() {
+  // assume each name has at most 1000 characters
+  char first_name_first_person[1000], second_name_first_person[1000];
+  char first_name_second_person[1000], second_name_second_person[1000];
+
+  cin >> first_name_first_person >> second_name_first_person;
+  cin >> first_name_second_person >> second_name_second_person;
+
+  // check if the second names are equal
+  bool is_equal = true; // stores if the strings are equal or not
+  int len_1 = strlen(second_name_first_person);
+  int len_2 = strlen(second_name_second_person);
+  if (len_1 != len_2) { // if the lengths are not equal then the strings can't be equal
+    is_equal = false;
+  }
+  else {
+    // now check if all characters are equal in both strings
+    for (int i = 0; i < len_1; i++) {
+      if (second_name_first_person[i] != second_name_second_person[i]) {
+        is_equal = false;
+        break;
+      }
+    }
+  }
+
+  if (is_equal) {
+    cout << "ARE Brothers\n";
+  }
+  else {
+    cout << "NOT\n";
+  }
+  return 0;
+}
 ```
+
 </details>
 <br>
 
@@ -1206,43 +607,34 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-// Problem: M. Lucky Numbers
-// Contest: Codeforces - Sheet #2 (Loops)
-// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/M
-// 
-//  Coded by : Dhiman Sarker Bappi (Dhimanda)
-// 
-
-
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-bool lucky(int x){
-	while(x){
-		int rem= x%10 ; 
-		if(!(rem==4 or rem==7)) return false ;  
-		x/=10 ; 
-	}
-	return true;
-}
 
-int main()
-{
-	int a,b;
-	cin >> a >> b ; 
-	if(a>b) swap(a,b);
-
-	bool flag=true;  
-	for(int i=a ; i<= b ; i++){
-		if(lucky(i)==true){
-			cout << i << " " ; 
-			flag = false; 
-		}
-	}
-	if(flag) cout << -1 << endl; 
-	
-	return 0;
+int main() {
+  char x; cin >> x;
+  int ascii = (int)x; // convert to ascii value
+  if (isalpha(x)) {
+    // same as if ((x >= 'A' and x <= 'Z') or (x >= 'a' and x <= 'z'))
+    // same as if ((ascii >= 65 and ascii <= 90) or (ascii >= 97 and ascii <= 122))
+    cout << "ALPHA\n";
+    if (isupper(x)) {
+      // same as if ((x >= 'A' and x <= 'Z'))
+      // same as if ((ascii >= 65 and ascii <= 90))
+      cout << "IS CAPITAL\n";
+    }
+    else {
+      // similar function: islower(x) -> to check if x is a small letter
+      cout << "IS SMALL\n";
+    }
+  }
+  else {
+    // similar function: isdigit(x) -> to check if x is a digit
+    cout << "IS DIGIT\n";
+  }
+  return 0;
 }
 ```
+
 </details>
 <br>
 
@@ -1251,34 +643,51 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-// Problem: N. Numbers Histogram
-// Contest: Codeforces - Sheet #2 (Loops)
-// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/n
-// 
-//  Coded by : Dhiman Sarker Bappi (Dhimanda)
-// 
-
-
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-int main()
-{
-	char ch ; 
-	cin >> ch ; 
-	int n ; 
-	cin >> n ; 
-	while(n--){
-		int x ;
-		cin >> x ; 
-		while(x--){
-			printf("%c",ch) ; 
-		}
-		printf("\n");
-	}
-	return 0;
-}
 
+int main() {
+  char x; cin >> x;
+  if (x >= 'A' and x <= 'Z') {
+    // notice that all ascii values of 'A' to 'Z' are one after another from 65 to 90
+    int ascii_of_capital_X = (int)x;
+    int ascii_of_capital_A = (int)'A'; // = 65
+    int position_of_capital_X = ascii_of_capital_X - ascii_of_capital_A;
+    int ascii_of_small_a = (int)'a'; // = 97
+    int ascii_of_small_x = ascii_of_small_a + position_of_capital_X;
+    char small_x = (char)ascii_of_small_x;
+    cout << small_x << '\n';
+  }
+  else {
+    int ascii_of_small_x = (int)x;
+    int ascii_of_small_a = (int)'a'; // = 97
+    int position_of_small_x = ascii_of_small_x - ascii_of_small_a;
+    int ascii_of_capital_A = (int)'A'; // = 65
+    int ascii_of_capital_X = ascii_of_capital_A + position_of_small_x;
+    char capital_X = (char)ascii_of_capital_X;
+    cout << capital_X << '\n';
+  }
+
+
+  // also correct! and short!
+  // if (x >= 'A' and x <= 'Z') {
+  //   cout << (char)((x - 'A') + 'a') << '\n';
+  // }
+  // else {
+  //   cout << (char)((x - 'a') + 'A') << '\n';
+  // }
+
+  // also correct! and perfect!
+  // if (isupper(x)) {
+  //   cout << (char)tolower(x) << '\n';
+  // }
+  // else {
+  //   cout << (char)toupper(x) << '\n';
+  // }
+  return 0;
+}
 ```
+
 </details>
 <br>
 
@@ -1287,30 +696,33 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-// Problem: O. Pyramid
-// Contest: Codeforces - Sheet #2 (Loops)
-// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/O
-// 
-//  Coded by : Dhiman Sarker Bappi (Dhimanda)
-// 
-
-
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-int main()
-{
-	int n ; 
-	cin>>n;
-	for(int j=1 ; j <= n ; j++){
-		for(int i=1 ; i <= j ; i++ ){
-			printf("*");
-		}
-		printf("\n");
-	}	
-	return 0;
-}
 
+int main() {
+  int a, b; char s;
+  // for 7+54
+  // cin >> a will add all the digits to a until it finds a non digit character
+  // then it will find the non digit char +, and then cin >> s will trigger itself
+  // then as s is a char data type, s will be equal to + and then cin >> b will get triggered
+  // and then the rest of the digits will get added to b
+  cin >> a >> s >> b;
+  if (s == '+') {
+    cout << a + b << '\n';
+  }
+  else if (s == '-') {
+    cout << a - b << '\n';
+  }
+  else if (s == '*') {
+    cout << a * b << '\n';
+  }
+  else {
+    cout << a / b << '\n'; // integer division
+  }
+  return 0;
+}
 ```
+
 </details>
 <br>
 
@@ -1319,30 +731,33 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-// Problem: P. Shape1
-// Contest: Codeforces - Sheet #2 (Loops)
-// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/P
-// 
-//  Coded by : Dhiman Sarker Bappi (Dhimanda)
-// 
-
-
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-int main()
-{
-	int n ; 
-	cin>>n;
-	while(n--){
-		for(int i=0 ; i <= n ; i++ ){
-			printf("*");
-		}
-		printf("\n");
-	}	
-	return 0;
-}
 
+int main() {
+  int x; cin >> x;
+  // notice that the number is from 1000 to 9999
+  // so the first digit can be found by dividing the number by 1000
+
+  int first_digit = x / 1000; // floor division
+  if (first_digit % 2 == 0) {
+    cout << "EVEN\n";
+  }
+  else {
+    cout << "ODD\n";
+  }
+
+  // the following is another of way of getting the first digit
+  // notice that we can take the input in any format we like
+  // the judging system only cares about what we print in the output file!
+  //
+  // char x[100];
+  // cin >> x;
+  // int first_digit = x[0] - '0';
+  return 0;
+}
 ```
+
 </details>
 <br>
 
@@ -1351,34 +766,23 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-// Problem: Q. Digits
-// Contest: Codeforces - Sheet #2 (Loops)
-// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/Q
-// Memory Limit: 256 MB
-// Time Limit: 1000 ms
-// 
-// // Coded by : Dhiman Sarker Bappi (Dhimanda)
-// 
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-int main()
-{
-	int t;
-	cin >> t ; 
-	while(t--){
-		string a ; 
-		cin >> a ; 
-		for(int i=a.size()-1 ; i >= 0 ; i--) {
-			cout << a[i] << " " ;
-		}
-		printf("\n");
-	}	
+
+int main() {
+	double x, y;
+	cin >> x >> y;
+	if (x == 0 and y == 0) cout << "Origem\n";
+	else if (y == 0 and (x > 0 or x < 0)) cout << "Eixo X\n";
+	else if (x == 0 and (y > 0 or y < 0)) cout << "Eixo Y\n";
+	else if (x > 0 and y > 0) cout << "Q1\n";
+	else if (x < 0 and y > 0) cout << "Q2\n";
+	else if (x < 0 and y < 0) cout << "Q3\n";
+	else cout << "Q4\n";
 	return 0;
 }
-
-
-
 ```
+
 </details>
 <br>
 
@@ -1387,36 +791,24 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-// Problem: R. Sequence of Numbers and Sum
-// Contest: Codeforces - Sheet #2 (Loops)
-// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/R
-// Memory Limit: 256 MB
-// Time Limit: 1000 ms
-// 
-// // Coded by : Dhiman Sarker Bappi (Dhimanda)
-// 
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-int main()
-{
-	while(true){
-		int n,m;
-		cin >> n >> m ; 
-		if(n<=0 or m<=0){
-			return 0 ; 
-		}
-		if(n>m) swap(n,m);
-		int sum = 0 ; 
-		for(int i=n; i <= m ; i++){
-			cout << i << " " ; 
-			sum +=i ; 
-		}
-		cout << "sum ="<<sum<<endl; 
-	}
+
+int main() {
+	int age_in_days; cin >> age_in_days;
+	int years = age_in_days / 365;
+	cout << years << " years\n";
+	age_in_days = age_in_days % 365;
+
+	int months = age_in_days / 30;
+	cout << months << " months\n";
+
+	age_in_days = age_in_days % 30;
+	cout << age_in_days << " days\n";
 	return 0;
 }
-
 ```
+
 </details>
 <br>
 
@@ -1425,34 +817,20 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-// Problem: S. Sum of Consecutive Odd Numbers
-// Contest: Codeforces - Sheet #2 (Loops)
-// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/S
-// 
-//  Coded by : Dhiman Sarker Bappi (Dhimanda)
-// 
-
-
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-int main()
-{
-	int t;
-	cin >> t ; 
-	while(t--){
-		int a,b;
-		cin>>a>>b;
-		if(b<a) swap(a,b);
-		int sum = 0;
-		for(int i=a+1 ; i < b ; i++){
-			if(i%2) sum+=i;
-		}
-		cout << sum << endl ; 
-	}
+
+int main() {
+	double x; cin >> x;
+	if (0 <= x and x <= 25) cout << "Interval [0,25]\n";
+	else if (25 < x and x <= 50) cout << "Interval (25,50]\n";
+	else if (50 < x and x <= 75) cout << "Interval (50,75]\n";
+	else if (75 < x and x <= 100) cout << "Interval (75,100]\n";
+	else cout << "Out of Intervals\n";
 	return 0;
 }
-
 ```
+
 </details>
 <br>
 
@@ -1461,34 +839,23 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-// Problem: T. Shape2
-// Contest: Codeforces - Sheet #2 (Loops)
-// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/T
-// 
-//  Coded by : Dhiman Sarker Bappi (Dhimanda)
-// 
-
-
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-int main()
-{
-	int n;
-	cin >> n ; 	
-	for(int i=1 ; i <= n ; i++){
-		for(int j=i ; j < n; j++){
-			printf(" ");
-		}
-		for(int j=1 ; j <= i*2-1 ; j++){
-			printf("*");
-		}
-		printf("\n");
-		
-	}
-	return 0;
-}
 
+int main() {
+  int a, b, c; cin >> a >> b >> c;
+
+  int minimum = min(a, min(b, c));
+  int maximum = max(a, max(b, c));
+  int mid = a + b + c - minimum - maximum; // the other number that is neither min nor max
+
+  cout << minimum << '\n' << mid << '\n' << maximum << '\n';
+  cout << '\n'; // blank line is important as the problem said so
+  cout << a << '\n' << b << '\n' << c << '\n';
+  return 0;
+}
 ```
+
 </details>
 <br>
 
@@ -1497,42 +864,25 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-// Problem: U. Some Sums
-// Contest: Codeforces - Sheet #2 (Loops)
-// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/U
-// 
-//  Coded by : Dhiman Sarker Bappi (Dhimanda)
-// 
-
-
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-int digitSum(int x){
-	int sum = 0 ; 
-	while(x){
-		sum += x%10 ; 
-		x/=10 ; 
-	}
-	return sum; 
-}
 
-int main()
-{
-	int n,a,b;
-	cin >> n >> a >> b ; 
-	if(a>b) swap(a,b);
-	int ans = 0 ; 
-	for(int i=1 ; i<= n ; i++){
-		int dSum = digitSum(i); 
-		if(dSum >= a and dSum <= b){
-			ans += i ; 
-		}
+int main() {
+	float number; cin >> number;
+
+	int integer_part = (int)number; // convert number to integer to get the integer part
+
+	if (number == integer_part) {
+		cout << "int " << integer_part << '\n';
 	}
-	cout << ans << endl;
+	else {
+		float decimal_part = number - integer_part;
+		cout << "float " << integer_part << " " << decimal_part << '\n';
+	}
 	return 0;
 }
-
 ```
+
 </details>
 <br>
 
@@ -1541,28 +891,29 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-// Problem: V. PUM
-// Contest: Codeforces - Sheet #2 (Loops)
-// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/v
-// 
-//  Coded by : Dhiman Sarker Bappi (Dhimanda)
-// 
-
-
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-int main()
-{
-	int n ;
-	cin >> n ; 
-	for(int i=1 ; i <= n*4 ; i++){
-		if(i%4==0) printf("PUM\n");
-		else printf("%d ", i); 
-	}	
+
+int main() {
+	int a, b; char s;
+	cin >> a >> s >> b;
+
+	if(s == '<') {
+		if (a < b) cout << "Right\n";
+		else cout << "Wrong\n";
+	}
+	else if (s == '=') {
+		if (a == b) cout << "Right\n";
+		else cout << "Wrong\n";
+	}
+	else if (s == '>') {
+		if (a > b) cout << "Right\n";
+		else cout << "Wrong\n";
+	}
 	return 0;
 }
-
 ```
+
 </details>
 <br>
 
@@ -1571,43 +922,31 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-// Problem: W. Shape3
-// Contest: Codeforces - Sheet #2 (Loops)
-// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/W
-// 
-//  Coded by : Dhiman Sarker Bappi (Dhimanda)
-// 
-
-
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-int main()
-{
-	int n;
-	cin >> n ; 	
-	for(int i=1 ; i <= n ; i++){
-		for(int j=i ; j < n; j++){
-			printf(" ");
-		}
-		for(int j=1 ; j <= i*2-1 ; j++){
-			printf("*");
-		}
-		printf("\n");
-		
+
+int main() {
+	int num1, num2, num3;
+	char sign1, sign2;
+	cin >> num1 >> sign1 >> num2 >> sign2 >> num3;
+
+	if (sign1 == '*') {
+		if (num3 == num1 * num2) cout << "Yes\n";
+		else cout << num1 * num2 << '\n';
 	}
-	for(int i=n ; i >= 1 ; i--){
-		for(int j=i ; j < n; j++){
-			printf(" ");
-		}
-		for(int j=1 ; j <= i*2-1 ; j++){
-			printf("*");
-		}
-		printf("\n");
-		
+	else if (sign1 == '+') {
+		if (num3 == num1 + num2) cout << "Yes\n";
+		else cout << num1 + num2 << '\n';
+	}
+	else if (sign1 == '-') {
+		if (num3 == num1 - num2) cout << "Yes\n";
+		else cout << num1 - num2 << '\n';
 	}
 	return 0;
 }
+
 ```
+
 </details>
 <br>
 
@@ -1616,39 +955,23 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-// Problem: X. Convert To Decimal 2
-// Contest: Codeforces - Sheet #2 (Loops)
-// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/X
-// 
-//  Coded by : Dhiman Sarker Bappi (Dhimanda)
-// 
-
-
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-int main()
-{
-	int t;
-	cin >> t ;
-	while(t--){
-		long long x ; 
-		cin >> x ; 
-		int ones = 0 ; 
-		while(x){
-			ones += (x%2);
-			x /= 2;
-		}
-		long long ans = 1 ; 
-		for(int i=1 ; i <= ones ; i++){
-			ans *= 2; 
-		}
-		cout << ans - 1<< endl;
-		//cout << pow(2,ones)-1 << endl;
-	}	
-	return 0;
-}
 
+int main() {
+  int l1, r1, l2, r2; cin >> l1 >> r1 >> l2 >> r2;
+  int left_boundary = max(l1, l2);
+  int right_boundary = min(r1, r2);
+  if (left_boundary <= right_boundary) {
+    cout << left_boundary << ' ' << right_boundary << '\n';
+  }
+  else {
+    cout << -1 << '\n';
+  }
+  return 0;
+}
 ```
+
 </details>
 <br>
 
@@ -1657,33 +980,29 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-// Problem: Y. Easy Fibonacci
-// Contest: Codeforces - Sheet #2 (Loops)
-// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/Y
-// 
-//  Coded by : Dhiman Sarker Bappi (Dhimanda)
-// 
-
-
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-int main()
-{
-	long long n,a=0,b=1;
-	cin >> n ; 
-	if(n==1) printf("0");
-	else{
-		printf("0 1") ; 
-		for(int i=3 ; i <= n ; i++ ){
-			long long now = a + b ; 
-			cout <<" "<<now; 
-			a = b , b = now; 
-		}
+
+int main() {
+	// solution explanation: https://youtu.be/6MSIMpWNRRg
+	int a, b, c, d;
+	cin >> a >> b >> c >> d ;
+	a %= 100;
+	b %= 100;
+	c %= 100;
+	d %= 100;
+	int product = a * b * c * d;
+	int last_digits = product % 100;
+	if (last_digits < 10) {
+		cout << 0 << last_digits << '\n'; // append 0 to the front to make 2 digits!
+	}
+	else {
+		cout << last_digits << '\n';
 	}
 	return 0;
 }
-
 ```
+
 </details>
 <br>
 
@@ -1692,483 +1011,1656 @@ int main()
 <details> <summary> Code(C++) </summary>
 
 ```c++
-// Problem: Z. Three Numbers
-// Contest: Codeforces - Sheet #2 (Loops)
-// URL: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/Z
-// 
-//  Coded by : Dhiman Sarker Bappi (Dhimanda)
-// 
-
-
-#include <bits/stdc++.h>
+#include<iostream>
+#include <math.h>
 using namespace std;
-int main()
-{
-	int k,s;
-	cin>>k >>s ;
-	int way=0; 
-	for(int i=0 ; i <= k ; i++){
-		for(int j=0 ; j <= k ; j++){
-			if(i+j <= s and (s-(i+j))<=k) way++;
-		}
+
+int main() {
+	long long a, b, c, d ;
+	cin >> a >> b >> c >> d ;
+	// notice that the values a, b are large, so a^b will be an astronomical value
+	// and we cant store it in long long either, so we need to think a bit
+	// notice that we dont need the exact value of a^b, we just have to check
+	// if a^b is > c^d or not.
+	//
+	// => a^b > c^d
+	// => log(a^b) > log(c^d)  // take log in both sides
+	// => b*loga > d*logc
+	// now we can do this!
+
+	if (b * log(a) > d * log(c)) {
+		// this log is in base e by default (natural logarithm (ln)),
+		// also the base doesn't matter here. You can also try with log2
+		cout << "YES\n";
 	}
-	cout <<way<<endl;
+	else {
+		cout << "NO\n";
+	}
 	return 0;
+}
+```
+
+</details>
+
+  </details>
+
+### [Codes] Check how to solve the problems of Contest 2
+  <details> <summary> smash me </summary>
+<b>1. Problem A</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int n; cin >> n;
+  for (int i = 1; i <= n; i++) {
+    cout << i << '\n'; // never use endl, use '\n' as it is faster than endl
+  }
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>2. Problem B</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int n; cin >> n;
+  if (n == 1) {
+    // no even numbers under 1
+    cout << -1 << '\n';
+  }
+  else {
+    for (int i = 2; i <= n; i += 2) {
+      cout << i << '\n';
+    }
+
+    // // should also work
+    // for (int i = 1; i <= n; i++) {
+    //   if (i % 2 == 0) {
+    //     cout << i << '\n';
+    //   }
+    // }
+  }
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>3. Problem C</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int n; cin >> n;
+  int even_numbers = 0;
+  int odd_numbers = 0;
+  int positive_numbers = 0;
+  int negative_numbers = 0;
+  for (int i = 1; i <= n; i++) {
+    int x; cin >> x;
+    // taking absolute of x first before taking the modulo to get non negative remainder values
+    // for example: -5 % 2 = -1, 5 % 2 = 1
+    if (abs(x) % 2 == 0) {
+      even_numbers++;
+    }
+    if (abs(x) % 2 == 1) {
+      odd_numbers++;
+    }
+    if (x > 0) {
+      positive_numbers++;
+    }
+    if (x < 0) {
+      negative_numbers++;
+    }
+    // notice that 0 is neither positive, nor negative. It is neutral
+  }
+  cout << "Even: " << even_numbers << '\n';
+  cout << "Odd: " << odd_numbers << '\n';
+  cout << "Positive: " << positive_numbers << '\n';
+  cout << "Negative: " << negative_numbers << '\n';
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>4. Problem D</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+// use const for constant variables
+// make constant variables all uppercase by convention
+const int PASSWORD = 1999;
+
+int main() {
+  int x;
+  // use while (cin >> x) to take input until End Of File (EOF)
+  while (cin >> x) {
+    if (x == PASSWORD) {
+      cout << "Correct\n";
+      break; // breaking the loop, as we dont need to take any more input as the problem said
+    }
+    else {
+      cout << "Wrong\n";
+    }
+  }
+  // note that this while loop will run until there is nothing in the file to take input from
+  // or when we hit the correct password
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>5. Problem E</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int n; cin >> n;
+  int maximum = 0; // set maximum to a very small value that is <= any value in the input
+  for (int i = 1; i <= n; i++) {
+    int x; cin >> x;
+    maximum = max(maximum, x);
+  }
+  cout << maximum << '\n';
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>6. Problem F</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int n; cin >> n;
+  for (int i = 1; i <= 12; i++) {
+    cout << n << " * " << i << " = " << n * i << '\n';
+    // print in the exact same format as the problem suggests
+    // do not print extra spaces, do not print less spaces
+    // 2 * 1 = 2 vs 2*1=2 are different!
+  }
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>7. Problem G</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int t; cin >> t;
+  while (t--) {
+    int n; cin >> n;
+    // use long long data type as in the worst case
+    // when n is the largest, that is n = 20
+    // n! = 20! = 2432902008176640000 which we can't store in a 32 bit int data type
+    long long factorial = 1;
+    for (int i = 1; i <= n; i++) {
+      factorial *= i;
+    }
+    cout << factorial << '\n';
+  }
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>8. Problem H</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int n; cin >> n;
+  // prime numbers are not divisible by any number i (2 <= i < n)
+  for (int i = 2; i < n; i++) {
+    if (n % i == 0) { // check if n is divisible by i
+      cout << "NO\n";
+      // print NO and return from the program as we don't want to print NO multiple times
+      return 0;
+    }
+  }
+  // special case: 1 is not prime!
+  // also try to take 1 as input and run your program
+  // always run your code against special cases
+  if (n == 1) {
+    cout << "NO\n";
+    return 0;
+  }
+  cout << "YES\n";
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>9. Problem I</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int number; cin >> number;
+  int original_number = number; // remember the number!
+
+  int reversed_number = 0;
+  // get the digits from right to the left and append them one after another
+  // for example, for 123, get the digits from right to left -> 3, 2, 1
+  // then append them together: 321 (reversed number)
+  while (number > 0) {
+    int last_digit = number % 10;
+
+    // append last_digit to the reversed_number
+    reversed_number = reversed_number * 10 + last_digit;
+
+    int number_without_last_digit = number / 10;
+    number = number_without_last_digit;
+  }
+  cout << reversed_number << '\n';
+
+
+  // in the while loop we have modified the value of number
+  // thats why we remembered the original value
+  if (original_number == reversed_number) { // palindrome
+    cout << "YES\n";
+  }
+  else {
+    cout << "NO\n";
+  }
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>10. Problem J</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+// function to check if the number is a prime or not
+// returns a boolean of true if it is a prime or false otherwise
+bool is_prime(int n) {
+  // always check for special cases!
+  if (n == 1) return false;
+  for (int i = 2; i < n; i++) {
+    // if it is divisible by some number other than 1 and n, then it is not a prime for sure
+    if (n % i == 0) {
+      return false;
+    }
+  }
+  // now we know that it is a prime for sure!
+  return true;
+}
+int main() {
+  int n; cin >> n;
+  // use functions to solve smaller subproblems
+  // this will make your code cleaner and less buggy
+  for (int i = 1; i <= n; i++) {
+    if (is_prime(i)) {
+      cout << i << ' ';
+    }
+  }
+  cout << '\n';
+  return 0;
+}
+// Also how many operations the program is making?
+// In the worst case, n = 1000
+// so we are running the loop in the main function 1000 times
+// and then in the is_prime function for each number we running the loop
+// 1000 times again. So in total we are making at most 1000 * 1000 = 10^6 operations
+// And in general it takes 1s to run 10^8 operations.
+// So we are good and won't get TLE
+```
+
+</details>
+<br>
+
+<b>11. Problem K</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main(){
+  int n; cin >> n;
+  for (int i = 1; i <= n; i++) {
+    if (n % i == 0) {
+      cout << i << '\n';
+    }
+  }
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>12. Problem L</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+#include<algorithm> // for using the gcd function
+using namespace std;
+
+int main() {
+  int a, b; cin >> a >> b;
+  cout << __gcd(a, b) << '\n'; // use the builtin function
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>13. Problem M</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+bool is_lucky_digit(int digit) {
+  // use OR operator here as if digit is 4 OR digit is 7 it returns true
+  // if you use AND operator here, it would mean digit would have to be 4 AND 7 at the same time!
+  return digit == 4 or digit == 7;
+}
+bool is_lucky_number(int n) {
+  // get the digits of n from right to left
+  // and check if there is any non lucky digit
+  while (n > 0) {
+    int last_digit = n % 10;
+    if (!is_lucky_digit(last_digit)) {
+      // if there is at least one non lucky digit then we are fucked
+      // return false immediately
+      return false;
+    }
+    int number_without_last_digit = n / 10;
+    n = number_without_last_digit;
+  }
+  return true;
+}
+
+// hey you! while reading others' codes, always start from the main function!
+int main() {
+  int a, b; cin >> a >> b;
+  bool got_lucky_number = false;
+  for (int i = a; i <= b; i++) {
+    if (is_lucky_number(i)) {
+      cout << i << ' ';
+      got_lucky_number = true;
+    }
+  }
+  if (!got_lucky_number) {
+    cout << -1 << '\n';
+  }
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>14. Problem N</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+// dont forget to use meaningful variable names!
+int main() {
+  char symbol; cin >> symbol;
+  int n; cin >> n;
+  for (int i = 1; i <= n; i++) {
+    int count; cin >> count;
+    // now print the symbol count times
+    for (int j = 1; j <= count; j++) { // use a different variable name in this nested loop as we have already used i in the parent loop
+      cout << symbol;
+    }
+    cout << '\n';
+  }
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>15. Problem O</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int row_count; cin >> row_count;
+  for (int row = 1; row <= row_count; row++) {
+    // there will be "row" number of * in the "row"th row
+    // for example, 1 * in the 1st row
+    // 2 * in the 2nd row and so on
+    int count_of_stars = row;
+    for (int i = 1; i <= count_of_stars; i++) {
+      cout << "*";
+    }
+    cout << '\n';
+  }
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>16. Problem P</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int row_count; cin >> row_count;
+  for (int row = 1; row <= row_count; row++) {
+    // there will be "row_count - row + 1" number of * in the "row"th row
+    // for example, if row_count = 4, then 4 * in the 1st row
+    // 3 * in the 2nd row, 2 * in the 3rd row and 1 * in the 4th row
+    int count_of_stars = row_count - row + 1;
+    for (int i = 1; i <= count_of_stars; i++) {
+      cout << "*";
+    }
+    cout << '\n';
+  }
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>17. Problem Q</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int t; cin >> t;
+  while (t--) {
+    int n; cin >> n;
+    if (n == 0) {
+      cout << 0 << '\n';
+      continue;
+      // we can't use return 0 here as we are running multiple test cases
+      // and return 0 will terminate the whole program which we dont want
+    }
+    while (n > 0) {
+      int last_digit = n % 10;
+      cout << last_digit << ' ';
+
+      int number_without_last_digit = n / 10;
+      n = number_without_last_digit;
+    }
+    cout << '\n';
+  }
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>18. Problem R</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int n, m;
+  while (cin >> n >> m) {
+    // The program should be TERMINATED as soon as any of these two numbers
+    // is less than or equal to zero and don't print any thing.
+    if (n <= 0 or m <= 0) {
+      break;
+    }
+    // make n <= m for easier implementation
+    if (n > m) {
+      swap(n, m);
+    }
+    int sum = 0;
+    for (int i = n; i <= m; i++) {
+      cout << i << ' ';
+      sum += i;
+    }
+    cout << "sum =" << sum << '\n'; // be careful with the spaces
+  }
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>19. Problem S</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int t; cin >> t;
+  while (t--) {
+    int x, y; cin >> x >> y;
+    // make x <= y for easier implementation
+    if (x > y) {
+      swap(x, y);
+    }
+    int sum_of_odds = 0;
+    // loop exluding x and y
+    for (int i = x + 1; i < y; i++) {
+      if (i % 2 == 1) { // odd number
+        sum_of_odds += i;
+      }
+    }
+    cout << sum_of_odds << '\n';
+  }
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>20. Problem T</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int row_count; cin >> row_count;
+  for (int row = 1; row <= row_count; row++) {
+    // there will be "2 * row - 1" number of * in the "row"th row
+    // for example, 1 * in the 1st row
+    // 3 * in the 2nd row, 5 * in the 3rd row and 7 * in the 4th row
+    int count_of_stars = 2 * row - 1;
+
+    // before the stars there will be "row_count - row" number of spaces in the "row"th row
+    // for example, if row_count = 4, then 3 spaces in the 1st row
+    // 2 spaces in the 2nd row, 1 space in the 3rd row and 0 space in the 4th row
+    int count_of_spaces = row_count - row;
+
+    for (int i = 1; i <= count_of_spaces; i++) {
+      cout << " ";
+    }
+    for (int i = 1; i <= count_of_stars; i++) {
+      cout << "*";
+    }
+    // you can use the same variable names in loops if they are not nested
+    cout << '\n';
+  }
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>21. Problem U</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int get_sum_of_digits(int n) {
+  int sum = 0;
+  // get the digits of n from right to left
+  // sum them up
+  while (n > 0) {
+    int last_digit = n % 10;
+    sum += last_digit;
+    int number_without_last_digit = n / 10;
+    n = number_without_last_digit;
+  }
+  return sum;
+}
+int main() {
+  int n, a, b; cin >> n >> a >> b;
+  int sum_of_numbers = 0;
+  for (int i = 1; i <= n; i++) {
+    int sum_of_digits = get_sum_of_digits(i);
+    if (a <= sum_of_digits and sum_of_digits <= b) {
+      sum_of_numbers += i;
+    }
+  }
+  cout << sum_of_numbers << '\n';
+
+  // notice that we don't need to use long long in sum_of_numbers
+  // as in the worst case, n = 10000. And we might have to take sum of all these numbers
+  // from 1 to 10000. And it is at max 10000 * (10000 + 1) / 2. And this number
+  // can be stored in an int variable
+  // Rule: Do not use long long when its not necessary
+  // this will make you a better coder
+  return 0;
 }
 
 ```
+
 </details>
 <br>
+
+<b>22. Problem V</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int n; cin >> n;
+  // notice that for each row the first number gets incremented by 4
+  // and in each row, then 3 numbers are consecutive
+  int first_number_in_row = 1;
+  for (int row = 1; row <= n; row++) {
+    for (int i = first_number_in_row; i <= first_number_in_row + 2; i++) {
+      cout << i << ' ';
+    }
+    cout << "PUM\n";
+
+    first_number_in_row += 4;
+  }
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>23. Problem W</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int n; cin >> n;
+
+  // print the first half of the diamond
+  for (int row = 1; row <= n; row++) {
+    // there will be "2 * row - 1" number of * in the "row"th row
+    // for example, 1 * in the 1st row
+    // 3 * in the 2nd row, 5 * in the 3rd row and 7 * in the 4th row
+    int count_of_stars = 2 * row - 1;
+
+    // before the stars there will be "n - row" number of spaces in the "row"th row
+    // for example, if n = 4, then 3 spaces in the 1st row
+    // 2 spaces in the 2nd row, 1 space in the 3rd row and 0 space in the 4th row
+    int count_of_spaces = n - row;
+
+    for (int i = 1; i <= count_of_spaces; i++) {
+      cout << " ";
+    }
+    for (int i = 1; i <= count_of_stars; i++) {
+      cout << "*";
+    }
+    cout << '\n';
+  }
+
+  // print the last half of the diamond
+  for (int row = 1; row <= n; row++) {
+    // there will be "2 * (n - row + 1) - 1" number of * in the "row"th row
+    // for example, if n = 4, 7 * in the 1st row
+    // 5 * in the 2nd row, 3 * in the 3rd row and 2 * in the 4th row
+    int count_of_stars = 2 * (n - row + 1) - 1;
+
+    // before the stars there will be "row - 1" number of spaces in the "row"th row
+    // for example, if n = 4, then 0 space in the 1st row
+    // 1 space in the 2nd row, 2 spaces in the 3rd row and 3 spaces in the 4th row
+    int count_of_spaces = row - 1;
+
+    for (int i = 1; i <= count_of_spaces; i++) {
+      cout << " ";
+    }
+    for (int i = 1; i <= count_of_stars; i++) {
+      cout << "*";
+    }
+    cout << '\n';
+  }
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>24. Problem X</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int t; cin >> t;
+  while (t--) {
+    int n; cin >> n;
+    int number_of_ones_in_binary = 0;
+    while (n > 0) {
+      int last_bit = n % 2;
+      if (last_bit == 1) {
+        number_of_ones_in_binary++;
+      }
+      int drop_last_bit = n / 2;
+      n = drop_last_bit;
+    }
+    int decimal = 0;
+    for (int i = 1; i <= number_of_ones_in_binary; i++) {
+      decimal = decimal * 2 + 1;
+    }
+    cout << decimal << '\n';
+  }
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>25. Problem Y</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+const int N = 45; // max value of n
+int fib[N + 1]; // int data type is enough, try printing for n = 45
+int main() {
+  int n; cin >> n;
+  fib[1] = 0;
+  fib[2] = 1;
+  for (int i = 3; i <= n; i++) {
+    fib[i] = fib[i - 1] + fib[i - 2];
+  }
+  for (int i = 1; i <= n; i++) {
+    cout << fib[i] << ' ';
+  }
+  cout << '\n';
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>26. Problem Z</b>
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// // bruteforce (direct) solution
+// #include<iostream>
+// using namespace std;
+
+// int main() {
+//   int k, s; cin >> k >> s;
+//   int count = 0;
+//   for (int x = 0; x <= k; x++) {
+//     for (int y = 0; y <= k; y++) {
+//       for (int z = 0; z <= k; z++) {
+//         if ((x + y + z) == s) {
+//           count++;
+//         }
+//       }
+//     }
+//   }
+//   cout << count << '\n';
+//   return 0;
+// }
+// // in the worst case, k = 3000
+// // so we will have to run the loops 3000 * 3000 * 3000 = 27 * 10^9 times
+// // but in general it takes 1s to run 10^8 operations.
+// // so running 27 * 10^9 operations will take around 27 * 10^9 / 10^8 = 270s
+// // but the time limit is 3s. So it will give you TLE
+
+// optimized solution
+#include<iostream>
+using namespace std;
+
+int main() {
+  int k, s; cin >> k >> s;
+  int count = 0;
+  for (int x = 0; x <= k; x++) {
+    for (int y = 0; y <= k; y++) {
+      // notice that
+      // => x + y + z = s
+      // => z = s - x - y
+      // so if we fix x and y, then z will also be fixed
+      // we will just have to check if z >= 0 and z <= k or not
+      int z = s - x - y;
+      if (z >= 0 && z <= k) {
+        count++;
+      }
+    }
+  }
+  cout << count << '\n';
+  return 0;
+}
+```
+
+</details>
+<br>
+
+
   </details>
 
 ### [Editorials and Codes] Check how to solve the problems of Contest 3
   <details> <summary> smash me </summary>
-  Credit: @MehediMubin, @tahmidarefin and @Tofayel and me
+<b>1. Problem A</b>
 
-  <b>1. Problem A</b>
+Editorial: [link](https://img.atcoder.jp/abc169/editorial.pdf)
 
-  Editorial: [link](https://img.atcoder.jp/abc169/editorial.pdf)
-  <details> <summary> Code(C++) </summary>
+<details> <summary> Code(C++) </summary>
 
-  ```c++
-  #include<bits/stdc++.h>
-  using namespace std;
+```c++
+#include<iostream>
+using namespace std;
 
-  int main() {
-    int a, b; cin >> a >> b;
-    cout << a * b << '\n';
-    return 0;
+int main() {
+  int a, b; cin >> a >> b;
+  cout << a * b << '\n';
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>2. Problem B</b>
+
+Editorial: [link](https://atcoder.jp/contests/abc209/editorial/2242)
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int a, b; cin >> a >> b;
+  if (a <= b) {
+    cout << b - a + 1 << '\n';
   }
-  ```
-  </details>
-  <br>
-
-  <b>2. Problem B</b>
-
-  Editorial: [link](https://atcoder.jp/contests/abc209/editorial/2242)
-  <details> <summary> Code(C++) </summary>
-
-  ```c++
-  #include<bits/stdc++.h>
-  using namespace std;
-
-  int main() {
-    int a, b; cin >> a >> b;
-    cout << max(0, b - a + 1) << '\n';
-    return 0;
+  else {
+    cout << 0 << '\n';
   }
-  ```
-  </details>
-  <br>
+  return 0;
+}
+```
 
-  <b>3. Problem C</b>
+</details>
+<br>
 
-  Editorial: [link](https://img.atcoder.jp/abc124/editorial.pdf)
-  <details> <summary> Code(C++) </summary>
+<b>3. Problem C</b>
 
-  ```c++
-  #include<bits/stdc++.h>
-  using namespace std;
+Editorial: [link](https://img.atcoder.jp/abc124/editorial.pdf)
 
-  int main() {
-    int a, b; cin >> a >> b;
-    cout << max({a + (a - 1), b + (b - 1), a + b}) << '\n';
-    return 0;
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int button_1, button_2;
+  cin >> button_1 >> button_2;
+
+  int ans = 0;
+  // press the first button twice
+  ans = max(ans, button_1 + (button_1 - 1));
+
+  // press the second button twice
+  ans = max(ans, button_2 + (button_2 - 1));
+
+  // press the first and second buttons once
+  ans = max(ans, button_1 + button_2);
+
+  cout << ans << '\n';
+
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>4. Problem D</b>
+
+Editorial: [link](https://atcoder.jp/contests/abc226/editorial/2903)
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+#include <math.h> // for using the round function
+using namespace std;
+
+int main() {
+  double x; cin >> x; // we need double data type
+  cout << round(x) << '\n'; // use the builtin round function
+  return 0;
+}
+// Can you solve it without using a builtin function?
+// Try yourself and if you can't then ask on discord
+```
+
+</details>
+<br>
+
+<b>5. Problem E</b>
+
+Editorial: [link](https://atcoder.jp/contests/abc222/editorial/2757)
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int n; cin >> n;
+  // just handle seperate cases
+  if (n < 10) cout << "000" <<  n << '\n';
+  else if (n < 100) cout << "00" <<  n << '\n';
+  else if (n < 1000) cout << "0" <<  n << '\n';
+  else cout << n << '\n';
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>6. Problem F</b>
+
+Editorial: [link](https://img.atcoder.jp/abc125/editorial.pdf)
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int a, b, t;
+  cin >> a >> b >> t;
+  int total_biscuits = 0;
+  for (int time = a; time <= t; time += a) {
+    // produces b biscuits at this time
+    total_biscuits += b;
   }
-  ```
-  </details>
-  <br>
-
-  <b>4. Problem D</b>
-
-  Editorial: [link](https://atcoder.jp/contests/abc226/editorial/2903)
-  <details> <summary> Code(C++) </summary>
-
-  ```c++
-  #include<bits/stdc++.h>
-  using namespace std;
-
-  int main() {
-    double d; cin >> d;
-    cout << round(d) << '\n';
-    return 0;
-  }
-  ```
-  </details>
-  <br>
-
-  <b>5. Problem E</b>
-
-  Editorial: [link](https://atcoder.jp/contests/abc222/editorial/2757)
-  <details> <summary> Code(C++) </summary>
-
-  ```c++
-  #include<bits/stdc++.h>
-  using namespace std;
-
-  int main() {
-    int n; cin >> n;
-    if (n < 10) cout << "000" <<  n << '\n';
-    else if (n < 100) cout << "00" <<  n << '\n';
-    else if (n < 1000) cout << "0" <<  n << '\n';
-    else cout << n << '\n';
-    return 0;
-  }
-  ```
-  </details>
-  <br>
-
-  <b>6. Problem F</b>
-
-  Editorial: [link](https://img.atcoder.jp/abc125/editorial.pdf)
-  <details> <summary> Code(C++) </summary>
-
-  ```c++
-  #include<bits/stdc++.h>
-  using namespace std;
-
-  int main() {
-    int a, b, t;
-    cin >> a >> b >> t;
-    cout << t / a * b << '\n';
-    return 0;
-  }
-  ```
-  </details>
-  <br>
-
-  <b>7. Problem G</b>
-
-  Editorial: [link](https://atcoder.jp/contests/abc220/editorial/2700)
-  <details> <summary> Code(C++) </summary>
-
-  ```c++
-  #include<iostream>
-  using namespace std;
-  int main(){
-      int a, b, c;
-      cin >> a >> b >> c;
-      if((a - 1) / c == b / c) cout << -1 << '\n';
-      else cout << c * (b / c) << '\n';
-      return 0;
-  }
-  ```
-  </details>
-  <br>
-
-  <b>8. Problem H</b>
-
-  Editorial: [link](https://codeforces.com/blog/entry/43392)
-  <details> <summary> Code(C++) </summary>
-
-  ```c++
-  #include<iostream>
-  using namespace std;
-  int main(){
-      int a, b, c;
-      cin >> a >> b >> c;
-      for(int i = 0; i <= 5000; i++){
-          for(int j = 0; j <= 5000; j++){
-              if(i * a + j * b == c){
-                  cout << "Yes" << '\n';
-                  return 0;
-              }
-          }
-      }
-      cout << "No" << '\n';
-      return 0;
-  }
-  ```
-  </details>
-  <br>
-
-  <b>9. Problem I</b>
-
-  Editorial: [link](https://atcoder.jp/contests/abc199/editorial/1165)
-  <details> <summary> Code(C++) </summary>
-
-  ```c++
-  #include<iostream>
-  using namespace std;
-  int main(){
-      int a, b, c;
-      cin >> a >> b >> c;
-      cout << ((a * a + b * b) < c*c ? "Yes" : "No") <<'\n';
-      return 0;
-  }
-  ```
-  </details>
-  <br>
-
-  <b>10. Problem J</b>
-
-  Editorial: [link](https://atcoder.jp/contests/abc193/editorial/822)
-  <details> <summary> Code(C++) </summary>
-
-  ```c++
-  #include<iostream>
-  #include<iomanip>
-  using namespace std;
-  int main(){
-      double a, b, ans;
-      cin >> a >> b;
-      ans = (a - b) / a * 100.0;
-      cout << fixed << setprecision(3) << ans << '\n';
-      return 0;
-  }
-  ```
-  </details>
-  <br>
-
-  <b>11. Problem K</b>
-
-  Editorial: [link](https://img.atcoder.jp/abc152/editorial.pdf)
-  <details> <summary> Code(C++) </summary>
-
-  ```c++
-  #include<iostream>
-  using namespace std;
-  int main(){
-      int n, m;
-      cin >> n >> m;
-      cout << (n == m ? "Yes" : "No") << '\n';
-      return 0;
-  }
-  ```
-  </details>
-  <br>
-
-  <b>12. Problem L</b>
-
-  Editorial: [link](https://codeforces.com/blog/entry/24160)
-  <details> <summary> Code(C++) </summary>
-
-  ```c++
-  #include<iostream>
-  using namespace std;
-  int main(){
-      long long n;
-      cin >> n;
-      cout << 25 << '\n';
-      return 0;
-  }
-  ```
-  </details>
-  <br>
-
-  <b>13. Problem M</b>
-
-  Editorial: [link](https://atcoder.jp/contests/abc214/editorial/2444)
-  <details> <summary> Code(C++) </summary>
-
-  ```c++
-  #include<bits/stdc++.h>
-  using namespace std;
-
-  int main(){
-      int S, T; cin >> S >> T;
-      int cnt = 0;
-      for(int a = 0; a <= S; a++){
-          for(int b = 0; a+b <= S; b++){
-              for(int c = 0; a+b+c <= S; c++){
-                  if(a*b*c <= T) cnt++;
-              }
-          }
-      }
-      cout << cnt << endl;
-  }
+  cout << total_biscuits << '\n';
 
 
-  ```
-  </details>
-  <br>
+  // notice that the for loop runs exactly floor(t / a) times
+  // and each time we are adding b biscuits
+  // so you can solve the problem like this
+  // cout << (t / a) * b << '\n';
+  return 0;
+}
 
-  <b>14. Problem N</b>
+```
 
-  Editorial: [link](https://codeforces.com/blog/entry/21590)
-  <details> <summary> Code(C++) </summary>
+</details>
+<br>
 
-  ```c++
-  #include <iostream>
-  using namespace std;
-  typedef long long ll;
+<b>7. Problem G</b>
 
-  int T;
-  ll N;
+Editorial: [link](https://atcoder.jp/contests/abc220/editorial/2700)
 
-  int main()
-  {
-    cin >> T;
+<details> <summary> Code(C++) </summary>
 
-    for (int t = 0; t < T; t++)
-    {
-      cin >> N;
+```c++
+#include<iostream>
+using namespace std;
 
-      ll power = 1;
-      while (2 * power <= N)
-        power *= 2;
-
-      cout << N*(N + 1) / 2 - 2 * (power * 2 - 1) << "\n";
+int main() {
+  int a, b, c; cin >> a >> b >> c;
+  for (int i = a; i <= b; i++) { // go through the numbers that are between a and b
+    // check if i is a multiple of c
+    // that means the remainder if we divide i by c will be 0
+    if (i % c == 0) {
+      // awesome! we just found a multiple
+      cout << i << '\n';
+      return 0; // return immediately as we don't wanna print anything else
     }
+  }
+  // if we are here, it means we haven't found any multiple
+  // so print -1 as asked by the problem
+  cout << -1 << '\n';
+  return 0;
+}
+```
 
-    return 0;
+</details>
+<br>
+
+<b>8. Problem H</b>
+
+Editorial: [link](https://codeforces.com/blog/entry/43392)
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int evony_damage, ivory_damage, damage_goal;
+  cin >> evony_damage >> ivory_damage >> damage_goal;
+
+  // evony and ivory can do any non-negative number of shots
+  // so lets try all possible shots
+  for (int evony_shots = 0; ; evony_shots++) {
+    if (evony_shots * evony_damage > damage_goal) {
+      break; // it doesn't make sense to loop further as the damage is already more than our goal
+    }
+    for (int ivory_shots = 0; ; ivory_shots++) {
+      int total_damage = evony_shots * evony_damage + ivory_shots * ivory_damage;
+      if (total_damage == damage_goal) { // yayy
+        cout << "Yes\n";
+        return 0; // return immediately
+      }
+      if (total_damage > damage_goal) { // no need to take more shots, its already bigger
+        break;
+      }
+    }
   }
 
-  ```
-  </details>
-  <br>
+  // we are here means we haven't the damage goal
+  cout << "No\n";
+  return 0;
+}
 
-  <b>15. Problem O</b>
+/**
+In our problem damage_goal is at most 10000
+The first loop will run at most damage_goal = 10000 times as in the worst case
+evony_damage = 1 and each time he can deal 1 damage, so after 10000 loops the loop will break
 
-  Editorial: [link](https://img.atcoder.jp/abc051/editorial.pdf)
-  <details> <summary> Code(C++) </summary>
+But the nested inside loop will also run damage_goal = 10000 times by the same logic
 
-  ```c++
-  #include<bits/stdc++.h>
-  using namespace std;
+So in total, as the loops are nested, the total number of operations will be around 10000 * 10000 = 10^8
+In general 10^8 operations take around 1s or less. So we are good.
 
-  int main() {
-    int k, s; cin >> k >> s;
-    int count = 0;
-    for (int x = 0; x <= k; x++) {
-      for (int y = 0; y <= k; y++) {
-        int z = s - x - y;
-        if (z >= 0 and z <= k) {
+It is REALLY important to understand how many operations your problem is doing.
+It is a CRIME if you don't understand this. Ask on discord if you have any questions.
+**/
+```
+
+</details>
+<br>
+
+<b>9. Problem I</b>
+
+Editorial: [link](https://atcoder.jp/contests/abc199/editorial/1165)
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int a, b, c; cin >> a >> b >> c;
+  // for doing a^2 use a * a instead of pow(a, 2) as pow function works for double numbers
+  // and it is not 100% accurate for integer calculations
+  if (a * a + b * b < c * c) {
+    cout << "Yes\n";
+  }
+  else {
+    cout << "No\n";
+  }
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>10. Problem J</b>
+
+Editorial: [link](https://atcoder.jp/contests/abc193/editorial/822)
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+  int regular_price, discounted_price;
+  cin >> regular_price >> discounted_price;
+
+  int total_discounts = regular_price - discounted_price;
+  double discount_percentage = (double) total_discounts / regular_price * 100; // typecast to double to do double divisions
+
+  cout << fixed << setprecision(10) << discount_percentage << '\n';
+  // in the problem it says "Your answer will be judged as correct when its absolute or relative error from our answer is at most 10^-2"
+  // so we will have to print at least 2 digits after the decimal point
+  // for being safe, we are printing 10 digits after the decimal point
+  // ALWAYS use the fixed keyword as it will make sure that you are printing exactly 10 digits after the decimal point
+  // without using << fixed, printing 2.63 will print 2.63, but with << fixed it will print 2.6300000000
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>11. Problem K</b>
+
+Editorial: [link](https://img.atcoder.jp/abc152/editorial.pdf)
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int total_test_cases, passed_test_cases;
+  cin >> total_test_cases >> passed_test_cases;
+  if (passed_test_cases == total_test_cases) {
+    cout << "Yes\n";
+  }
+  else {
+    cout << "No\n";
+  }
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>12. Problem L</b>
+
+Editorial: [link](https://codeforces.com/blog/entry/24160)
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+/**
+expression | product  | last two digits
+    5^2    |   25     |    25
+    5^3    |   125    |    25
+    5^4    |   625    |    25
+    5^5    |   3125   |    25
+
+So???
+**/
+int main() {
+  long long n; cin >> n;
+  cout << 25 << '\n';
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>13. Problem M</b>
+
+Editorial: [link](https://atcoder.jp/contests/abc214/editorial/2444)
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main() {
+  int sum, product; cin >> sum >> product;
+  int count = 0;
+  // try all possible triplets such that their sum is <= sum
+  for (int a = 0; a <= sum; a++) { // we start from a = 0 as they asked for triples of NON-NEGATIVE integers
+    for (int b = 0; b <= sum; b++) {
+      for (int c = 0; c <= sum; c++) {
+        if (a + b + c <= sum) {
+          // check for the product
+          if (a * b * c <= product) {
             count++;
           }
+        }
       }
     }
-    cout << count << '\n';
+  }
+  cout << count << '\n';
+  return 0;
+}
+
+// in the max case, sum = 200
+// so the 3 nested loops will run sum * sum * sum = 200^3 = 8 * 10^6 times
+// so we are good
+```
+
+</details>
+<br>
+
+<b>14. Problem N</b>
+
+Editorial: [link](https://codeforces.com/blog/entry/21590)
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+/**
+Imagine we need to find S = 1 + 2 + 3 + ... + (n - 1) + n
+How to find it without using a loop?
+
+Do you remember the formula for this from school?
+If not, lets find its formula again!
+
+S  =    1    +    2    +    3    + ... + (n - 1) +    n
+S  =    n    + (n - 1) + (n - 2) + ... +    2    +    1  (showing in reverse order)
+----------------------------------------------------------
+2S = (n + 1) + (n + 1) + (n + 1) + ... + (n + 1) + (n + 1) (sum the first and second equations)
+
+so 2S = (n + 1) * n (as there are n variables in total)
+so S = (n + 1) * n / 2
+So instead of running a loop we can just use this formula to find the sum from 1 to n. Great!
+
+
+Note that the powers of twos are 2^0 = 1, 2^1 = 2, 2^2 = 4, 2^3 = 8, 2^4 = 16, 2^5 = 32, ...
+But in this problem we have to find P = -1 - 2 + 3 - 4 + 5 + 6 + 7 - 8 + 9 + 10 + ... upto n (only powers of twos have negative sign)
+
+How to do this?
+
+  S   =    1  +   2 + 3 + 4   + 5 + 6 + 5 + 8 + 9 + 10 + ...
+  P   =   -1  -   2 + 3 - 4   + 5 + 6 + 7 - 8 + 9 + 10 + ...
+----------------------------------------------------------
+S - P = 2 * 1 + 2 * 2 + 2 * 4 +          + 2 * 8 + ...       (subtracting the second equation from the first)
+
+So basically,
+S - P = 2 * (1 + 2 + 4 + 8 + ....)
+S - P = 2 * (sum of powers of 2 that are <= n)
+
+so P = S - 2 * (sum of powers of 2 that are <= n)
+
+We can compute S fast, so we have to compute the sum of powers of 2 that are <= n
+But the thing is there aren't that many powers of 2 under n.
+There are log2(n) powers of 2 under n. For n = 10^9, there are only 30 powers of 2 uner 10^9.
+So we can just loop over them!
+**/
+int main() {
+  int t; cin >> t;
+  while (t--) {
+    int n; cin >> n;
+    long long S = (long long) (n + 1) * n / 2; // typecast to long long so that we don't overflow
+    long long sum_of_powers_of_2 = 0;
+    for (int i = 1; i <= n; i *= 2) { // traversing through all powers of 2, one is just the double of the previous one
+      sum_of_powers_of_2 += i;
+    }
+    long long P = S - 2 * sum_of_powers_of_2;
+    cout << P << '\n';
+  }
+  return 0;
+}
+
+// we can't run a loop n times in this problem thats because n can be as large as 10^9
+// and in 1s we can do around 10^8 operations
+// so it will take arounf 10^9 / 10^8 = 10s to run a loop n times which is way more than our time limit
+```
+
+</details>
+<br>
+
+<b>15. Problem O</b>
+
+Editorial: [link](https://img.atcoder.jp/abc051/editorial.pdf)
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+// // bruteforce (direct) solution
+// #include<iostream>
+// using namespace std;
+
+// int main() {
+//   int k, s; cin >> k >> s;
+//   int count = 0;
+//   for (int x = 0; x <= k; x++) {
+//     for (int y = 0; y <= k; y++) {
+//       for (int z = 0; z <= k; z++) {
+//         if ((x + y + z) == s) {
+//           count++;
+//         }
+//       }
+//     }
+//   }
+//   cout << count << '\n';
+//   return 0;
+// }
+// // in the worst case, k = 2500
+// // so we will have to run the loops 2500 * 2500 * 2500 = 15625000000 times
+// // but in general it takes 1s to run 10^8 operations.
+// // so running 15625000000 operations will take around 15625000000 / 10^8 = 156s
+// // but the time limit is 2s. So it will give you TLE
+
+// optimized solution
+#include<iostream>
+using namespace std;
+
+int main() {
+  int k, s; cin >> k >> s;
+  int count = 0;
+  for (int x = 0; x <= k; x++) {
+    for (int y = 0; y <= k; y++) {
+      // notice that
+      // => x + y + z = s
+      // => z = s - x - y
+      // so if we fix x and y, then z will also be fixed
+      // we will just have to check if z >= 0 and z <= k or not
+      int z = s - x - y;
+      if (z >= 0 && z <= k) {
+        count++;
+      }
+    }
+  }
+  cout << count << '\n';
+  return 0;
+}
+```
+
+</details>
+<br>
+
+<b>16. Problem P</b>
+
+Editorial: [link](https://codeforces.com/blog/entry/2393)
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+#include<string.h>
+using namespace std;
+
+const int N = 1e5 + 9;
+char number_as_string[N];
+int main() {
+  // as the number is at most 10^100000 so the number can have 100000 digits!
+  // so we can't store it in int or long long
+  // we have to read it as a string
+  cin >> number_as_string;
+  int len = strlen(number_as_string);
+  // edge case: if the length is already 1 then we don't have to perform any spell
+  if (len == 1) {
+    cout << 0 << '\n';
     return 0;
   }
-  ```
-  </details>
-  <br>
 
-  <b>16. Problem P</b>
+  // now we will have to convert it to its sum of digits
+  // but the funny thing is that the sum of digits can be stored in int
+  // as in the worst case every digit is 9, and sum of 100000 9s = 999999
+  int sum_of_digits = 0;
+  for (int i = 0; i < len; i++) {
+    sum_of_digits += number_as_string[i] - '0';
+  }
+  int spell_count = 1; // we just performed one spell
 
-  Editorial: [link](https://codeforces.com/blog/entry/2393)
-  <details> <summary> Code(C++) </summary>
+  // now we can perform the spells as long as we don't hit only one digit number
+  int current_number = sum_of_digits;
 
-  ```c++
-  #include<bits/stdc++.h>
-  using namespace std;
-  typedef long long ll;
+  while (current_number > 9) { // it has more than one digit
+    int sum_of_digits = 0;
+    while (current_number > 0) {
+      int last_digit = current_number % 10;
+      sum_of_digits += last_digit;
+      int number_without_last_digit = current_number / 10;
+      current_number = number_without_last_digit;
+    }
+    // replace the number with its sum of digits and increment the spell count
+    current_number = sum_of_digits;
+    ++spell_count;
+  }
+  cout << spell_count << '\n';
+  return 0;
+}
+```
 
-  string s;
+</details>
+<br>
 
-  int main()
-  {
-      cin.sync_with_stdio(0);
+<b>17. Problem Q</b>
 
-      int sum = 0;
-      cin >> s;
-      for (int i = 0; i < s.size(); i++) sum += s[i] - '0';
-      int ans = 1;
-      if (s.size() == 1) ans = 0;
+Editorial: [link](https://codeforces.com/blog/entry/610)
 
-      while (sum > 9)
-      {
-          int temp = sum, newsum = 0;
-          while (temp)
-          {
-              newsum += temp % 10;
-              temp /= 10;
-          }
-          sum = newsum;
-          ans++;
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+/**
+Divide the problem into multiple steps.
+
+Thinking Process:
+
+Level 1:
+  Loop i from 1 to n and check if i is an almost prime number,
+  so we can have a function for that. Lets call it is_almost_prime() function.
+
+  Level 2:
+  is_almost_prime(n) function:
+    In the function we have to check if the number n is an almost prime number.
+    That is we have to check if the number has exactly two prime divisors.
+    So we can loop over i from 1 to n and check if i is a prime divisor of n
+    then count it. If the count is 2 then OK.
+    To check if it is a divisor we can check if n % i == 0
+    And to check if it is a prime we need another function!
+
+        Level 3:
+        is_prime(n) function:
+          In this function we need to check if n is a prime or not.
+          We can loop over i from 2 to n - 1, if any number divides it
+          then n is not a prime, otherwise it is a prime.
+
+So we are done! but note that we are doing 3 nested for loops in this solution.
+As n = 3000, running 3 nested loops is not good as 3000 * 3000 * 3000 operations will take more than our time limit (2s)
+
+But notice that we are calling the is_prime(n) function tons of times.
+But is_prime(n) can take 1 <= n <= 3000, so 3000 different inputs.
+So we can remember which of these are prime and which are not BEFORE our solution
+and we can store the answers in an array.
+
+By doing so, we don't have to call the is_prime(n) function in Level 3.
+We can just get the info from our answer array. Check the code to understand more.
+
+This way we can remove one nested loop.
+So we will have two nested loops = 3000 * 3000 operations which is OK
+
+**/
+
+const int N = 3030;
+
+bool is_prime[N];
+bool check_prime(int n) {
+  if (n == 1) return false; // 1 is not a prime by definition
+  for (int i = 2; i < n; i++) {
+    if (n % i == 0) { // n is divisible by i but i is neither 1, nor n, so n must not be a prime
+      return false;
+    }
+  }
+  return true;
+}
+bool is_almost_prime(int n) { // Level 2
+  int prime_divisor_count = 0;
+  for (int i = 1; i <= n; i++) {
+    if (n % i == 0) { // i is a divisor
+      if (is_prime[i]) { // prime divisor (check if it is a prime from the answer array that we precalculated!)
+        prime_divisor_count++;
       }
+    }
+  }
+  if (prime_divisor_count == 2) return true; // almost prime when it has two prime divisors
+  else return false;
+}
+int main() {
+  int n; cin >> n;
+  // Level 3: precalculate which numbers are prime and which are not
+  for (int i = 1; i <= n; i++) {
+    is_prime[i] = check_prime(i);
+  }
+  int ans = 0;
+  // Level 1
+  for (int i = 1; i <= n; i++) {
+    if (is_almost_prime(i)) {
+      ++ans;
+    }
+  }
+  cout << ans << '\n';
+  return 0;
+}
+```
 
-      cout << ans << endl;
+</details>
+<br>
 
+<b>18. Problem R</b>
+
+Editorial: [link](https://codeforces.com/blog/entry/6662)
+
+<details> <summary> Code(C++) </summary>
+
+```c++
+#include<iostream>
+using namespace std;
+
+bool has_distinct_digits(int year) { // year has 4 digits
+  // get all digits from right to left
+  int d4 = year % 10;
+  year /= 10;
+  int d3 = year % 10;
+  year /= 10;
+  int d2 = year % 10;
+  year /= 10;
+  int d1 = year % 10;
+
+  if (d1 != d2 and d1 != d3 and d1 != d4
+    and d2 != d3 and d2 != d4
+     and d3 != d4) { // check if all digits are distinct
+    return true;
+  }
+  return false;
+}
+int main() {
+  int year; cin >> year;
+  // in this problem 1000 <= year <= 9000
+  // as 9012 has all distinct digits so in the following loop
+  // year will always have 4 digits and it will never exceed 9012
+  while (year++) {
+    if (has_distinct_digits(year)) {
+      cout << year << '\n';
       return 0;
+    }
   }
+  return 0;
+}
+```
 
-
-  ```
-  </details>
-  <br>
-
-  <b>17. Problem Q</b>
-
-  Editorial: [link](https://codeforces.com/blog/entry/610)
-  <details> <summary> Code(C++) </summary>
-
-  ```c++
-  #include <iostream>
-  #include <cstdio>
-
-  using namespace std;
-
-  int fact(int n) {
-
-      int r = 0;
-      for(int i = 2; i * i <= n; ++i) {
-          if(n % i == 0) {
-              r++;
-              while(n % i == 0) n /= i;
-          }
-      }
-      if(n > 1)
-          r++;
-      return r;
-  }
-
-  int main() {
-
-      int n, c = 0;
-
-      cin >> n;
-
-      for(int i = 1; i <= n; ++i) {
-          if(fact(i) == 2)
-              c++;
-      }
-      cout << c << endl;
-
-      return 0;
-  }
-
-
-  ```
-  </details>
-  <br>
-
-  <b>18. Problem R</b>
-
-  Editorial: [link](https://codeforces.com/blog/entry/6662)
-  <details> <summary> Code(C++) </summary>
-
-  ```c++
-  #include <iostream>
-
-  using namespace std;
-
-  int main()
-  {
-      int y;
-      cin >> y;
-      while (true)
-      {
-          y += 1;
-          int a = y / 1000;
-          int b = y / 100 % 10;
-          int c = y / 10 % 10;
-          int d = y % 10;
-          if (a != b && a != c && a != d && b != c && b != d && c != d)
-          {
-              break;
-          }
-      }
-      cout << y << endl;
-      return 0;
-  }
-
-  ```
-  </details>
+</details>
+<br>
     </details>
     
-  REMEMBER THAT SOLVING MORE PROBLEMS IS THE KEY
+ **REMEMBER THAT SOLVING MORE PROBLEMS IS THE KEY**
 
 ### FAQ
   - [What is the key to CP?](https://codeforces.com/blog/entry/47516)
