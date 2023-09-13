@@ -505,7 +505,7 @@ Get familiar with problem-solving by solving these problems. You won't need to k
 
 - Contest 1: [link](https://codeforces.com/group/MWSDmqGsZm/contest/219158)
 - Contest 2: [link](https://codeforces.com/group/MWSDmqGsZm/contest/219432)
-- Contest 3: [link](https://vjudge.net/contest/468964)
+- Contest 3: [link](https://vjudge.net/contest/568978)
 
 **Pro Tip:** To check your ranking on the standings page on Vjudge, click on [settings](https://i.ibb.co/x7b1LQ6/image.png) on the contest page and then click on [Show Practice Submissions](https://i.ibb.co/R2CZ1Wg/image.png).
 
