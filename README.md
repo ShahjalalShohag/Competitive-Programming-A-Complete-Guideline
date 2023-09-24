@@ -289,7 +289,7 @@ My sublime build system for CP looks like this on Mac:
 
 ```c++
 {
-	"shell_cmd": "g++-11 -std=c++17 \"${file}\" -o \"${file_path}/${file_base_name}\" && \"${file_path}/${file_base_name}\"<~/Desktop/Codes/input.txt>~/Desktop/Codes/output.txt  && rm \"${file_path}/${file_base_name}\"",
+	"shell_cmd": "g++-11 -Wl,-stack_size,0x20000000 -std=c++17 \"${file}\" -o \"${file_path}/${file_base_name}\" && \"${file_path}/${file_base_name}\"<~/Desktop/Codes/input.txt>~/Desktop/Codes/output.txt  && rm \"${file_path}/${file_base_name}\"",
 	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
 	"working_dir": "${file_path}",
 	"selector": "source.c++",
