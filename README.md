@@ -507,7 +507,7 @@ Meanwhile, always participate in live contests and solve some random problems fr
 
 Also, you can sometimes try to do rating-wise practice. And make sure that you are not solving too many easy problems. Try to solve problems that are a bit harder than your current level.
 
-_Do not get overwhelmed by the number of topics. Just start with the basics and keep going. If you are done with the basics, then you are already better than 80% of the people._
+_Do not get overwhelmed by the number of topics. Just start with the basics and keep going. If you are done with the basics, then you are already better than 80% of the people and ready to be an Expert in Codeforces. And, if you are done with the 3\* topics of easy and medium difficulty, then you can be a Grandmaster in Codeforces once you solve enough problems._
 
 ---
 
