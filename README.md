@@ -45,15 +45,8 @@
 - [FAQ](#faq)
 - [Books](#books)
 - [Important Notes](#important-notes)
-- [\[Contest\]Solve some very basic problems.](#contestsolve-some-very-basic-problems)
-- [\[Codes\] Check how to solve the problems of Contest 1](#codes-check-how-to-solve-the-problems-of-contest-1)
-- [\[Codes\] Check how to solve the problems of Contest 2](#codes-check-how-to-solve-the-problems-of-contest-2)
-- [\[Editorials and Codes\] Check how to solve the problems of Contest 3](#editorials-and-codes-check-how-to-solve-the-problems-of-contest-3)
-- [Getting into Competitive Programming](#getting-into-competitive-programming)
 - [Tutorial](#tutorial)
 - [Life Hack(if you are from Bangladesh)](#life-hackif-you-are-from-bangladesh)
-- [How to do Topicwise Practice?](#how-to-do-topicwise-practice)
-- [Topic List (As you are feeling lazy to collect them by yourself!)](#topic-list-as-you-are-feeling-lazy-to-collect-them-by-yourself)
 - [Code Library](#code-library)
 - [Common Mistakes](#common-mistakes)
 - [How to Debug](#how-to-debug)
@@ -67,6 +60,11 @@
 - [How to not Miss any Contest?](#how-to-not-miss-any-contest)
 - [Virtual Contests](#virtual-contests)
 - [Useful Tools](#useful-tools)
+- [\[Contest\]Solve some very basic problems.](#contestsolve-some-very-basic-problems)
+- [\[Codes\] Check how to solve the problems of Contest 1](#codes-check-how-to-solve-the-problems-of-contest-1)
+- [\[Codes\] Check how to solve the problems of Contest 2](#codes-check-how-to-solve-the-problems-of-contest-2)
+- [\[Editorials and Codes\] Check how to solve the problems of Contest 3](#editorials-and-codes-check-how-to-solve-the-problems-of-contest-3)
+- [Similar Tutorials](#similar-tutorials)
 
 ### Discord Server
 
@@ -494,6 +492,228 @@ Check [this](https://cses.fi/book/book.pdf) if you want. It contains everything.
   - Why did this solution get TLE?
   - Why did this work?
   - Why do we exist...?
+
+### Tutorial
+
+- [The Ultimate Topic List](https://youkn0wwho.academy/topic-list)
+
+Check the above link. You will find everything categorized there. Then check the [guideline](https://youkn0wwho.academy/topic-list/guideline) page.
+
+So basically start with the basics section. Complete the topics under this section, you will find resources and problems for everything in increasing order of completion.
+
+After you are done with the basics section, select a difficulty and importance (3\* topics first), then complete them one by one.
+
+Meanwhile, always participate in live contests and solve some random problems from time to time.
+
+Also, you can sometimes try to do rating-wise practice. And make sure that you are not solving too many easy problems. Try to solve problems that are a bit harder than your current level.
+
+_Do not get overwhelmed by the number of topics. Just start with the basics and keep going. If you are done with the basics, then you are already better than 80% of the people._
+
+---
+
+### Life Hack(if you are from Bangladesh)
+
+If you want a complete guideline like this for EVERYTHING about CP and you are from Bangladesh, then you can check out my academy and enroll in some courses that fits you well.
+
+Link: [YouKn0wWho Academy](https://academy.shahjalalshohag.com/).
+
+---
+
+### Code Library
+
+- [Almost all the important templates that you will need in CP](https://github.com/ShahjalalShohag/code-library)
+
+### Common Mistakes
+
+Check out [[Tutorial] Common Mistakes in Competitive Programming and How to Avoid Them](https://codeforces.com/blog/entry/111217)
+
+### How to Debug
+
+Debugging is the process of finding and fixing bugs (errors) in your code. It's a very important skill that you need to master.
+
+- **Understand Error Messages:** Read the error messages carefully and try to understand what they mean.
+  For example, if you see a message like this:
+
+  ```c++
+  my_program.cpp: In function ‘int main()’:
+  my_program.cpp:4:12: error: ‘x’ was not declared in this scope
+  ```
+
+  This tells you that on line 4 of `my_program.cpp`, you're trying to use a variable x that the compiler doesn't know about.
+
+- **Print and Check:** This is the best way to debug your code. Print the values of variables and check if they are what you expect them to be.
+  For example, consider calculating the factorial of a number $n$ where $n$ could be up to $20$. Here's a buggy code:
+
+  ```c++
+    #include <bits/stdc++.h>
+    using namespace std;
+
+    int main() {
+      int n;
+      cin >> n;
+      int fact = 1;
+      for (int i = 1; i <= n; i++) {
+        fac *= i;
+      }
+      cout << fact << '\n';
+      return 0;
+    }
+  ```
+
+  If you run this, you will get a compilation error because `fac` is not defined. But if you fix that, you will get a wrong answer. So, you need to print the value of `fac` in each iteration to see what's going wrong.
+
+  ```c++
+    #include <bits/stdc++.h>
+    using namespace std;
+
+    int main() {
+      int n;
+      cin >> n; // input n = 20
+      int fact = 1;
+      for (int i = 1; i <= n; i++) {
+        fact *= i;
+        cout << fact << '\n';
+      }
+      cout << fact << '\n';
+      return 0;
+    }
+  ```
+
+  Now, you can see that some of the values of `fact` become negative after $12!$. Why? Because the maximum value that an `int` can store is $2^{31}-1$ which is less than $13!$. So, you need to use a `long long` instead of an `int`.
+
+  ```c++
+    #include <bits/stdc++.h>
+    using namespace std;
+
+    int main() {
+      int n;
+      cin >> n; // input n = 20
+      long long fact = 1;
+      for (int i = 1; i <= n; i++) {
+        fact *= i;
+      }
+      cout << fact << '\n';
+      return 0;
+    }
+  ```
+
+### Stress Testing
+
+- [Find a counter-test](https://ali-ibrahim137.github.io/competitive/programming/2020/08/23/Stress-Testing.html)
+
+### Coding Style
+
+**IMPROVE YOUR CODING STYLE. IT DESCRIBES YOURSELF!**
+
+- It's important because it makes your code more readable and understandable.
+- It's important because it makes your code more beautiful.
+- It's important because it helps you to debug your code easily.
+- It's important because it helps your teammates to understand your code easily.
+- It's important because it will help you during interviews.
+- It's important because if you don't follow a coding style in your job, you might get fired!
+
+<br>
+
+Tutorial: [link](https://codeforces.com/blog/entry/64218).
+
+**Online formatter:** [link](https://codebeautify.org/cpp-formatter-beautifier), you can use this to check how your ugly codes can be made beautiful.
+
+<br>In short:
+
+- Use proper indentations and spacings.
+- Use `const` if you are using the same value multiple times. For example, `const int N = 1e5 + 9` or `const int INF = 1e9 + 9`.
+- Use not more than three macros(for example, `#define ll long long` is acceptable).
+- After any condition, loop, or function, write the curly bracket on the same line, not on the next line.
+- Write variables on the go. `for (int i = 1; i <= n; i++)`. Here `i` has been declared on the go.
+- Use meaningful variable/function names.
+- Naming Conventions: `snake_case` or `camelCase` for variables and functions, `PascalCase` for classes and structures. I personally use `snake_case` for variables and functions.
+  - `snake_case`: Words are separated by underscores. For example, `int max_value_possible = 0`.
+  - `camelCase`: Words are separated by capital letters, but the first word starts with a small letter. For example, `int maxValuePossible = 0`.
+  - `PascalCase`: Words are separated by capital letters, and the first word also starts with a capital letter. For example, `struct MaxValuePossible {}`.
+- Comment your code. It helps you to understand your code later.
+- Consistency is the key. If you are using `snake_case` for variables, then use it everywhere. Don't use `snake_case` for some variables and `camelCase` for others.
+
+<br>You can follow other users on Codeforces and make them friends (click the star button on the right of the username on CF) and check their solutions using the "friends only" button. I like the coding styles of the following users:
+
+- [neal](https://codeforces.com/profile/neal)
+- [YouKn0wWho](https://codeforces.com/profile/YouKn0wWho)
+- [mango_lassi](https://codeforces.com/profile/mango_lassi)
+- [jiangly](https://codeforces.com/profile/jiangly)
+- [tourist](https://codeforces.com/profile/tourist)
+- [Anachor](https://codeforces.com/profile/Anachor)
+- [Bruteforceman](https://codeforces.com/profile/Bruteforceman)
+- [Others](https://codeforces.com/blog/entry/77865)
+
+### More About Contests
+
+#### Codeforces
+
+Website: [https://codeforces.com/](https://codeforces.com/)
+
+- **How to Use Codeforces**
+  - Check this guide: [must check](https://codeforces.com/blog/entry/99660).
+- **How do Codeforces' contests work?**
+  - Read this: [must check](https://codeforces.com/blog/entry/456).
+- **Problem Rating**
+  - Each problem has a rating that indicates contestants with which average rating solved this problem previously. Check [this](https://codeforces.com/blog/entry/62865) to know more about this and **how to sort problems based on ratings.**
+- **Problem Tags**
+  - Each problem has some tags that indicate the topics related to the problem. Check [this](https://codeforces.com/blog/entry/14565) to know more about this.
+- **Make Sure You Know the Following:**
+  - How to submit a solution.
+  - How to see other's solutions.
+  - How to see the test cases.
+  - How to see the standings.
+  - How to see the editorial.
+  - How to see the discussions.
+  - How to sort problems based on ratings.
+  - How to up-solve problems.
+  - What are different divisions and how to participate in them.
+
+#### AtCoder
+
+Website: [https://atcoder.jp/](https://atcoder.jp/)
+
+The process is similar to Codeforces.
+
+#### CodeChef
+
+Website: [https://www.codechef.com/](https://www.codechef.com/)
+
+The process is similar to Codeforces.
+
+#### Should I Participate in Contests?
+
+Some people think that they will learn some topics first and once they are done with learning, they will participate in contests. But this is a veryyyy bad practice.
+
+**YOU SHOULD PARTICIPATE IN ALL CONTESTS.**
+
+Participating in contests in real-time, trying to solve problems in a limited amount of time, competing with thousands of people all over the world, not being able to solve during the contest, up-solving after the contest, reading editorials, reading other's solutions, reading discussions, etc. will help you a lot in learning new things and improving your skills.
+
+I will **strongly** recommend you participate in the following contests:
+
+- Codeforces Div. 4, Div. 3, and Div. 2 contests.
+- AtCoder Beginner Contests.
+- CodeChef Starters Contests.
+
+### How to not Miss any Contest?
+
+You can check the contest tabs on the corresponding websites. But the best way to get notified about all the contests:
+
+- Join this server: [BCS - Bangladesh CP Server](https://discord.gg/hDSMZATsrM) and go to `reaction-roles` channel and react to the first message with the corresponding emoji to get notified about all the future contests!
+
+### Virtual Contests
+
+Virtual contests will give you a real-time experience. It enables the users to run past contests in a special mode that would imitate real competition. It feels just like a real contest with real contestants competing alongside the participant who writes a virtual contest. But it won't affect your rating.
+
+For Codeforces, click on `Virtual participation` on the [contest page](https://codeforces.com/contests) to participate in a virtual contest. You can pick your own start time for the virtual contest.
+
+### Useful Tools
+
+- [Chrome/Firefox Extension to analyze Codeforces profiles](https://codeforces.com/blog/entry/93417)
+- [Codeforces Practice Tracker — Browser Extension](https://codeforces.com/blog/entry/78203)
+- [CF-Predictor](https://chrome.google.com/webstore/detail/cf-predictor/ocfloejijfhhkkdmheodbaanephbnfhn)
+- [Codeforces Live Bot (Telegram Bot)](https://codeforces.com/blog/entry/82669)
+- [Codeforces Visualizer](https://cfviz.netlify.app/)
 
 ### [Contest]Solve some very basic problems.
 
@@ -2951,237 +3171,14 @@ int main() {
 </details>
 <br>
     </details>
-    
- **REMEMBER THAT SOLVING MORE PROBLEMS IS THE KEY**
+<br>
 
-### Getting into Competitive Programming
+**REMEMBER THAT SOLVING MORE PROBLEMS IS THE KEY**
 
-- [Getting into CP](https://github.com/the-hyp0cr1t3/CC)
-- [Basic Blocks](https://www.hackerearth.com/practice/notes/getting-started-with-the-sport-of-programming/)
-- [Book](https://cses.fi/book/book.pdf)
-
-### Tutorial
+### Similar Tutorials
 
 - [A way to Practice Competitive Programming : From Rating 1000 to 2400+ by Masataka Yoneda](https://drive.google.com/file/d/1J2x8pIYQ3MXANgvzOgBciWd3d79j_Exa/view)
 - [From Beginner to Grandmaster - Complete Roadmap for Competitive Programming by Galen Colin](https://www.youtube.com/watch?v=bSdp2WeyuJY)
-
-**Note: If your Codeforces rating is not at least 1900 then the aftermentioned topicwise practice is not needed, just learn basic stuffs and follow the tutorial linked above.**
-
-### Life Hack(if you are from Bangladesh)
-
-If you want a complete guideline like this for EVERYTHING about CP and you are from Bangladesh, then you can check out my academy and enroll in some courses that fits you well.
-
-Link: [YouKn0wWho Academy](https://academy.shahjalalshohag.com/).
-
-### How to do Topicwise Practice?
-
-1. Create a topic list(every possible category, from easy to advanced).
-2. Select a topic.
-3. Learn the topic.
-4. Solve lots of problems about that topic.
-5. Go to ii.
-
-And of course, participate in every possible contests in every online judge.
-
-### Topic List (As you are feeling lazy to collect them by yourself!)
-
-- [The Ultimate Topic List (with Resources, Problems and Templates)](https://codeforces.com/blog/entry/95106)
-
-### Code Library
-
-- [Almost all the important templates that you will need in CP](https://github.com/ShahjalalShohag/code-library)
-
-### Common Mistakes
-
-Check out [[Tutorial] Common Mistakes in Competitive Programming and How to Avoid Them](https://codeforces.com/blog/entry/111217)
-
-### How to Debug
-
-Debugging is the process of finding and fixing bugs (errors) in your code. It's a very important skill that you need to master.
-
-- **Understand Error Messages:** Read the error messages carefully and try to understand what they mean.
-  For example, if you see a message like this:
-
-  ```c++
-  my_program.cpp: In function ‘int main()’:
-  my_program.cpp:4:12: error: ‘x’ was not declared in this scope
-  ```
-
-  This tells you that on line 4 of `my_program.cpp`, you're trying to use a variable x that the compiler doesn't know about.
-
-- **Print and Check:** This is the best way to debug your code. Print the values of variables and check if they are what you expect them to be.
-  For example, consider calculating the factorial of a number $n$ where $n$ could be up to $20$. Here's a buggy code:
-
-  ```c++
-    #include <bits/stdc++.h>
-    using namespace std;
-
-    int main() {
-      int n;
-      cin >> n;
-      int fact = 1;
-      for (int i = 1; i <= n; i++) {
-        fac *= i;
-      }
-      cout << fact << '\n';
-      return 0;
-    }
-  ```
-
-  If you run this, you will get a compilation error because `fac` is not defined. But if you fix that, you will get a wrong answer. So, you need to print the value of `fac` in each iteration to see what's going wrong.
-
-  ```c++
-    #include <bits/stdc++.h>
-    using namespace std;
-
-    int main() {
-      int n;
-      cin >> n; // input n = 20
-      int fact = 1;
-      for (int i = 1; i <= n; i++) {
-        fact *= i;
-        cout << fact << '\n';
-      }
-      cout << fact << '\n';
-      return 0;
-    }
-  ```
-
-  Now, you can see that some of the values of `fact` become negative after $12!$. Why? Because the maximum value that an `int` can store is $2^{31}-1$ which is less than $13!$. So, you need to use a `long long` instead of an `int`.
-
-  ```c++
-    #include <bits/stdc++.h>
-    using namespace std;
-
-    int main() {
-      int n;
-      cin >> n; // input n = 20
-      long long fact = 1;
-      for (int i = 1; i <= n; i++) {
-        fact *= i;
-      }
-      cout << fact << '\n';
-      return 0;
-    }
-  ```
-
-### Stress Testing
-
-- [Find a counter-test](https://ali-ibrahim137.github.io/competitive/programming/2020/08/23/Stress-Testing.html)
-
-### Coding Style
-
-**IMPROVE YOUR CODING STYLE. IT DESCRIBES YOURSELF!**
-
-- It's important because it makes your code more readable and understandable.
-- It's important because it makes your code more beautiful.
-- It's important because it helps you to debug your code easily.
-- It's important because it helps your teammates to understand your code easily.
-- It's important because it will help you during interviews.
-- It's important because if you don't follow a coding style in your job, you might get fired!
-
-<br>
-
-Tutorial: [link](https://codeforces.com/blog/entry/64218).
-
-**Online formatter:** [link](https://codebeautify.org/cpp-formatter-beautifier), you can use this to check how your ugly codes can be made beautiful.
-
-<br>In short:
-
-- Use proper indentations and spacings.
-- Use `const` if you are using the same value multiple times. For example, `const int N = 1e5 + 9` or `const int INF = 1e9 + 9`.
-- Use not more than three macros(for example, `#define ll long long` is acceptable).
-- After any condition, loop, or function, write the curly bracket on the same line, not on the next line.
-- Write variables on the go. `for (int i = 1; i <= n; i++)`. Here `i` has been declared on the go.
-- Use meaningful variable/function names.
-- Naming Conventions: `snake_case` or `camelCase` for variables and functions, `PascalCase` for classes and structures. I personally use `snake_case` for variables and functions.
-  - `snake_case`: Words are separated by underscores. For example, `int max_value_possible = 0`.
-  - `camelCase`: Words are separated by capital letters, but the first word starts with a small letter. For example, `int maxValuePossible = 0`.
-  - `PascalCase`: Words are separated by capital letters, and the first word also starts with a capital letter. For example, `struct MaxValuePossible {}`.
-- Comment your code. It helps you to understand your code later.
-- Consistency is the key. If you are using `snake_case` for variables, then use it everywhere. Don't use `snake_case` for some variables and `camelCase` for others.
-
-<br>You can follow other users on Codeforces and make them friends (click the star button on the right of the username on CF) and check their solutions using the "friends only" button. I like the coding styles of the following users:
-
-- [neal](https://codeforces.com/profile/neal)
-- [YouKn0wWho](https://codeforces.com/profile/YouKn0wWho)
-- [mango_lassi](https://codeforces.com/profile/mango_lassi)
-- [jiangly](https://codeforces.com/profile/jiangly)
-- [tourist](https://codeforces.com/profile/tourist)
-- [Anachor](https://codeforces.com/profile/Anachor)
-- [Bruteforceman](https://codeforces.com/profile/Bruteforceman)
-- [Others](https://codeforces.com/blog/entry/77865)
-
-### More About Contests
-
-#### Codeforces
-
-Website: [https://codeforces.com/](https://codeforces.com/)
-
-- **How to Use Codeforces**
-  - Check this guide: [must check](https://codeforces.com/blog/entry/99660).
-- **How do Codeforces' contests work?**
-  - Read this: [must check](https://codeforces.com/blog/entry/456).
-- **Problem Rating**
-  - Each problem has a rating that indicates contestants with which average rating solved this problem previously. Check [this](https://codeforces.com/blog/entry/62865) to know more about this and **how to sort problems based on ratings.**
-- **Problem Tags**
-  - Each problem has some tags that indicate the topics related to the problem. Check [this](https://codeforces.com/blog/entry/14565) to know more about this.
-- **Make Sure You Know the Following:**
-  - How to submit a solution.
-  - How to see other's solutions.
-  - How to see the test cases.
-  - How to see the standings.
-  - How to see the editorial.
-  - How to see the discussions.
-  - How to sort problems based on ratings.
-  - How to up-solve problems.
-  - What are different divisions and how to participate in them.
-
-#### AtCoder
-
-Website: [https://atcoder.jp/](https://atcoder.jp/)
-
-The process is similar to Codeforces.
-
-#### CodeChef
-
-Website: [https://www.codechef.com/](https://www.codechef.com/)
-
-The process is similar to Codeforces.
-
-#### Should I Participate in Contests?
-
-Some people think that they will learn some topics first and once they are done with learning, they will participate in contests. But this is a veryyyy bad practice.
-
-**YOU SHOULD PARTICIPATE IN ALL CONTESTS.**
-
-Participating in contests in real-time, trying to solve problems in a limited amount of time, competing with thousands of people all over the world, not being able to solve during the contest, up-solving after the contest, reading editorials, reading other's solutions, reading discussions, etc. will help you a lot in learning new things and improving your skills.
-
-I will **strongly** recommend you participate in the following contests:
-
-- Codeforces Div. 4, Div. 3, and Div. 2 contests.
-- AtCoder Beginner Contests.
-- CodeChef Starters Contests.
-
-### How to not Miss any Contest?
-
-You can check the contest tabs on the corresponding websites. But the best way to get notified about all the contests:
-
-- Join this server: [BCS - Bangladesh CP Server](https://discord.gg/hDSMZATsrM) and go to `reaction-roles` channel and react to the first message with the corresponding emoji to get notified about all the future contests!
-
-### Virtual Contests
-
-Virtual contests will give you a real-time experience. It enables the users to run past contests in a special mode that would imitate real competition. It feels just like a real contest with real contestants competing alongside the participant who writes a virtual contest. But it won't affect your rating.
-
-For Codeforces, click on `Virtual participation` on the [contest page](https://codeforces.com/contests) to participate in a virtual contest. You can pick your own start time for the virtual contest.
-
-### Useful Tools
-
-- [Chrome/Firefox Extension to analyze Codeforces profiles](https://codeforces.com/blog/entry/93417)
-- [Codeforces Practice Tracker — Browser Extension](https://codeforces.com/blog/entry/78203)
-- [CF-Predictor](https://chrome.google.com/webstore/detail/cf-predictor/ocfloejijfhhkkdmheodbaanephbnfhn)
-- [Codeforces Live Bot (Telegram Bot)](https://codeforces.com/blog/entry/82669)
-- [Codeforces Visualizer](https://cfviz.netlify.app/)
 
 Also, remember to exercise and drink more water. It helps a lot.
 
